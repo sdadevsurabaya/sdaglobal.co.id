@@ -61,6 +61,7 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    transition: all .36s ease-in-out;
 }
 
 a:hover,
@@ -70,11 +71,13 @@ a.active {
 }
 
 button {
+    display: block;
     border: solid 1px transparent;
     padding: 0;
     background: transparent;
     color: inherit;
     cursor: pointer;
+    font-size: inherit;
 }
 
 address {
@@ -104,6 +107,22 @@ p {
 
 hr {
     border-color: var(--color-light-100);
+}
+
+input,
+textarea {
+    display: block;
+    background: var(--color-white);
+    color: var(--color-black);
+    border: solid 1px var(--color-dark-800);
+    padding: var(--size-2) var(--size-3);
+    font-size: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: inherit;
+    opacity: .5;
 }
 
 .container {

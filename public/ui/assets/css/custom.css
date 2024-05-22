@@ -1,0 +1,22 @@
+/* =============================== bradcrumb */
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: var(--size-1);
+}
+
+.breadcrumb-item {
+    position: relative;
+    margin-right: var(--size-2);
+}
+
+.breadcrumb-item::before {
+    content: '|';
+    color: var(--color-light-900);
+    margin-right: var(--size-2);
+}
+
+.breadcrumb-item:first-of-type::before {
+    display: none;
+}
