@@ -1,0 +1,128 @@
+:root {
+    --color-primary: #842c2d;
+    --color-black: #000000;
+    --color-dark-100: #101010;
+    --color-dark-200: #202020;
+    --color-dark-300: #303030;
+    --color-dark-400: #404040;
+    --color-dark-500: #505050;
+    --color-dark-600: #606060;
+    --color-dark-700: #707070;
+    --color-dark-800: #808080;
+    --color-dark-900: #909090;
+    --color-white: #ffffff;
+    --color-light-100: #f4f4f4;
+    --color-light-200: #eeeeee;
+    --color-light-300: #e4e4e4;
+    --color-light-400: #dddddd;
+    --color-light-500: #d4d4d4;
+    --color-light-600: #cccccc;
+    --color-light-700: #c4c4c4;
+    --color-light-800: #bbbbbb;
+    --color-light-900: #b4b4b4;
+    --size-1: .25em;
+    --size-2: .5em;
+    --size-3: .75em;
+    --size-4: 1em;
+    --size-5: 1.25em;
+    --size-6: 1.5em;
+    --size-7: 1.75em;
+    --size-8: 2em;
+    --size-9: 2.5em;
+    --size-10: 3em;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: var(--color-white);
+    color: var(--color-dark-500);
+}
+
+html {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a.active {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+button {
+    border: solid 1px transparent;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: inherit;
+}
+
+hr {
+    border-color: var(--color-light-100);
+}
+
+.container {
+    width: 100%;
+    padding-left: var(--size-4);
+    padding-right: var(--size-4);
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 90%;
+        max-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    padding-left: var(--size-4);
+    padding-right: var(--size-4);
+}
