@@ -1,4 +1,9 @@
-/* =============================== bradcrumb */
+ul.nav,
+ol.nav {
+    padding-left: 0;
+    list-style: none;
+}
+
 .breadcrumb {
     display: flex;
     flex-wrap: wrap;

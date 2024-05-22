@@ -33,7 +33,9 @@
         <section class="page-section">
             <div class="container">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ad excepturi sunt labore magnam delectus explicabo harum. Cum blanditiis recusandae, officia praesentium necessitatibus minima sequi facere ipsam possimus. Aspernatur, sed.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ad excepturi sunt labore magnam
+                    delectus explicabo harum. Cum blanditiis recusandae, officia praesentium necessitatibus minima sequi
+                    facere ipsam possimus. Aspernatur, sed.
                 </p>
             </div>
         </section>
@@ -150,3 +152,54 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    .footbar {
+        background: var(--color-primary);
+        color: var(--color-light-500);
+        text-align: center;
+    }
+
+    .footbar a:hover,
+    .footbar a.active {
+        color: var(--color-white);
+    }
+
+    .footbar main>.container {
+        padding-top: var(--size-10);
+        padding-bottom: var(--size-10);
+        display: grid;
+        row-gap: var(--size-9);
+    }
+
+    .footbar footer {
+        background: var(--color-black);
+    }
+
+    .footbar footer>.container {
+        padding-top: var(--size-6);
+        padding-bottom: var(--size-6);
+        display: grid;
+        row-gap: var(--size-4);
+    }
+
+    .footbar footer .nav {
+        text-transform: capitalize;
+        justify-content: center;
+    }
+
+    .footbar footer .copyright {
+        opacity: .6;
+    }
+</style>

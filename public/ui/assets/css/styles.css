@@ -71,7 +71,6 @@ a.active {
 }
 
 button {
-    display: block;
     border: solid 1px transparent;
     padding: 0;
     background: transparent;
@@ -111,7 +110,6 @@ hr {
 
 input,
 textarea {
-    display: block;
     background: var(--color-white);
     color: var(--color-black);
     border: solid 1px var(--color-dark-800);

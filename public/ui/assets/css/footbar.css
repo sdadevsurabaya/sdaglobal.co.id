@@ -9,114 +9,13 @@
     color: var(--color-white);
 }
 
-
-/* =============================== footbar main */
 .footbar main>.container {
-    padding-top: var(--size-8);
-    padding-bottom: var(--size-8);
+    padding-top: var(--size-10);
+    padding-bottom: var(--size-10);
     display: grid;
-    gap: var(--size-8);
+    row-gap: var(--size-9);
 }
 
-.footbar main .nav-primary,
-.footbar main .nav-secondary {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-transform: capitalize;
-    align-items: first baseline;
-}
-
-.footbar main .sign-up label {
-    display: block;
-    margin-bottom: var(--size-2);
-}
-
-.footbar main .sign-up .form-group {
-    display: inline-flex;
-    align-items: center;
-    font-size: 1.125em;
-}
-
-.footbar main .sign-up .form-group input {
-    max-width: 225px;
-    border-width: 0;
-}
-
-.footbar main .sign-up .form-group button {
-    background: var(--color-black);
-    color: var(--color-white);
-    padding: var(--size-2) var(--size-3);
-}
-
-.footbar main .nav-sosmed {
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: var(--size-4);
-    font-size: var(--size-6);
-}
-
-@media (max-width: 991.98px) {
-    .footbar main .apps-mobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        column-gap: var(--size-6);
-        margin-top: var(--size-3);
-    }
-}
-
-@media (min-width: 992px) {
-    .footbar main>.container {
-        grid-template-columns: 1fr auto auto;
-        text-align: left;
-        column-gap: calc(var(--size-10) + 3vw);
-    }
-}
-
-@media (min-width: 992px) {
-    .footbar main .nav-primary {
-        order: 1;
-    }
-}
-
-@media (min-width: 992px) {
-    .footbar main .img-industrial {
-        order: 2;
-    }
-}
-
-@media (min-width: 992px) {
-    .footbar main .nav-secondary {
-        order: 3;
-    }
-}
-
-@media (min-width: 992px) {
-    .footbar main .sign-up {
-        order: 4;
-    }
-}
-
-@media (min-width: 992px) {
-    .footbar main .mobile {
-        order: 5;
-    }
-}
-
-@media (min-width: 992px) {
-    .footbar main .nav-sosmed {
-        order: 6;
-    }
-}
-
-@media (min-width: 992px) {
-    .footbar main .feedback {
-        order: 7;
-    }
-}
-
-
-/* =============================== footbar footer */
 .footbar footer {
     background: var(--color-black);
 }

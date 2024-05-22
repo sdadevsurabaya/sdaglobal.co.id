@@ -5,59 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDA &bull; Home</title>
+    <link rel="shortcut icon" href="../assets/img/logo/ikon-sda.ico" type="image/x-icon">
     <style>
         * {
             outline: solid 1px green;
             outline: solid 1px transparent;
         }
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
         html,
         body {
             width: 100%;
-            height: 100%;
-            overflow: hidden;
+            min-height: 100%;
             background: #842c2d;
+            color: white;
+            justify-content: flex-end;
         }
 
         body {
             margin: 0;
+            display: flex;
+            flex-direction: column;
             position: relative;
-            background-image: url(../assets/img/landing/iamges.png);
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-size: calc(100% - 10vw) auto;
+        }
+
+        body>* {
+            width: 100%;
+            height: auto;
         }
 
         header {
-            position: fixed;
-            top: 10vh;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 100;
-            width: calc(50% - 5vw);
+            padding: 20vw 10vw;
+        }
+
+        main {
+            margin-top: auto;
+            display: flex;
+            align-items: flex-end;
         }
 
         footer {
-            position: fixed;
+            position: absolute;
             bottom: 0;
             right: 0;
-            width: calc(75% - 5vw);
-            z-index: 200;
+            width: 85%;
+            display: flex;
+            align-items: flex-end;
         }
 
         @media (min-width: 992px) {
             body {
-                background-position: left bottom;
-                background-size: calc(50% - 5vw) auto;
+                flex-direction: row;
+                height: 100%;
+                overflow: hidden;
             }
+
             header {
-                top: 50%;
-                left: 62.5%;
-                transform: translate(-50%, -50%);
-                width: 28%;
+                order: 2;
+                width: 50%;
+                height: 100%;
+                padding: 0;
+                display: flex;
+                align-items: center;
+            }
+
+            header>img {
+                max-width: 32vw;
+            }
+
+            main {
+                width: 50%;
+                height: 100%;
+                order: 1;
+            }
+
+            main>img {
+                height: 90%;
+                width: auto;
             }
 
             footer {
+                order: 3;
+                position: fixed;
                 width: 40%;
             }
         }
@@ -67,11 +106,13 @@
 <body>
 
     <header>
-        <img src="../assets/img/landing/wording.png" width="100%" height="auto" alt="">
+        <img src="../assets/img/landing/wording-mobile.png" width="100%" height="auto" alt="">
     </header>
-
+    <main>
+        <img src="../assets/img/landing/person-mobile.png" width="100%" height="auto" alt="">
+    </main>
     <footer>
-        <img src="../assets/img/landing/frontimage.png" width="100%" height="auto" alt="">
+        <img src="../assets/img/landing/label-mobile.png" width="100%" height="auto" alt="">
     </footer>
 
 </body>
