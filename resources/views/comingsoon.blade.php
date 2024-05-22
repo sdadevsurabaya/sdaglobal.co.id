@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDA &bull; Home</title>
+    <link rel="icon" href="ui/assets/img/landing/redtop.png" type="image/x-icon">
+
     <style>
         * {
             outline: solid 1px green;
