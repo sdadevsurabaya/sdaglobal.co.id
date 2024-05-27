@@ -2,154 +2,190 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDA & Home</title>
-    <link rel="stylesheet" href="../vendor/fontawesome-free-6.5.1-web/css/all.min.css">
-    <link rel="stylesheet" href="../assets/fonts/HelveticaNeue/HelveticaNeue.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/custom.css">
-    <link rel="stylesheet" href="../assets/css/footbar.css">
-    <style>
-        * {
-            outline: solid 1px green;
-            outline: solid 1px transparent;
-        }
-    </style>
+   <script src="components/links.js"></script>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <title>SDA &bull; Home</title>
+   <style>
+      * {
+         outline: solid 1px green;
+         outline: solid 1px transparent;
+      }
+   </style>
 </head>
 
 <body>
 
-    <header class="page-header">
-        <nav class="navbar">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <img src="../assets/img/logo/logo-sda.png" width="auto" height="30" alt="">
-                </a>
+   <header class="page-header container">
+      <script src="components/navtop.js"></script>
+      <script src="components/sidebar.js"></script>
+   </header>
+
+   <main class="page-wrapper">
+      <section class="page-section banner" style="padding: 0;">
+         <img src="../assets/img/banner/banner.png" alt="" width="100%" height="auto">
+      </section>
+      <section class="page-section">
+         <div class="container">
+            <h5 class="page-title">
+               ABOUT <br class="d-none d-lg-block"><b class="fw-bold">US</b>
+            </h5>
+            <p>
+               SDA Global takes pride in its reputation as a reliable and customer-centric organization. Since our
+               inception on June 2, 1992, we have remained committed to fulfilling our customers’ needs. Starting with
+               hydraulic and pneumatic products, we expanded our portfolio to include industrial and commercial
+               solutions. Our knowledgeable team offers friendly advice based on years of combined experience and
+               friendly demeanor.
+            </p>
+         </div>
+      </section>
+      <section class="page-section" style="background: var(--color-primary); color: var(--color-white);">
+         <div class="container">
+            <h5 class="page-title">
+               OUR <br class="d-none d-lg-block"><b class="fw-bold">GOAL</b>
+            </h5>
+            <p>
+               Our goal at SDA Indonesia is to stay in touch with any changes in our industry, so that we can always
+               offer you the latest and most current information and services.
+            </p>
+         </div>
+      </section>
+      <section class="page-section" style="padding-top: 0;">
+         <div style="margin-bottom: calc(3em + 1vw);">
+            <div class="img-wrapper" style="aspect-ratio: 1/1; background: var(--color-primary);">
+               <img src="../assets/img/home/mission-banner.jpg" alt="">
             </div>
-        </nav>
-    </header>
+         </div>
+         <div class="container">
+            <h5 class="page-title">
+               <b class="fw-bold">MISSION</b> <br class="d-none d-lg-block">STATEMENT
+            </h5>
+            <ul>
+               <li>
+                  Customer Satisfaction: We strive to understand our customers’ requirements thoroughly and
+                  deliver
+                  solutions that exceed their expectations.
+               </li>
+               <li>
+                  Quality Assurance: Our commitment to quality ensures that every product and service we offer
+                  meets
+                  the highest standards.
+               </li>
+               <li>
+                  Timeliness: We value your time. Our e(icient processes and dedicated team ensure timely
+                  delivery.
+               </li>
+               <li>
+                  Competitive Edge: We stay ahead of the curve by o(ering competitive pricing, innovative
+                  solutions
+                  supported by comprehensive inventory for the market.
+               </li>
+               <li>
+                  Mutual Success: We believe in fostering strong relationships with our valuable customers,
+                  trusted
+                  suppliers, prestigious corporation and the dynamic community.
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section class="page-section">
+         <div class="container">
+            <h5 class="page-title">
+               <b class="fw-bold">VISION</b> <br class="d-none d-lg-block">STATEMENT
+            </h5>
+            <p>
+               SDA Global aims to be the paragon of the value-added problem-solving instituition. We provide superior
+               person-to-person individualized service to all our customers and prospects. Our vision is to be the go-to
+               partner for industrial and commercial needs, offering personalized solutions that make a difference.
+               Additionally, we envision expanding our reach through e-commerce, providing seamless online experiences
+               for our valued clients.
+            </p>
+            <h3 style="margin: 2em 0; font-size: 1.75em;">
+               <b>What’s New?</b>
+            </h3>
+            <style>
+               .news-list {
+                  display: grid;
+                  gap: calc(1.5em + .5em);
+               }
 
-    <main class="page-wrapper">
+               @media (min-width: 768px) {
+                  .news-list {
+                     grid-template-columns: 1fr 1fr;
+                  }
+               }
 
-        <section class="page-section">
-            <div class="container">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ad excepturi sunt labore magnam
-                    delectus explicabo harum. Cum blanditiis recusandae, officia praesentium necessitatibus minima sequi
-                    facere ipsam possimus. Aspernatur, sed.
-                </p>
+               @media (min-width: 1200px) {
+                  .news-list {
+                     grid-template-columns: 1fr 1fr 1fr;
+                  }
+               }
+            </style>
+            <div class="news-list">
+               <figure style="margin: 0;">
+                  <img src="../assets/img/home/news1.png" width="100%" height="auto" alt="" style="margin-bottom: 1em;">
+                  <figcaption>
+                     <h5 style="margin-bottom: 1em;">
+                        <a href="#" target="_blank">
+                           SDA Announces Community Partnership with Vendor A
+                        </a>
+                     </h5>
+                     <p style="margin-bottom: 1em;">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum my nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                     </p>
+                     <p style="opacity: .5;">
+                        <small>April 23, 2024 / Indonesia</small>
+                     </p>
+                  </figcaption>
+               </figure>
+               <figure style="margin: 0;">
+                  <img src="../assets/img/home/news2.png" width="100%" height="auto" alt="" style="margin-bottom: 1em;">
+                  <figcaption>
+                     <h5 style="margin-bottom: 1em;">
+                        <a href="#" target="_blank">
+                           SDA Announces Community Partnership with Vendor A
+                        </a>
+                     </h5>
+                     <p style="margin-bottom: 1em;">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum my nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                     </p>
+                     <p style="opacity: .5;">
+                        <small>April 23, 2024 / Indonesia</small>
+                     </p>
+                  </figcaption>
+               </figure>
+               <figure style="margin: 0;">
+                  <img src="../assets/img/home/news3.png" width="100%" height="auto" alt="" style="margin-bottom: 1em;">
+                  <figcaption>
+                     <h5 style="margin-bottom: 1em;">
+                        <a href="#" target="_blank">
+                           SDA Announces Community Partnership with Vendor A
+                        </a>
+                     </h5>
+                     <p style="margin-bottom: 1em;">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum my nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                     </p>
+                     <p style="opacity: .5;">
+                        <small>April 23, 2024 / Indonesia</small>
+                     </p>
+                  </figcaption>
+               </figure>
             </div>
-        </section>
+         </div>
+      </section>
+   </main>
 
-    </main>
+   <footer class="page-footer">
+      <script src="components/footbar.js"></script>
+   </footer>
 
-    <footer class="page-footer">
-        <div class="footbar">
-            <main>
-                <div class="container">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">about us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">about SDA GLOBAL</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">our business</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">news</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">careers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">contact us</a>
-                        </li>
-                    </ul>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">connect</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">call us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">branch locations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">catalog request</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">help</a>
-                        </li>
-                    </ul>
-                    <div>
-                        <img src=".." alt="INDUSTRIAL">
-                    </div>
-                    <nav class="nav">
-                        <a href="#" target="_blank" class="nav-link">
-                            <i class="fab fa-x-twitter"></i>
-                        </a>
-                        <a href="#" target="_blank" class="nav-link">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" target="_blank" class="nav-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" target="_blank" class="nav-link">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="#" target="_blank" class="nav-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </nav>
-                    <form action="">
-                        <label for=""><strong>Sign Up For Email</strong></label>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email">
-                            <button type="submit">Submit</button>
-                        </div>
-                    </form>
-                    <div>
-                        <p>
-                            <strong>We’re Mobile</strong>
-                            <br>Mobile Features
-                        </p>
-                        <div class="apps-mobile">
-                            <div><img src=".." alt="App Store"></div>
-                            <div><img src=".." alt="Google Play"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <h5><strong>Feedback</strong></h5>
-                        <button>Help Us Improve</button>
-                    </div>
-                </div>
-            </main>
-            <footer>
-                <div class="container">
-                    <nav class="nav breadcrumb">
-                        <a href="" target="_blank" class="nav-link breadcrumb-item">terms of access</a>
-                        <a href="" target="_blank" class="nav-link breadcrumb-item">terms of sale</a>
-                        <a href="" target="_blank" class="nav-link breadcrumb-item">privacy policy</a>
-                        <a href="" target="_blank" class="nav-link breadcrumb-item">your privacy choices</a>
-                        <a href="" target="_blank" class="nav-link breadcrumb-item">sitemap</a>
-                        <a href="" target="_blank" class="nav-link breadcrumb-item">fraud alert</a>
-                        <a href="" target="_blank" class="nav-link breadcrumb-item">accessibility statement</a>
-                    </nav>
-                    <div class="copyright">&copy; <span id="year"></span> SDA. All rights reserved.</div>
-                </div>
-            </footer>
-        </div>
-    </footer>
-
-    <script src="../vendor/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-    <script src="../assets/js/scripts.js"></script>
+   <script src="components/scripts.js"></script>
 
 </body>
 
