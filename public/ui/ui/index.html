@@ -120,10 +120,6 @@
             position: absolute;
          }
       }
-
-      .dropdown:hover .dropdown-menu {
-         display: block;
-      }
    </style>
    <style>
       :root {
@@ -136,6 +132,47 @@
 <body>
 
    <header class="page-header">
+      <style>
+         @media (max-width: 991.98px) {
+            .navtop .offcanvas-body a {
+               display: block;
+               width: 100%;
+            }
+
+            .navtop .dropdown-menu {
+               position: unset !important;
+               inset: unset !important;
+               margin: unset !important;
+               transform: unset !important;
+               border-width: 0;
+               border-radius: 0;
+            }
+
+            .navtop .dropdown-toggle {
+               position: relative;
+            }
+
+            .navtop .dropdown-toggle::after {
+               font-family: 'FontAwesome';
+               content: "\f078";
+               border-width: 0;
+               position: absolute;
+               top: 50%;
+               left: 100%;
+               transform: translate(-150%, -50%) rotate(0);
+            }
+
+            .navtop .dropdown-toggle.show::after {
+               transform: translate(-150%, -50%) rotate(-180deg);
+            }
+         }
+
+         @media (min-width: 992px) {
+            .navtop .dropdown:hover .dropdown-menu {
+               display: block;
+            }
+         }
+      </style>
       <div class="navtop bg-light py-3 py-lg-4">
          <div class="container d-lg-grid row-gap-lg-4">
             <ul class="list-unstyled m-0 d-grid align-items-center d-lg-block"
@@ -173,23 +210,25 @@
                         <a href="#">home</a>
                      </li>
                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">
+                        <a href="#" class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
                            about SDA GLOBAL
                         </a>
                         <ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="#">Action</a></li>
-                           <li><a class="dropdown-item" href="#">Another action</a></li>
-                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                           <li class="dropdown-item"><a href="#">Action</a></li>
+                           <li class="dropdown-item"><a href="#">Another action</a></li>
+                           <li class="dropdown-item"><a href="#">Something else here</a></li>
                         </ul>
                      </li>
                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">
+                        <a href="#" class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
                            our businesses
                         </a>
                         <ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="#">Action</a></li>
-                           <li><a class="dropdown-item" href="#">Another action</a></li>
-                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                           <li class="dropdown-item"><a href="#">Action</a></li>
+                           <li class="dropdown-item"><a href="#">Another action</a></li>
+                           <li class="dropdown-item"><a href="#">Something else here</a></li>
                         </ul>
                      </li>
                      <li>
