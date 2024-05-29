@@ -4,4 +4,4 @@ $(window).scroll(function () {
    } else {
       $('body').removeClass('scrollTop');
    }
-});
+})
