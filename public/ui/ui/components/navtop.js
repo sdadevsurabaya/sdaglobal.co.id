@@ -41,9 +41,15 @@ document.write(`
                      about SDA GLOBAL
                   </a>
                   <ul class="dropdown-menu">
-                     <li class="dropdown-item"><a href="#">Action</a></li>
-                     <li class="dropdown-item"><a href="#">Another action</a></li>
-                     <li class="dropdown-item"><a href="#">Something else here</a></li>
+                     <li class="dropdown-item">
+                        <a href="history.html">history</a>
+                     </li>
+                     <li class="dropdown-item">
+                        <a href="leadership.html">leadership</a>
+                     </li>
+                     <li class="dropdown-item">
+                        <a href="way.html">the SDA way</a>
+                     </li>
                   </ul>
                </li>
                <li class="dropdown">
