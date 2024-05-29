@@ -118,3 +118,7 @@ button {
    border-radius: 0;
    font-size: inherit;
 }
+
+.g-7 {
+   gap: 5em;
+}

@@ -40,7 +40,7 @@ document.write(`
                      aria-expanded="false">
                      about SDA GLOBAL
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu rounded-0">
                      <li class="dropdown-item">
                         <a href="history.html">history</a>
                      </li>
@@ -57,7 +57,7 @@ document.write(`
                      aria-expanded="false">
                      our businesses
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu rounded-0">
                      <li class="dropdown-item"><a href="#">Action</a></li>
                      <li class="dropdown-item"><a href="#">Another action</a></li>
                      <li class="dropdown-item"><a href="#">Something else here</a></li>
