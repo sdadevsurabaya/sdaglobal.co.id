@@ -122,3 +122,7 @@ button {
 .g-7 {
    gap: 5em;
 }
+
+.dropdown-item>a {
+   display: block;
+}
