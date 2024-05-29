@@ -11,6 +11,7 @@ body {
    min-height: 100%;
    display: grid;
    grid-template-rows: auto 1fr auto;
+   overflow-x: hidden;
 }
 
 a {
@@ -88,5 +89,17 @@ button {
 @media (min-width: 1200px) {
    .position-xl-absolute {
       position: absolute;
+   }
+}
+
+@media (min-width: 1200px) {
+   .pt-xl-7 {
+      padding-top: 7em !important;
+   }
+}
+
+@media (min-width: 1200px) {
+   .pt-xl-14 {
+      padding-top: 14em !important;
    }
 }
