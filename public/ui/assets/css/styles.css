@@ -103,3 +103,18 @@ button {
       padding-top: 14em !important;
    }
 }
+
+.column-grid-1 {
+   grid-template-columns: 1fr;
+}
+
+@media (min-width: 992px) {
+   .column-grid-lg-2 {
+      grid-template-columns: 1fr 1fr;
+   }
+}
+
+.form-control {
+   border-radius: 0;
+   font-size: inherit;
+}

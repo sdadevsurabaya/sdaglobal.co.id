@@ -64,7 +64,7 @@ document.write(`
                   <a href="#">careers</a>
                </li>
                <li>
-                  <a href="#">contact us</a>
+                  <a href="contact.html">contact us</a>
                </li>
             </ul>
             <ul class="list-unstyled m-0 column-gap-4" id="navcorner">
