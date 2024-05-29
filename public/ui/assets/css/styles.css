@@ -125,4 +125,11 @@ button {
 
 .dropdown-item>a {
    display: block;
+   color: inherit !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+   background: var(--bs-primary) !important;
+   color: var(--bs-white) !important;
 }

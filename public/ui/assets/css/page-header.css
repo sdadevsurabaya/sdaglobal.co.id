@@ -85,3 +85,14 @@
       display: block;
    }
 }
+
+/* navtop nav */
+.navtop-nav a {
+   color: inherit;
+   transition: all .36s ease-in-out;
+}
+
+.navtop-nav a:hover,
+.navtop-nav a.active {
+   color: var(--bs-primary);
+}

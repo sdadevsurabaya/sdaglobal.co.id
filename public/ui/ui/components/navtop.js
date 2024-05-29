@@ -8,8 +8,8 @@ document.write(`
             </button>
          </li>
          <li>
-            <h1 class="navbrand m-0 text-center">
-               <a href="index.html">
+            <h1 class="navbrand m-0 text-center d-flex">
+               <a href="index.html" class="d-flex mx-auto">
                   <img src="../assets/img/logo/logo-sda.svg" width="auto" alt=""
                      style="height: calc(32px + 1vw);">
                </a>
@@ -28,38 +28,53 @@ document.write(`
             </button>
          </div>
          <div class="offcanvas-body">
-            <ul class="list-unstyled m-0 text-capitalize d-flex flex-column row-gap-3 flex-lg-row flex-wrap justify-content-center w-100 column-gap-4" style="font-size: large;">
+            <ul class="list-unstyled m-0 text-capitalize d-flex flex-column row-gap-3 flex-lg-row flex-wrap justify-content-center w-100 column-gap-4 navtop-nav" style="font-size: large;">
                <li>
-                  <a href="index.html">home</a>
+                  <a href="index.html" id="nav-home">
+                     home
+                  </a>
                </li>
                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                     aria-expanded="false">
+                  <a href="#" class="dropdown-toggle" id="nav-about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                      about SDA GLOBAL
                   </a>
                   <ul class="dropdown-menu rounded-0">
-                     <li class="dropdown-item">
-                        <a href="history.html">history</a>
+                     <li class="dropdown-item" id="nav-history">
+                        <a href="history.html">
+                           history
+                        </a>
                      </li>
-                     <li class="dropdown-item">
-                        <a href="leadership.html">leadership</a>
+                     <li class="dropdown-item" id="nav-leadership">
+                        <a href="leadership.html">
+                           leadership
+                        </a>
                      </li>
-                     <li class="dropdown-item">
-                        <a href="way.html">the SDA way</a>
+                     <li class="dropdown-item" id="nav-sda-way">
+                        <a href="way.html">
+                           the SDA way
+                        </a>
                      </li>
                   </ul>
                </li>
                <li>
-                  <a href="#">our businesses</a>
+                  <a href="#" id="nav-businesses">
+                     our businesses
+                  </a>
                </li>
                <li>
-                  <a href="#">news</a>
+                  <a href="#" id="nav-news">
+                     news
+                  </a>
                </li>
                <li>
-                  <a href="#">careers</a>
+                  <a href="#" id="nav-careers">
+                     careers
+                  </a>
                </li>
                <li>
-                  <a href="contact.html">contact us</a>
+                  <a href="contact.html" id="nav-contact">
+                     contact us
+                  </a>
                </li>
             </ul>
             <ul class="list-unstyled m-0 column-gap-4" id="navcorner">
