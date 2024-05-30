@@ -62,12 +62,12 @@ document.write(`
                   </a>
                </li>
                <li>
-                  <a href="#" id="nav-news">
+                  <a href="news.html" id="nav-news">
                      news
                   </a>
                </li>
                <li>
-                  <a href="#" id="nav-careers">
+                  <a href="careers.html" id="nav-careers">
                      careers
                   </a>
                </li>
