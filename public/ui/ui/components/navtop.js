@@ -57,7 +57,7 @@ document.write(`
                   </ul>
                </li>
                <li>
-                  <a href="#" id="nav-businesses">
+                  <a href="businesses.html" id="nav-businesses">
                      our businesses
                   </a>
                </li>
