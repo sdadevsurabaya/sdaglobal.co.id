@@ -10,8 +10,7 @@ document.write(`
          <li>
             <h1 class="navbrand m-0 text-center d-flex">
                <a href="index.html" class="d-flex mx-auto">
-                  <img src="../assets/img/logo/logo-sda.svg" width="auto" alt=""
-                     style="height: calc(32px + 1vw);">
+                  <img src="../assets/img/logo/logo-sda.svg" width="auto" alt="">
                </a>
             </h1>
          </li>

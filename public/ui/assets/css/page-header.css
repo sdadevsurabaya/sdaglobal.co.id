@@ -2,6 +2,16 @@
    display: none;
 }
 
+.navbrand img {
+   height: 37px;
+}
+
+@media (min-width: 992px) {
+   .navbrand img {
+      height: 47px;
+   }
+}
+
 /* scrollTop on navtop */
 @media (max-width: 991.98px) {
    .scrollTop .page-header {
