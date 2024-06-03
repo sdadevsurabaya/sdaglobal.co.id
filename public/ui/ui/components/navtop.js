@@ -35,7 +35,8 @@ document.write(`
                </li>
                <li class="dropdown">
                   <a href="#" class="dropdown-toggle" id="nav-about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     about SDA GLOBAL
+                     <!-- about SDA GLOBAL -->
+                     about us
                   </a>
                   <ul class="dropdown-menu rounded-0">
                      <li class="dropdown-item" id="nav-history">
@@ -43,14 +44,14 @@ document.write(`
                            history
                         </a>
                      </li>
-                     <li class="dropdown-item" id="nav-leadership">
-                        <a href="leadership.html">
-                           leadership
-                        </a>
-                     </li>
                      <li class="dropdown-item" id="nav-sda-way">
                         <a href="way.html">
                            the SDA way
+                        </a>
+                     </li>
+                     <li class="dropdown-item d-none" id="nav-leadership">
+                        <a href="leadership.html">
+                           leadership
                         </a>
                      </li>
                   </ul>
@@ -60,12 +61,12 @@ document.write(`
                      our businesses
                   </a>
                </li>
-               <li>
+               <li class="d-none">
                   <a href="news.html" id="nav-news">
                      news
                   </a>
                </li>
-               <li>
+               <li class="d-none">
                   <a href="careers.html" id="nav-careers">
                      careers
                   </a>

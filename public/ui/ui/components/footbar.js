@@ -8,7 +8,7 @@ document.write(`
             <script src="components/footbar-img-industrial.js"></script>
             <script src="components/footbar-sosmed.js"></script>
             <script src="components/footbar-signup.js"></script>
-            <script src="components/footbar-mobile.js"></script>
+            <!-- <script src="components/footbar-mobile.js"></script> -->
             <script src="components/footbar-feedback.js"></script>
          </div>
       </div>
@@ -16,33 +16,30 @@ document.write(`
          <div class="container d-grid" style="grid-template-columns: 1fr auto auto; column-gap: 5vw;">
             <div class="d-flex flex-column justify-content-between row-gap-4">
                <script src="components/footbar-nav1.js"></script>
+               <script src="components/footbar-sosmed.js"></script>
+               </div>
+               <div class="d-flex flex-column justify-content-between row-gap-4">
+               <script src="components/footbar-img-industrial.js"></script>
+               <!--
+               <script src="components/footbar-mobile.js"></script>
+               -->
                <script src="components/footbar-signup.js"></script>
             </div>
             <div class="d-flex flex-column justify-content-between row-gap-4">
-               <script src="components/footbar-img-industrial.js"></script>
-               <script src="components/footbar-mobile.js"></script>
-            </div>
-            <div class="d-flex flex-column justify-content-between row-gap-4">
                <script src="components/footbar-nav2.js"></script>
-               <script src="components/footbar-sosmed.js"></script>
                <script src="components/footbar-feedback.js"></script>
             </div>
          </div>
       </div>
    </div>
    <div class="footbar-bottom bg-black text-white py-4">
-      <div class="container d-grid row-gap-4">
+      <div class="container d-grid row-gap-4 d-lg-flex row-gap-lg-0 column-gap-5 justify-content-between">
          <nav class="custom-breadcrumb text-capitalize">
-            <a href="#" target="_blank">terms of access</a>
-            <a href="#" target="_blank">terms of sale</a>
             <a href="#" target="_blank">privacy policy</a>
-            <a href="#" target="_blank">your privacy choice</a>
-            <a href="#" target="_blank">sitemap</a>
-            <a href="#" target="_blank">fraud alert</a>
-            <a href="#" target="_blank">accessibility statement</a>
+            <a href="#" target="_blank">terms & conditions</a>
          </nav>
          <p class="opacity-50 m-0">
-            &copy;
+            Copyright &copy;
             <script>document.write(new Date().getFullYear())</script>
             SDA. All rights reserved.
          </p>

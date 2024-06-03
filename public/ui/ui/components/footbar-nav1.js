@@ -6,12 +6,13 @@ document.write(`
          <a href="#">home</a>
       </li>
       <li>
-         <a href="#">about SDA GLOBAL</a>
+         <!-- <a href="#">about SDA GLOBAL</a> -->
+         <a href="#">about us</a>
       </li>
       <li>
          <a href="#">our bussiness</a>
       </li>
-      <li>
+      <li class="d-none">
          <a href="#">news</a>
       </li>
       <li>

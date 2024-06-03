@@ -5,7 +5,7 @@ document.write(`
       <li>
          <a href="#">call us</a>
       </li>
-      <li>
+      <li class="d-none">
          <a href="#">branch locations</a>
       </li>
       <li>
