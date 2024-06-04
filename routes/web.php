@@ -49,3 +49,11 @@ Route::get('/careers', function () {
 Route::get('/contact', function () {
     return file_get_contents(public_path('ui/contact.html'));
 });
+
+Route::get('/privacy', function () {
+    return file_get_contents(public_path('ui/privacy.html'));
+});
+
+Route::get('/terms', function () {
+    return file_get_contents(public_path('ui/terms.html'));
+});

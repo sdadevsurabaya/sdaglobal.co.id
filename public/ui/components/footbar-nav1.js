@@ -3,23 +3,25 @@ document.write(`
    <h5 class="fw-medium">About Us</h5>
    <ul class="list-unstyled text-capitalize">
       <li>
-         <a href="#">home</a>
+         <a href="/">home</a>
       </li>
       <li>
-         <!-- <a href="#">about SDA GLOBAL</a> -->
-         <a href="#">about us</a>
+         <a href="/history">history</a>
       </li>
       <li>
-         <a href="#">our bussiness</a>
+         <a href="/way">SDA way</a>
+      </li>
+      <li>
+         <a href="/businesses">our bussiness</a>
       </li>
       <li class="d-none">
          <a href="#">news</a>
       </li>
-      <li>
+      <li class="d-none">
          <a href="#">careers</a>
       </li>
       <li>
-         <a href="#">contact us</a>
+         <a href="/contact">contact us</a>
       </li>
    </ul>
 </div>

@@ -9,7 +9,7 @@ document.write(`
          </li>
          <li>
             <h1 class="navbrand m-0 text-center d-flex">
-               <a href="index.html" class="d-flex mx-auto">
+               <a href="/" class="d-flex mx-auto">
                   <img src="../assets/img/logo/logo-sda.svg" width="auto" alt="">
                </a>
             </h1>
