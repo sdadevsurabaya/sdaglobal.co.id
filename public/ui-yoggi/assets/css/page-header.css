@@ -1,0 +1,108 @@
+#navcorner {
+   display: none;
+}
+
+.navbrand img {
+   height: 37px;
+}
+
+@media (min-width: 992px) {
+   .navbrand img {
+      height: 47px;
+   }
+}
+
+/* scrollTop on navtop */
+@media (max-width: 991.98px) {
+   .scrollTop .page-header {
+      position: sticky;
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: 1030;
+   }
+}
+
+@media (min-width: 992px) {
+   .scrollTop #sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: 1030;
+      background: var(--bs-light) !important;
+   }
+
+   .scrollTop .page-header .offcanvas-body {
+      padding: 2em 1rem;
+      display: flex;
+      column-gap: 3em;
+   }
+
+   .scrollTop .page-header .offcanvas-body>ul:first-child {
+      justify-content: flex-end !important;
+   }
+
+   .scrollTop #navcorner {
+      display: flex;
+   }
+
+   .scrollTop .navbrand {
+      position: fixed;
+      top: 22px;
+      left: 1rem;
+      z-index: 1040;
+   }
+}
+
+/* navtop dropdown */
+@media (max-width: 991.98px) {
+   .navtop .offcanvas-body a {
+      display: block;
+      width: 100%;
+   }
+
+   .navtop .dropdown-menu {
+      position: unset !important;
+      inset: unset !important;
+      margin: unset !important;
+      transform: unset !important;
+      border-width: 0;
+      border-radius: 0;
+   }
+
+   .navtop .dropdown-toggle {
+      position: relative;
+   }
+
+   .navtop .dropdown-toggle::after {
+      font-family: 'FontAwesome';
+      content: "\f078";
+      border-width: 0;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translate(-150%, -50%) rotate(0);
+   }
+
+   .navtop .dropdown-toggle.show::after {
+      transform: translate(-150%, -50%) rotate(-180deg);
+   }
+}
+
+@media (min-width: 992px) {
+   .navtop .dropdown:hover .dropdown-menu {
+      display: block;
+   }
+}
+
+/* navtop nav */
+.navtop-nav a {
+   color: inherit;
+   transition: all .36s ease-in-out;
+}
+
+.navtop-nav a:hover,
+.navtop-nav a.active {
+   color: var(--bs-primary);
+}
