@@ -35,8 +35,8 @@ document.write(`
    <div class="footbar-bottom bg-black text-white py-4">
       <div class="container d-grid row-gap-4 d-lg-flex row-gap-lg-0 column-gap-5 justify-content-between">
          <nav class="custom-breadcrumb text-capitalize">
-            <a href="#" target="_blank">privacy policy</a>
-            <a href="#" target="_blank">terms & conditions</a>
+            <a href="privacy.html" target="_blank">privacy policy</a>
+            <a href="terms.html" target="_blank">terms & conditions</a>
          </nav>
          <p class="opacity-50 m-0">
             Copyright &copy;

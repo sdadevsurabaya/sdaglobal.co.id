@@ -133,3 +133,7 @@ button {
    background: var(--bs-primary) !important;
    color: var(--bs-white) !important;
 }
+
+.fs-sm {
+   font-size: small !important;
+}
