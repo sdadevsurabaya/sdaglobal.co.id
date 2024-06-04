@@ -1,0 +1,58 @@
+@font-face {
+   font-family: 'HelveticaNeue';
+   src: url(../HelveticaNeue/HelveticaNeue-Regular.woff);
+   font-weight: 400;
+   font-style: normal;
+}
+
+.fw-normal {
+   font-family: 'HelveticaNeue' !important;
+}
+
+@font-face {
+   font-family: 'HelveticaNeue Medium';
+   src: url(../HelveticaNeue/HelveticaNeue-Medium.woff);
+   font-weight: 500;
+   font-style: normal;
+}
+
+.fw-medium {
+   font-family: 'HelveticaNeue Medium' !important;
+}
+
+@font-face {
+   font-family: 'HelveticaNeue Bold';
+   src: url(../HelveticaNeue/HelveticaNeue-Bold.woff);
+   font-weight: 700;
+   font-style: normal;
+}
+
+.fw-bold {
+   font-family: 'HelveticaNeue Bold' !important;
+}
+
+@font-face {
+   font-family: 'HelveticaNeue Light';
+   src: url(../HelveticaNeue/HelveticaNeue-Light.woff);
+   font-weight: 300;
+   font-style: normal;
+}
+
+.fw-light {
+   font-family: 'HelveticaNeue Light' !important;
+}
+
+@font-face {
+   font-family: 'HelveticaNeue Thin';
+   src: url(../HelveticaNeue/HelveticaNeue-Thin.woff);
+   font-weight: 100;
+   font-style: normal;
+}
+
+.fw-thin {
+   font-family: 'HelveticaNeue Thin' !important;
+}
+
+body {
+   font-family: 'HelveticaNeue';
+}

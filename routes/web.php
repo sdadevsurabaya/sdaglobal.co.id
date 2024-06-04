@@ -13,6 +13,39 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('comingsoon');
+// });
+
 Route::get('/', function () {
-    return view('comingsoon');
+    return file_get_contents(public_path('ui/index.html'));
+});
+
+Route::get('/history', function () {
+    return file_get_contents(public_path('ui/history.html'));
+});
+
+
+Route::get('/way', function () {
+    return file_get_contents(public_path('ui/way.html'));
+});
+
+Route::get('/leadership', function () {
+    return file_get_contents(public_path('ui/leadership.html'));
+});
+
+Route::get('/businesses', function () {
+    return file_get_contents(public_path('ui/businesses.html'));
+});
+
+Route::get('/news', function () {
+    return file_get_contents(public_path('ui/news.html'));
+});
+
+Route::get('/careers', function () {
+    return file_get_contents(public_path('ui/careers.html'));
+});
+
+Route::get('/contact', function () {
+    return file_get_contents(public_path('ui/contact.html'));
 });
