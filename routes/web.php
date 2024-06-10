@@ -54,6 +54,26 @@ Route::get('/careers2', function () {
     return file_get_contents(public_path('ui/careers2.html'));
 });
 
+Route::get('/careers3', function () {
+    return file_get_contents(public_path('ui/careers3.html'));
+});
+
+Route::get('/careers4', function () {
+    return file_get_contents(public_path('ui/careers4.html'));
+});
+
+Route::get('/careers5', function () {
+    return file_get_contents(public_path('ui/careers5.html'));
+});
+
+Route::get('/careers6', function () {
+    return file_get_contents(public_path('ui/careers6.html'));
+});
+
+Route::get('/careers7', function () {
+    return file_get_contents(public_path('ui/careers7.html'));
+});
+
 Route::get('/contact', function () {
     return file_get_contents(public_path('ui/contact.html'));
 });
