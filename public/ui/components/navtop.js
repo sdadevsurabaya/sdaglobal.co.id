@@ -66,7 +66,7 @@ document.write(`
                      news
                   </a>
                </li>
-               <li>
+               <li class="d-none">
                   <a href="/careers" id="nav-careers">
                      careers
                   </a>
