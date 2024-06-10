@@ -161,3 +161,37 @@ select option {
     left: 0;
     top: 0;
 }
+
+ul.marker-circle {
+	list-style-type: none !important;
+	padding-left: .325rem;
+}
+
+ul.marker-circle>li::marker {
+	font-family: "bootstrap-icons";
+	content: "\f287";
+	font-size: .325em;
+	color: inherit;
+}
+
+ul.marker-circle>li {
+	padding-left: .5rem;
+}
+
+.form-check,
+.form-check .form-check-label,
+.form-check .form-check-input {
+	cursor: pointer;
+}
+
+.form-check .form-check-input {
+	background-image: none !important;
+	background-color: #565656;
+	border-color: #565656;
+	opacity: .5;
+	border-radius: 100%;
+}
+
+.form-check .form-check-input:checked {
+	opacity: 1;
+}

@@ -46,6 +46,10 @@ Route::get('/careers', function () {
     return file_get_contents(public_path('ui/careers.html'));
 });
 
+Route::get('/careers1', function () {
+    return file_get_contents(public_path('ui/careers1.html'));
+});
+
 Route::get('/contact', function () {
     return file_get_contents(public_path('ui/contact.html'));
 });
@@ -57,3 +61,4 @@ Route::get('/privacy', function () {
 Route::get('/terms', function () {
     return file_get_contents(public_path('ui/terms.html'));
 });
+
