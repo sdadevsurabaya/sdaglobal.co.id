@@ -50,6 +50,10 @@ Route::get('/careers1', function () {
     return file_get_contents(public_path('ui/careers1.html'));
 });
 
+Route::get('/careers2', function () {
+    return file_get_contents(public_path('ui/careers2.html'));
+});
+
 Route::get('/contact', function () {
     return file_get_contents(public_path('ui/contact.html'));
 });
