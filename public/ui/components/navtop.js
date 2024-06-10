@@ -1,5 +1,5 @@
 document.write(`
-<div class="navtop bg-light py-3 py-lg-4">
+<div class="navtop bg-white py-3 py-lg-4">
    <div class="container d-lg-grid row-gap-lg-4">
       <ul class="list-unstyled m-0 d-grid align-items-center d-lg-block" style="grid-template-columns: 1fr auto 1fr;">
          <li class="d-lg-none">
@@ -66,7 +66,7 @@ document.write(`
                      news
                   </a>
                </li>
-               <li class="d-none">
+               <li>
                   <a href="/careers" id="nav-careers">
                      careers
                   </a>
