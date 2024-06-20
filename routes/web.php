@@ -30,12 +30,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [LandingController::class, 'landing'])->name('landing');
 Route::get('/history', [HistoryController::class, 'history'])->name('about.history');
 Route::get('/way', [WayContoller::class, 'way'])->name('about.way');
-Route::get('/leadership', [LeadershipContoller::class, 'leadership'])->name('about.leadership');
+// Route::get('/leadership', [LeadershipContoller::class, 'leadership'])->name('about.leadership');
 Route::get('/business', [BusinessController::class, 'business'])->name('business');
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
-Route::get('/news', [NewsController::class, 'news'])->name('news');
-Route::get('/careers', [CareersController::class, 'careers'])->name('careers.careers');
+// Route::get('/news', [NewsController::class, 'news'])->name('news');
+// Route::get('/careers', [CareersController::class, 'careers'])->name('careers.careers');
 Route::get('/policy', [PolicyController::class, 'policy'])->name('policy.policy');
 Route::get('/terms', [TermsController::class, 'terms'])->name('policy.terms');
 
