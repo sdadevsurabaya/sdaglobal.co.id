@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SDA &bull; {{ $title }}</title>
+    <meta name="keywords" content="SDA Group, SDA Global, SDA Global Group, SDA, SDA Indonesia">
+    <meta name="description" content="SDA Global Group">
+    <meta name="robots" content="all,index,follow" />
+    <meta name="googlebot" content="all,index,follow" />
+    <meta name="google" content="notranslate" />
+    <title>SDA {{ $title }}</title>
     <link rel="shortcut icon" href="{{ asset('assets/img/logo/ikon-sda.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('vendor/bootstrap-5.3.2-dist/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free-6.5.1-web/css/all.css') }}">
@@ -21,6 +26,18 @@
         }
     </style>
     @yield('pageStyles')
+    <!-- Google search console (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND4VECF0JZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ND4VECF0JZ');
+    </script>
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {

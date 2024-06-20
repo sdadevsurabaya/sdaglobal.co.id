@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class LandingController extends Controller
 {
     public function landing() {
-        $title = 'SDA | SDA Global Group';
+        $title = '| SDA Global Group';
         return view('front.landing.landing', compact('title'));
     }
 }
