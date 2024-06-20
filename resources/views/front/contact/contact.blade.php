@@ -30,7 +30,7 @@
                         <input type="number" class="form-control" name="phone" placeholder="Contact Number">
                     </div>
                     <div class="form-group mb-3">
-                        <textarea class="form-control" rows="10" name="pesan" placeholder="Message"></textarea>
+                        <textarea class="form-control" rows="10" name="pesan" placeholder="Help us improve our services by sharing your experience"></textarea>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-lg bg-primary text-white rounded-0 w-100">

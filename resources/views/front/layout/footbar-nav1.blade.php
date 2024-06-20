@@ -5,10 +5,10 @@
             <a href="{{ route('landing') }}">home</a>
         </li>
         <li>
-            <a href="{{ route('about.history') }}">history</a>
+            <a href="{{ route('about.history') }}">about us history</a>
         </li>
         <li>
-            <a href="{{ route('about.way') }}">SDA way</a>
+            <a href="{{ route('about.way') }}">about us the SDA way</a>
         </li>
         <li>
             <a href="{{ route('business') }}">our bussiness</a>

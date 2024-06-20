@@ -47,11 +47,11 @@
                                     the SDA way
                                 </a>
                             </li>
-                            <li class="dropdown-item" id="nav-leadership">
+                            {{-- <li class="dropdown-item" id="nav-leadership">
                                 <a href="{{ route('about.leadership') }}">
                                     leadership
                                 </a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </li>
                     <li>
@@ -59,7 +59,7 @@
                             our businesses
                         </a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="{{ route('news') }}" id="nav-news">
                             news
                         </a>
@@ -68,7 +68,7 @@
                         <a href="{{ route('careers.careers') }}" id="nav-careers">
                             careers
                         </a>
-                    </li>
+                    </li> --}}
                     <li>
                         <a href="{{ route('contact') }}" id="nav-contact">
                             contact us
