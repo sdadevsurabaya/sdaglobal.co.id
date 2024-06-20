@@ -35,7 +35,7 @@
                     <div class="col col-12 col-md-8 order-lg-1">
                         <h5 class="section-title fs-3 mb-3">
                             <b class="fw-bold">
-                                SOPHISTICATED <br class="d-none d-lg-block">INFRACTRUCTURE
+                                SOPHISTICATED <br class="d-none d-lg-block">INFRASTRUCTURE
                             </b>
                         </h5>
                         <p>
