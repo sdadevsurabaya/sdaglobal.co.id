@@ -62,19 +62,20 @@
 
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-537D36NP" height="0" width="0"
-            style="display:none;visibility:hidden">
-        </iframe>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-537D36NP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header class="page-header">
+    <header class="page-header sticky-top">
         @include('front.layout.navbar'){{-- end of navbar --}}
     </header>
 
-    <main class="page-wrapper fs-xxl-4">
+    <main class="page-wrapper">
         @yield('content')
     </main>
+    {{-- <main class="page-wrapper fs-xxl-4">
+        @yield('content')
+    </main> --}}
 
     <footer class="page-footer">
         @include('front.layout.footbar'){{-- end of footbar --}}

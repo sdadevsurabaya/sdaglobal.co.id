@@ -1,0 +1,44 @@
+@media (max-width: 767.98px) {
+    .footbar-collapse .footbar-title {
+        cursor: pointer;
+        position: relative;
+        margin: 0;
+    }
+
+    .footbar-collapse .footbar-title::before,
+    .footbar-collapse .footbar-title::after {
+        content: "\2b";
+        font-family: 'FontAwesome';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        font-size: .875rem;
+        transition: all .36s ease-in-out;
+    }
+
+    .footbar-collapse .footbar-title.collapsed.collapsed::before,
+    .footbar-collapse .footbar-title.collapsed.collapsed::after {
+        transform: translateY(-50%) rotate(0);
+    }
+
+    .footbar-collapse .footbar-title::before {
+        left: 0;
+    }
+
+    .footbar-collapse .footbar-title::after {
+        right: 0;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .footbar main .gx-md-5 {
+        --bs-gutter-x: calc(3rem + 3vw);
+    }
+}
+
+@media (min-width: 768px) {
+    .footbar-title {
+        pointer-events: none !important;
+    }
+}

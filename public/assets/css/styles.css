@@ -1,4 +1,150 @@
-:root {
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+body>header,
+body>footer {
+    flex-grow: 0;
+}
+
+body>main {
+    flex-grow: 1;
+}
+
+body>main>section {
+    margin-bottom: 4rem;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    color: inherit;
+    background: transparent;
+    border-width: 0;
+    padding: 0;
+}
+
+*::placeholder {
+    color: inherit !important;
+    opacity: .5 !important;
+}
+
+svg {
+    fill: currentColor;
+    border: currentColor;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 90%;
+        max-width: 1320px;
+    }
+}
+
+.breadcrumb-dark .breadcrumb-item+.breadcrumb-item::before {
+    color: #b4b4b4;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    border-color: rgb(132, 44, 45);
+}
+
+.dropdown-item {
+    text-decoration: none !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item.active {
+    background: #f1f2f2 !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.text-underline-none,
+.text-underline-none>a {
+    text-decoration: none !important;
+}
+
+.btn,
+.btn-close,
+.form-control {
+    border-radius: 0;
+    text-decoration: none !important;
+}
+
+.bg-primary {
+    background: rgb(132, 44, 45) !important;
+}
+
+.link-disabled {
+    text-decoration: none !important;
+    pointer-events: none !important;
+    opacity: .5 !important;
+}
+
+
+.form-group {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.btn-primary {
+    background: rgb(132, 44, 45) !important;
+    border-color: rgb(132, 44, 45) !important;
+    color: white !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
     --bs-primary: #842c2d;
     --bs-primary-rgb: 132, 44, 45;
 }
@@ -194,4 +340,4 @@ ul.marker-circle>li {
 
 .form-check .form-check-input:checked {
 	opacity: 1;
-}
+} */

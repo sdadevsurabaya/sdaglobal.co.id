@@ -1,4 +1,103 @@
-#navcorner {
+@media (min-width: 992px) {
+    .navbar {
+        padding-top: 1.5rem;
+        padding-bottom: 0;
+    }
+
+    .scrollTop .navbar {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .scrollTop .navbar>.container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.navbar>.container>header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    column-gap: 1.25rem;
+    padding: .5rem 0;
+}
+
+@media (min-width: 992px) {
+    .navbar>.container>header {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .scrollTop .navbar>.container>main.w-100 {
+        width: unset !important;
+        margin-left: auto;
+    }
+}
+
+.navbar>.container>main .nav-list>li>a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.15rem;
+    padding: .5rem 0;
+    color: inherit;
+    background: transparent;
+}
+
+@media (max-width: 991.98px) {
+    .navbar>.container>main .nav-list>li>a {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
+.navbar>.container>main .nav-list>li:hover>a,
+.navbar>.container>main .nav-list>li:focus>a {
+    background: rgba(132, 44, 45, .875);
+    color: white;
+}
+
+.navbar>.container>main .nav-list>li>a.active {
+    background: rgb(132, 44, 45);
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .navbar>.container>main .nav-list>li>a {
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar .dropdown-menu {
+        position: relative;
+        border-color: transparent;
+    }
+
+    .navbar .dropdown-item {
+        padding-left: 2.25rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    #navside {
+        max-width: 320px;
+    }
+}
+
+
+
+
+
+
+
+/* #navcorner {
    display: none;
 }
 
@@ -12,7 +111,6 @@
    }
 }
 
-/* scrollTop on navtop */
 @media (max-width: 991.98px) {
    .scrollTop .page-header {
       position: sticky;
@@ -55,7 +153,6 @@
    }
 }
 
-/* navtop dropdown */
 @media (max-width: 991.98px) {
    .navtop .offcanvas-body a {
       display: block;
@@ -96,7 +193,6 @@
    }
 }
 
-/* navtop nav */
 .navtop-nav a {
    color: inherit;
    transition: all .36s ease-in-out;
@@ -105,4 +201,4 @@
 .navtop-nav a:hover,
 .navtop-nav a.active {
    color: var(--bs-primary);
-}
+} */
