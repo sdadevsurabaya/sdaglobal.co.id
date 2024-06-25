@@ -14,24 +14,20 @@
         </div>
     </div>
 </section>
-<section class="mb-0">
-    <div class="container py-lg-5">
+<section class="py-lg-5">
+    <div class="container mb-5">
         <p>
             SDA Global takes pride in its reputation as a reliable and customer-centric organization. Since our inception on June 2, 1992, we have remained committed to fulfilling our customers’ needs. Starting with hydraulic and pneumatic products, we expanded our portfolio to include industrial and commercial solutions. Our knowledgeable team offers friendly advice based on years of combined experience and friendly demeanor.
         </p>
     </div>
-</section>
-<section class="mb-0">
-    <div class="container py-lg-5">
+    <div class="container mb-5">
         <h5 class="mb-3"><b class="fw-bold">VISION STATEMENT</b></h5>
         <p>
             SDA Global aims to be the paragon of the value-added problem-solving instituition. We provide superior person-to-person individualized service to all our customers and prospects. Our vision is to be the go-to partner for industrial and commercial needs, offering personalized solutions that make a difference. Additionally, we envision expanding our reach through e-commerce, providing seamless online experiences for our valued clients.
         </p>
     </div>
-</section>
-<section>
-    <div class="container py-lg-5">
-        <h5 class="mb-3"><b class="fw-bold"> MISSION STATEMENT </b></h5>
+    <div class="container">
+        <h5 class="mb-3"><b class="fw-bold">MISSION STATEMENT</b></h5>
         <ul class="bullet-list d-grid row-gap-3">
             <li>Customer Satisfaction: We strive to understand our customers&apos; requirements thoroughly and deliver solutions that exceed their expectations.</li>
             <li>Quality Assurance: Our commitment to quality ensures that every product and service we offer meets the highest standards.</li>
@@ -42,7 +38,7 @@
     </div>
 </section>
 <section>
-    <div class="container py-lg-5">
+    <div class="container">
         <ul class="list-unstyled m-0 d-grid row-gap-5">
             <li>
                 <div class="row g-4 g-md-5">
