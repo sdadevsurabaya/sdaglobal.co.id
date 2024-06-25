@@ -1,7 +1,8 @@
 $(window).scroll(function () {
-   if ($(window).scrollTop() > 100) {
+   if ($(window).scrollTop() >= 200) {
       $('body').addClass('scrollTop');
-   } else {
+   }
+   if ($(window).scrollTop() <= 199) {
       $('body').removeClass('scrollTop');
    }
 })

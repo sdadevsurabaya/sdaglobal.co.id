@@ -1,21 +1,21 @@
 @extends('front/layout/layout')
 @section('pageStyles')@endsection
 @section('content')
-<section
-    style="background-image: url({{asset('assets/img/about/leadership-banner.png')}}); background-repeat: no-repeat; background-position: center; background-size: cover; padding: calc(5em + 2vw) 0;">
-    <div class="container d-flex">
-        <div class="caption bg-primary text-white py-5 px-3 px-md-5">
-            <h5 class="page-title display-3">
-                OUR <br><b class="fw-bold">BUSINESS</b>
-            </h5>
+<section style="background-image: url({{asset('assets/img/about/leadership-banner.png')}}); background-repeat: no-repeat; background-position: center; background-size: cover; padding: calc(5em + 2vw) 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-md-auto">
+                <div class="caption bg-primary text-white py-5 px-4 px-md-5">
+                    <h5 class="page-title display-3 text-center text-md-start">
+                        OUR <br class="d-none d-lg-block"><b class="fw-bold">INDUSTRIES</b>
+                    </h5>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-<section class="py-5">
-    <div class="container py-5">
-        <h5 class="section-title fs-3 mb-4 mb-xl-5">
-            <b class="fw-bold">Our Services</b>
-        </h5>
+<section>
+    <div class="container py-lg-5">
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 g-xl-5">
             <div class="col">
                 <a href="#">
@@ -74,6 +74,6 @@
 @endsection
 @section('pageScripts')
 <script>
-    $('#nav-businesses').addClass('active');
+    $('#nav-business').addClass('active');
 </script>
 @endsection

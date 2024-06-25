@@ -10,7 +10,7 @@
     <meta name="robots" content="all,index,follow" />
     <meta name="googlebot" content="all,index,follow" />
     <meta name="google" content="notranslate" />
-    <title>SDA {{ $title }}</title>
+    <title>SDA &bull; {{ $title }}</title>
     <link rel="shortcut icon" href="{{ asset('assets/img/logo/ikon-sda.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('vendor/bootstrap-5.3.2-dist/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free-6.5.1-web/css/all.css') }}">

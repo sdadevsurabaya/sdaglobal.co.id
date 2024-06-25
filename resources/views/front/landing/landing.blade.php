@@ -1,25 +1,25 @@
 @extends('front/layout/layout')
 @section('pageStyles')
 <style>
-    .mission-img {
-        --bs-aspect-ratio: 100%;
-    }
-
-    @media (min-width: 768px) {
-        .mission-img {
-            --bs-aspect-ratio: 60%;
-        }
+    .img-mission {
+        --bs-aspect-ratio: calc(100% - 50vw);
     }
 
     @media (min-width: 1200px) {
-        .mission-img {
-            --bs-aspect-ratio: 204%;
+        .img-mission {
+            --bs-aspect-ratio: 171%;
+            max-width: 468px;
+            margin-left: auto;
+        }
+
+        .pe-xl-gutterx {
+            padding-right: .75rem;
         }
     }
 </style>
 @endsection
 @section('content')
-<section>
+<section class="mb-0">
     <div id="slider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000"
         data-bs-pause="false">
         {{-- <div class="carousel-indicators">
@@ -29,13 +29,13 @@
         </div> --}}
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{asset('assets/img/banner/banner.png')}}" class="d-block w-100" alt="...">
+                <img src="{{asset('assets/img/banner/banner.jpg')}}" class="d-block w-100" alt="...">
             </div>
             {{-- <div class="carousel-item">
-                <img src="{{asset('assets/img/banner/banner.png')}}" class="d-block w-100" alt="...">
+                <img src="{{asset('assets/img/banner/banner.jpg')}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="{{asset('assets/img/banner/banner.png')}}" class="d-block w-100" alt="...">
+                <img src="{{asset('assets/img/banner/banner.jpg')}}" class="d-block w-100" alt="...">
             </div> --}}
         </div>
         {{-- <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
@@ -48,201 +48,94 @@
         </button> --}}
     </div>
 </section>
-<section class="d-lg-flex text-split-lg-50">
-    <div class="w-lg-50 d-none d-lg-block"
-        style="background-image: url({{asset('assets/img/home/after-ours-banner-2.jpg')}}); background-repeat: no-repeat; background-position: center; background-size: cover;">
-    </div>
-    <div class="w-lg-50">
-        <div>
-            <div class="container-sm py-5 px-lg-5">
-                <h5 class="section-title text-primary display-2 mb-4">
-                    ABOUT <br class="d-none d-lg-block"><b class="fw-bold">US</b>
-                </h5>
-                <p>
-                    SDA Global takes pride in its reputation as a reliable and customer-centric organization.
-                    Since
-                    our inception on June 2, 1992, we have remained committed to fulfilling our customers’
-                    needs.
-                    Starting with hydraulic and pneumatic products, we expanded our portfolio to include
-                    industrial
-                    and commercial solutions. Our knowledgeable team offers friendly advice based on years of
-                    combined experience and friendly demeanor.
-                </p>
-            </div>
-        </div>
-        <div class="bg-primary text-white"
-            style="background: url({{asset('assets/img/home/goal-bg.png')}}); background-repeat: no-repeat; background-position: right bottom; background-size: 70% auto;">
-            <div class="container-sm py-5 px-lg-5 d-grid row-gap-5">
-                {{-- <div>
-                    <h5 class="card-title text-white display-2 mb-4">
-                        OUR <br class="d-none d-lg-block"><b class="fw-bold">GOAL</b>
-                    </h5>
-                    <p>
-                        Our goal at SDA Indonesia is to stay in touch with any changes in our industry, so that
-                        we
-                        can always offer you the latest and most current information and services.
-                    </p>
-                </div> --}}
-                <div class="text-center py-5">
-                    <img src="{{asset('assets/img/footer/idustrial.png')}}" width="104%" height="auto" alt=""
-                        style="max-width: 320px;">
+<section class="container-fluid p-0 mb-0">
+    <div class="row row-cols-1 row-cols-lg-2 g-0">
+        <div class="col d-none d-lg-block" style="background-image: url({{asset('assets/img/home/after-ours-banner-2.jpg')}}); background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
+        <div class="col">
+            <div class="row row-cols-1 g-0">
+                <div class="col py-5">
+                    <div class="container py-lg-5">
+                        <h5 class="section-title text-primary display-2 mb-4">
+                            ABOUT <br class="d-none d-lg-block"><b class="fw-bold">US</b>
+                        </h5>
+                        <p>
+                            SDA Global takes pride in its reputation as a reliable and customer-centric organization. Since our inception on June 2, 1992, we have remained committed to fulfilling our customers' needs. Starting with hydraulic and pneumatic products, we expanded our portfolio to include industrial and commercial solutions. Our knowledgeable team offers friendly advice based on years of combined experience and friendly demeanor.
+                        </p>
+                    </div>
                 </div>
+                <div class="col bg-primary" style="min-height: calc(152px + 10vw); background: url({{asset('assets/img/home/goal-bg.png')}}); background-repeat: no-repeat; background-position: right bottom; background-size: 70% auto;"></div>
             </div>
         </div>
     </div>
 </section>
-<section class="bg-xl-primary text-xl-white position-relative">
-    <div class="container-xl px-0">
-        <div class="row mx-0">
-            <div class="col px-0 col-12 col-xl-5 order-xl-2 ms-xl-auto position-relative">
-                <div class="position-xl-absolute top-0 start-0 w-100 pe-lg-3">
-                    <div class="position-relative">
-                        <div class="mission-img ratio">
-                            <img src="{{asset('assets/img/home/mission-banner.jpg')}}" class="object-fit-cover" alt="">
-                        </div>
-                        <div class="d-none d-lg-block position-absolute bottom-0 end-0 vw-100"
-                            style="transform: translateX(calc(var(--bs-gutter-x) * .5));">
-                            <div class="container me-0">
-                                <img src="{{asset('assets/img/home/wording-vision.svg')}}" width="100%" height="auto" alt="">
+<section class="bg-xl-primary text-xl-white">
+    <div class="container-xl p-0">
+        <div class="row g-0">
+            <div class="col col-12 col-xl-5 order-xl-2 ms-xl-auto position-relative">
+                <div class="w-100 position-xl-absolute top-0 pe-xl-gutterx">
+                    <div class="img-mission ratio">
+                        <img class="object-fit-cover" src="{{asset('assets/img/home/mission-banner.jpg')}}" alt="">
+                        <div class="d-none d-xl-block">
+                            <div class="position-absolute top-0 start-0">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="776.518px" height="179px" viewBox="-98.636 -24.452 776.518 179" enable-background="new -98.636 -24.452 776.518 179" xml:space="preserve">
+                                    <g>
+                                        <path fill="#FFFFFF" d="M-0.027,148.842H-42.49L-96.636-18.517h39.429l0.226,0.712l36.077,113.906L15.854-18.517h39.669   L-0.027,148.842z M-41.003,146.799H-1.5L52.698-16.474H17.346L-19.93,99.755h-1.955l-0.226-0.712L-58.699-16.474h-35.129   L-41.003,146.799z" />
+                                        <path fill="#FFFFFF" d="M105.605,148.842H67.213V-18.517h38.392V148.842z M69.254,146.799h34.31V-16.474h-34.31V146.799z" />
+                                        <path fill="#FFFFFF" d="M196.506,152.548c-9.151,0-18.157-1.143-26.768-3.392c-8.654-2.256-16.405-5.857-23.034-10.697   c-6.659-4.854-12.021-11.125-15.935-18.645c-3.921-7.53-5.828-16.575-5.669-26.884l0.015-1.006h37.219v1.022   c-0.001,5.371,0.972,9.966,2.892,13.651c1.922,3.701,4.506,6.735,7.681,9.02c3.196,2.307,7.015,4.045,11.351,5.169   c4.375,1.13,8.963,1.702,13.637,1.702c3.187,0,6.642-0.269,10.271-0.799c3.586-0.524,6.995-1.544,10.13-3.037   c3.076-1.462,5.682-3.51,7.746-6.084c2.002-2.505,3.017-5.757,3.017-9.667c0-4.168-1.337-7.585-3.976-10.149   c-2.746-2.67-6.413-4.936-10.899-6.731c-4.564-1.826-9.814-3.446-15.603-4.818c-5.931-1.403-11.942-2.965-17.87-4.64   c-6.156-1.535-12.273-3.456-18.146-5.702c-5.929-2.259-11.313-5.228-16.002-8.823c-4.724-3.62-8.596-8.212-11.506-13.643   c-2.923-5.446-4.406-12.115-4.406-19.814c0-8.637,1.878-16.25,5.58-22.623c3.682-6.353,8.571-11.717,14.53-15.95   c5.931-4.214,12.74-7.382,20.236-9.414c7.474-2.021,15.042-3.046,22.498-3.046c8.68,0,17.135,0.982,25.13,2.923   c8.035,1.954,15.279,5.16,21.531,9.531C246.432-5.6,251.484,0.087,255.17,6.91c3.691,6.837,5.564,15.219,5.564,24.912v1.022   h-37.172l-0.061-0.959c-0.299-4.768-1.309-8.751-3.002-11.846c-1.685-3.073-3.942-5.518-6.711-7.269   c-2.808-1.771-6.081-3.048-9.731-3.797c-3.708-0.753-7.806-1.135-12.182-1.135c-2.839,0-5.729,0.301-8.588,0.902   c-2.796,0.59-5.369,1.635-7.646,3.101c-2.261,1.458-4.146,3.308-5.607,5.498c-1.421,2.134-2.143,4.905-2.143,8.236   c0,3.039,0.571,5.505,1.698,7.335c1.121,1.826,3.428,3.562,6.858,5.166c3.553,1.668,8.559,3.361,14.88,5.034   c6.153,1.633,14.367,3.754,25.112,6.483c3.058,0.609,7.411,1.747,12.888,3.367c5.547,1.641,11.13,4.292,16.596,7.88   c5.488,3.609,10.301,8.497,14.298,14.528c4.032,6.089,6.076,13.951,6.076,23.371c0,7.667-1.513,14.898-4.491,21.49   c-2.987,6.603-7.486,12.375-13.368,17.157c-5.861,4.77-13.221,8.533-21.877,11.184C217.931,151.207,207.82,152.548,196.506,152.548   z M127.132,93.966c-0.019,9.55,1.813,17.923,5.449,24.906c3.766,7.236,8.924,13.271,15.327,17.938   c6.422,4.688,13.94,8.179,22.346,10.372c8.444,2.206,17.276,3.323,26.254,3.323c11.112,0,21.021-1.309,29.455-3.891   c8.403-2.573,15.533-6.212,21.187-10.815c5.636-4.581,9.941-10.104,12.797-16.412c2.857-6.326,4.309-13.274,4.309-20.65   c0-9.012-1.929-16.495-5.736-22.243c-3.843-5.799-8.458-10.493-13.715-13.947c-5.3-3.48-10.701-6.049-16.055-7.633   c-5.419-1.603-9.712-2.725-12.759-3.332c-10.804-2.741-19.023-4.864-25.185-6.5c-6.438-1.704-11.561-3.438-15.221-5.157   c-3.851-1.801-6.38-3.746-7.731-5.946c-1.329-2.155-2.002-4.984-2.002-8.405c0-3.74,0.837-6.892,2.486-9.367   c1.616-2.425,3.701-4.471,6.2-6.083c2.486-1.601,5.29-2.739,8.333-3.383c2.999-0.627,6.03-0.946,9.01-0.946   c4.511,0,8.746,0.396,12.59,1.178c3.894,0.797,7.396,2.167,10.414,4.071c3.065,1.938,5.559,4.634,7.412,8.016   c1.721,3.145,2.789,7.09,3.179,11.742h33.216c-0.126-8.918-1.912-16.625-5.31-22.921c-3.536-6.541-8.376-11.993-14.39-16.204   c-6.043-4.228-13.056-7.328-20.84-9.222c-7.839-1.902-16.133-2.864-24.651-2.864c-7.273,0-14.665,1-21.964,2.975   c-7.263,1.971-13.853,5.035-19.586,9.11c-5.72,4.061-10.411,9.212-13.947,15.31c-3.52,6.061-5.303,13.327-5.303,21.599   c0,7.36,1.4,13.701,4.164,18.85c2.773,5.173,6.457,9.544,10.949,12.989c4.532,3.476,9.744,6.347,15.488,8.537   c5.798,2.217,11.836,4.112,17.943,5.636c5.93,1.675,11.914,3.228,17.816,4.627c5.887,1.394,11.232,3.045,15.891,4.909   c4.733,1.895,8.625,4.304,11.563,7.162c3.047,2.967,4.593,6.872,4.593,11.613c0,4.385-1.166,8.064-3.465,10.94   c-2.257,2.818-5.106,5.057-8.462,6.652c-3.319,1.58-6.923,2.661-10.71,3.215c-3.726,0.544-7.28,0.821-10.566,0.821   c-4.846,0-9.607-0.597-14.147-1.77c-4.583-1.185-8.632-3.032-12.034-5.485c-3.437-2.477-6.229-5.75-8.298-9.733   c-1.949-3.741-2.994-8.305-3.112-13.575h-33.177V93.966z" />
+                                        <path fill="#FFFFFF" d="M324.175,148.842h-38.392V-18.517h38.392V148.842z M287.824,146.799h34.311V-16.474h-34.311V146.799z" />
+                                        <path fill="#FFFFFF" d="M429.198,152.548c-12.739,0-24.367-2.249-34.558-6.687c-10.201-4.437-18.929-10.637-25.938-18.428   c-7.005-7.783-12.446-17.05-16.179-27.547c-3.727-10.479-5.614-21.927-5.614-34.031c0-12.405,1.889-24.086,5.612-34.719   c3.729-10.647,9.173-20.07,16.174-28.005c7.006-7.94,15.734-14.259,25.939-18.78c10.187-4.514,21.816-6.802,34.562-6.802   c12.895,0,24.564,2.289,34.684,6.802c10.125,4.522,18.812,10.84,25.819,18.777c7.002,7.935,12.444,17.357,16.175,28.008   c3.727,10.636,5.614,22.319,5.614,34.719c0,12.098-1.891,23.547-5.616,34.031c-3.729,10.498-9.173,19.765-16.181,27.547   c-7.006,7.789-15.694,13.989-25.817,18.428C453.754,150.298,442.087,152.548,429.198,152.548z M429.198-20.412   c-12.461,0-23.811,2.227-33.738,6.626c-9.934,4.402-18.424,10.548-25.234,18.265c-6.826,7.738-12.134,16.933-15.776,27.331   c-3.649,10.416-5.497,21.869-5.497,34.045c0,11.871,1.848,23.09,5.495,33.349c3.642,10.243,8.948,19.281,15.771,26.863   c6.814,7.571,15.306,13.603,25.236,17.923c9.933,4.324,21.285,6.516,33.744,6.516c12.605,0,23.996-2.191,33.857-6.515   c9.856-4.321,18.308-10.353,25.122-17.924c6.825-7.582,12.132-16.621,15.771-26.863c3.65-10.264,5.499-21.483,5.499-33.349   c0-12.171-1.851-23.625-5.5-34.045c-3.642-10.399-8.95-19.596-15.777-27.331c-6.813-7.719-15.266-13.864-25.12-18.267   C453.194-18.183,441.805-20.412,429.198-20.412z M429.196,122.217c-8.316,0-15.493-1.643-21.333-4.875   c-5.829-3.229-10.621-7.583-14.245-12.942c-3.597-5.31-6.254-11.378-7.899-18.036c-1.632-6.603-2.46-13.501-2.46-20.508   c0-7.303,0.827-14.474,2.457-21.307c1.644-6.88,4.301-13.108,7.899-18.504c3.621-5.436,8.416-9.831,14.248-13.061   c5.846-3.237,13.023-4.878,21.333-4.878c8.308,0,15.484,1.641,21.335,4.876c5.825,3.23,10.619,7.625,14.246,13.063   c3.604,5.411,6.262,11.638,7.899,18.504c1.632,6.843,2.46,14.01,2.46,21.307c0,6.998-0.828,13.896-2.463,20.508   c-1.638,6.644-4.296,12.712-7.9,18.038c-3.625,5.359-8.418,9.712-14.241,12.941C444.688,120.574,437.512,122.217,429.196,122.217z    M429.196,10.146c-7.96,0-14.805,1.556-20.345,4.621c-5.543,3.071-10.097,7.246-13.537,12.407   c-3.463,5.197-6.025,11.202-7.611,17.848c-1.594,6.675-2.401,13.686-2.401,20.833c0,6.842,0.807,13.575,2.398,20.019   c1.588,6.423,4.148,12.271,7.61,17.384c3.441,5.091,7.998,9.229,13.542,12.299c5.533,3.065,12.378,4.619,20.344,4.619   c7.964,0,14.811-1.554,20.345-4.619c5.541-3.07,10.097-7.21,13.541-12.299c3.469-5.126,6.028-10.974,7.609-17.384   c1.596-6.449,2.404-13.186,2.404-20.019c0-7.138-0.81-14.146-2.406-20.833c-1.58-6.633-4.143-12.638-7.611-17.848   c-3.444-5.162-7.999-9.336-13.537-12.407C443.999,11.701,437.154,10.146,429.196,10.146z" />
+                                        <path fill="#FFFFFF" d="M675.882,148.842h-37.939l-67.641-108.86v108.86h-36.081V-18.517h37.71l67.873,109.099V-18.517h36.076   v167.359H675.882z M639.077,146.799h34.763V-16.474h-31.994V94.429h-2.052L570.797-16.474h-34.534v163.275h31.997V36.127h2.049   L639.077,146.799z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="position-absolute bottom-0 end-0">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="975.83px" height="179px" viewBox="-137.472 -27 975.83 179" enable-background="new -137.472 -27 975.83 179" xml:space="preserve">
+                                    <g>
+                                        <path fill="#6C2424" d="M44.619,146.293H8.541V32.851l-39.234,113.442h-29.469L-99.398,33.96v112.333h-36.076V-21.064h52.92   l38.147,112.156L-8.316-21.064h52.935V146.293z M10.583,144.251h31.994V-19.022H-6.828L-43.41,94.661h-1.938L-84.014-19.022   h-49.418v163.273h31.991v-116h2.21l40.517,116h26.565L8.372,27.095h2.211V144.251z" />
+                                        <path fill="#6C2424" d="M112.921,146.293H74.53V-21.064h38.392V146.293z M76.572,144.251h34.309V-19.022H76.572V144.251z" />
+                                        <path fill="#6C2424" d="M203.824,150c-9.142,0-18.148-1.143-26.771-3.393c-8.646-2.253-16.395-5.852-23.032-10.695   c-6.659-4.855-12.02-11.127-15.935-18.645c-3.922-7.528-5.829-16.573-5.671-26.882l0.015-1.007h37.218V90.4   c-0.002,5.368,0.972,9.961,2.894,13.651c1.922,3.7,4.506,6.736,7.681,9.019c3.184,2.305,7.001,4.042,11.35,5.167   c4.365,1.131,8.955,1.703,13.637,1.703c3.187,0,6.643-0.27,10.271-0.799c3.578-0.52,6.986-1.539,10.13-3.037   c3.075-1.464,5.682-3.511,7.745-6.084c2.002-2.499,3.018-5.754,3.018-9.667c0-4.229-1.3-7.549-3.976-10.147   c-2.752-2.678-6.417-4.939-10.896-6.731c-4.572-1.83-9.82-3.448-15.603-4.817c-5.863-1.386-11.877-2.947-17.871-4.64   c-6.15-1.535-12.267-3.455-18.149-5.7c-5.926-2.259-11.31-5.229-16-8.827c-4.726-3.62-8.598-8.21-11.509-13.642   c-2.923-5.445-4.405-12.112-4.405-19.816c0-8.632,1.877-16.243,5.578-22.622c3.686-6.354,8.574-11.719,14.533-15.948   c5.933-4.217,12.741-7.384,20.236-9.413c7.472-2.024,15.041-3.05,22.498-3.05c8.667,0,17.123,0.983,25.13,2.923   c8.03,1.952,15.273,5.161,21.529,9.534c6.278,4.396,11.329,10.084,15.015,16.907c3.692,6.838,5.565,15.22,5.565,24.911v1.021   h-37.172l-0.061-0.956c-0.299-4.762-1.308-8.748-3.001-11.845c-1.688-3.073-3.945-5.518-6.712-7.268   c-2.814-1.776-6.089-3.055-9.731-3.799c-3.701-0.753-7.8-1.136-12.183-1.136c-2.834,0-5.726,0.304-8.589,0.903   c-2.798,0.591-5.37,1.635-7.645,3.101c-2.264,1.461-4.151,3.309-5.608,5.495c-1.424,2.134-2.144,4.904-2.144,8.235   c0,3.038,0.571,5.508,1.698,7.336c1.123,1.826,3.431,3.564,6.859,5.167c3.545,1.664,8.55,3.355,14.877,5.033   c6.108,1.623,14.322,3.743,25.112,6.48c3.04,0.607,7.396,1.744,12.89,3.367c5.543,1.643,11.126,4.294,16.594,7.883   c5.49,3.612,10.302,8.5,14.298,14.532c4.029,6.086,6.073,13.946,6.073,23.367c0,7.67-1.51,14.898-4.489,21.49   c-2.989,6.604-7.487,12.377-13.368,17.158c-5.86,4.771-13.223,8.533-21.878,11.183C225.247,148.659,215.136,150,203.824,150z    M134.446,91.418c-0.02,9.55,1.814,17.925,5.451,24.905c3.767,7.236,8.924,13.271,15.327,17.938   c6.429,4.694,13.946,8.183,22.345,10.372c8.453,2.206,17.288,3.322,26.256,3.322c11.109,0,21.019-1.307,29.451-3.889   c8.403-2.573,15.532-6.213,21.188-10.814c5.634-4.581,9.938-10.104,12.795-16.416c2.86-6.324,4.309-13.274,4.309-20.65   c0-9.011-1.929-16.494-5.733-22.239c-3.843-5.799-8.459-10.493-13.72-13.952c-5.299-3.479-10.699-6.046-16.05-7.632   c-5.437-1.604-9.731-2.726-12.762-3.334c-10.849-2.752-19.069-4.874-25.185-6.498c-6.444-1.708-11.563-3.441-15.221-5.156   c-3.849-1.8-6.378-3.745-7.731-5.946c-1.328-2.154-2.002-4.984-2.002-8.405c0-3.742,0.838-6.893,2.486-9.367   c1.612-2.419,3.698-4.466,6.201-6.079c2.484-1.602,5.287-2.74,8.33-3.384c3.003-0.627,6.034-0.946,9.011-0.946   c4.518,0,8.755,0.397,12.59,1.177c3.885,0.796,7.389,2.166,10.412,4.073c3.063,1.936,5.556,4.631,7.412,8.013   c1.722,3.15,2.789,7.096,3.179,11.742h33.217c-0.126-8.916-1.911-16.624-5.312-22.92c-3.533-6.54-8.373-11.992-14.387-16.203   c-6.048-4.227-13.06-7.331-20.842-9.222c-7.851-1.901-16.144-2.865-24.649-2.865c-7.278,0-14.669,1.001-21.966,2.978   c-7.26,1.967-13.851,5.031-19.587,9.108c-5.718,4.06-10.412,9.21-13.95,15.309c-3.518,6.063-5.301,13.328-5.301,21.597   c0,7.364,1.4,13.706,4.163,18.852c2.773,5.175,6.458,9.544,10.952,12.986c4.534,3.479,9.744,6.352,15.486,8.54   c5.806,2.216,11.844,4.11,17.946,5.634c5.996,1.692,11.98,3.245,17.816,4.626c5.88,1.392,11.226,3.043,15.889,4.908   c4.729,1.889,8.618,4.299,11.561,7.165c3.048,2.961,4.594,6.867,4.594,11.61c0,4.387-1.165,8.067-3.465,10.943   c-2.26,2.817-5.106,5.053-8.462,6.647c-3.328,1.586-6.932,2.667-10.712,3.214c-3.725,0.546-7.28,0.822-10.566,0.822   c-4.854,0-9.616-0.597-14.149-1.771c-4.595-1.187-8.644-3.034-12.031-5.484c-3.436-2.47-6.229-5.744-8.298-9.731   c-1.949-3.742-2.996-8.305-3.113-13.571h-33.174V91.418z" />
+                                        <path fill="#6C2424" d="M356.995,150c-9.141,0-18.146-1.143-26.771-3.393c-8.645-2.253-16.396-5.852-23.034-10.695   c-6.659-4.855-12.019-11.127-15.934-18.645c-3.922-7.533-5.83-16.576-5.67-26.884l0.015-1.005h37.217V90.4   c-0.002,5.368,0.971,9.961,2.894,13.651c1.921,3.7,4.506,6.733,7.683,9.019c3.185,2.305,7.001,4.042,11.348,5.167   c4.366,1.131,8.957,1.703,13.637,1.703c3.187,0,6.642-0.27,10.27-0.799c3.577-0.517,6.988-1.539,10.131-3.037   c3.075-1.464,5.682-3.511,7.743-6.084c2.004-2.499,3.02-5.754,3.02-9.667c0-4.227-1.298-7.546-3.977-10.147   c-2.75-2.675-6.416-4.939-10.898-6.731c-4.567-1.83-9.817-3.448-15.601-4.817c-5.869-1.389-11.884-2.95-17.871-4.64   c-6.146-1.534-12.262-3.453-18.149-5.7c-5.927-2.259-11.311-5.229-16.002-8.827c-4.725-3.621-8.597-8.211-11.505-13.642   c-2.926-5.443-4.409-12.111-4.409-19.816c0-8.632,1.877-16.243,5.578-22.622c3.683-6.349,8.572-11.716,14.533-15.948   c5.931-4.215,12.738-7.382,20.233-9.413c7.477-2.024,15.048-3.05,22.504-3.05c8.668,0,17.122,0.983,25.13,2.923   c8.028,1.951,15.271,5.157,21.531,9.532c6.277,4.395,11.327,10.083,15.011,16.907c3.692,6.835,5.563,15.217,5.563,24.911v1.021   h-37.168l-0.062-0.956c-0.3-4.765-1.31-8.751-3.002-11.845c-1.686-3.071-3.942-5.517-6.712-7.268   c-2.814-1.776-6.09-3.055-9.732-3.799c-3.701-0.753-7.799-1.136-12.182-1.136c-2.835,0-5.726,0.304-8.59,0.903   c-2.796,0.591-5.371,1.635-7.646,3.101c-2.259,1.456-4.146,3.306-5.607,5.496c-1.422,2.135-2.145,4.905-2.145,8.234   c0,3.037,0.573,5.505,1.702,7.336c1.119,1.826,3.427,3.564,6.858,5.167c3.545,1.664,8.551,3.355,14.879,5.033   c6.128,1.629,14.341,3.749,25.109,6.481c3.04,0.607,7.391,1.744,12.89,3.367c5.543,1.641,11.127,4.292,16.594,7.883   c5.493,3.612,10.305,8.501,14.3,14.531c4.03,6.09,6.074,13.951,6.074,23.366c0,7.665-1.51,14.896-4.491,21.493   c-2.99,6.605-7.484,12.376-13.365,17.158c-5.863,4.771-13.225,8.53-21.881,11.182C378.42,148.659,368.31,150,356.995,150z    M287.618,91.418c-0.021,9.547,1.812,17.922,5.449,24.905c3.768,7.236,8.924,13.271,15.328,17.938   c6.43,4.694,13.948,8.183,22.344,10.372c8.457,2.206,17.29,3.322,26.256,3.322c11.112,0,21.023-1.307,29.451-3.889   c8.401-2.573,15.53-6.21,21.191-10.814c5.631-4.581,9.934-10.104,12.792-16.416c2.861-6.33,4.31-13.279,4.31-20.65   c0-9.008-1.927-16.491-5.734-22.239c-3.842-5.799-8.457-10.493-13.718-13.952c-5.299-3.479-10.701-6.046-16.054-7.632   c-5.439-1.605-9.734-2.726-12.76-3.334c-10.828-2.746-19.05-4.868-25.184-6.498c-6.445-1.708-11.565-3.441-15.221-5.156   c-3.85-1.8-6.381-3.745-7.731-5.947c-1.329-2.156-2.004-4.984-2.004-8.405c0-3.739,0.838-6.892,2.487-9.367   c1.616-2.424,3.705-4.47,6.202-6.079c2.482-1.602,5.287-2.74,8.329-3.384c3.004-0.627,6.036-0.946,9.01-0.946   c4.519,0,8.754,0.397,12.591,1.177c3.883,0.796,7.388,2.166,10.413,4.073c3.063,1.937,5.558,4.632,7.411,8.013   c1.722,3.147,2.788,7.093,3.179,11.742h33.214c-0.124-8.917-1.909-16.625-5.309-22.92c-3.533-6.541-8.374-11.993-14.388-16.203   c-6.048-4.229-13.063-7.332-20.841-9.222c-7.85-1.901-16.142-2.866-24.648-2.866c-7.277,0-14.669,1.002-21.969,2.979   c-7.262,1.967-13.852,5.031-19.586,9.108c-5.722,4.063-10.415,9.213-13.95,15.309c-3.518,6.063-5.301,13.328-5.301,21.597   c0,7.365,1.401,13.708,4.166,18.851c2.772,5.175,6.455,9.544,10.949,12.988c4.532,3.478,9.745,6.35,15.487,8.54   c5.811,2.217,11.849,4.111,17.947,5.634c5.986,1.69,11.974,3.244,17.816,4.626c5.881,1.392,11.227,3.043,15.889,4.908   c4.729,1.889,8.618,4.299,11.562,7.165c3.05,2.964,4.595,6.87,4.595,11.61c0,4.387-1.163,8.069-3.466,10.943   c-2.26,2.814-5.105,5.053-8.46,6.647c-3.331,1.586-6.938,2.667-10.717,3.214c-3.722,0.546-7.278,0.822-10.563,0.822   c-4.855,0-9.615-0.597-14.148-1.771c-4.593-1.187-8.639-3.031-12.03-5.484c-3.437-2.473-6.231-5.745-8.301-9.731   c-1.949-3.742-2.995-8.305-3.111-13.571h-33.176V91.418z" />
+                                        <path fill="#6C2424" d="M484.661,146.293H446.27V-21.064h38.391V146.293z M448.309,144.251h34.313V-19.022h-34.313V144.251z" />
+                                        <path fill="#6C2424" d="M589.681,149.997c-12.737,0-24.367-2.25-34.56-6.683c-10.202-4.44-18.93-10.642-25.936-18.433   c-7.006-7.781-12.445-17.049-16.18-27.543c-3.728-10.477-5.616-21.926-5.616-34.029c0-12.4,1.889-24.083,5.616-34.718   c3.731-10.651,9.174-20.074,16.171-28.004c7.012-7.944,15.736-14.262,25.938-18.782c10.195-4.515,21.825-6.804,34.563-6.804   c12.893,0,24.563,2.289,34.686,6.804c10.128,4.524,18.817,10.842,25.817,18.78c7,7.929,12.44,17.352,16.177,28.004   c3.722,10.631,5.61,22.313,5.61,34.721c0,12.104-1.889,23.553-5.613,34.029c-3.733,10.499-9.177,19.767-16.18,27.545   c-7.003,7.787-15.689,13.988-25.817,18.43C614.241,147.747,602.574,149.997,589.681,149.997z M589.681-22.959   c-12.452,0-23.806,2.23-33.74,6.629c-9.929,4.397-18.418,10.545-25.233,18.266c-6.823,7.733-12.128,16.927-15.773,27.329   c-3.651,10.42-5.499,21.872-5.499,34.045c0,11.869,1.848,23.088,5.496,33.346c3.643,10.243,8.947,19.28,15.771,26.863   c6.813,7.57,15.302,13.603,25.233,17.925c9.935,4.322,21.291,6.512,33.746,6.512c12.607,0,23.999-2.189,33.86-6.511   c9.86-4.326,18.312-10.358,25.115-17.924c6.826-7.582,12.132-16.622,15.773-26.865c3.648-10.258,5.496-21.477,5.496-33.346   c0-12.179-1.848-23.632-5.496-34.046c-3.645-10.403-8.953-19.597-15.779-27.327c-6.807-7.717-15.258-13.864-25.119-18.268   C613.674-20.73,602.286-22.959,589.681-22.959z M589.678,119.666c-8.319,0-15.498-1.641-21.332-4.875   c-5.825-3.225-10.619-7.578-14.241-12.939c-3.602-5.316-6.26-11.386-7.904-18.039c-1.631-6.611-2.459-13.51-2.459-20.503   c0-7.293,0.825-14.462,2.456-21.306c1.645-6.881,4.3-13.107,7.904-18.508c3.619-5.434,8.413-9.828,14.244-13.061   c5.836-3.235,13.013-4.875,21.332-4.875c8.313,0,15.489,1.641,21.334,4.874c5.831,3.236,10.622,7.63,14.241,13.063   c3.604,5.4,6.26,11.625,7.902,18.507c1.633,6.839,2.461,14.008,2.461,21.307c0,6.996-0.828,13.895-2.464,20.503   c-1.643,6.653-4.301,12.723-7.902,18.039c-3.622,5.358-8.413,9.712-14.238,12.939C605.179,118.025,598.002,119.666,589.678,119.666   z M589.678,7.603c-7.967,0-14.812,1.554-20.34,4.619c-5.546,3.073-10.099,7.247-13.538,12.408   c-3.467,5.199-6.028,11.205-7.614,17.85c-1.595,6.688-2.403,13.697-2.403,20.832c0,6.828,0.809,13.563,2.4,20.018   c1.586,6.415,4.147,12.264,7.614,17.384c3.442,5.091,7.995,9.229,13.541,12.298c5.528,3.065,12.37,4.618,20.34,4.618   c7.975,0,14.819-1.553,20.342-4.616c5.546-3.073,10.099-7.21,13.539-12.3c3.466-5.118,6.027-10.969,7.613-17.384   c1.596-6.451,2.403-13.185,2.403-20.018c0-7.138-0.811-14.146-2.406-20.832c-1.586-6.645-4.147-12.652-7.613-17.85   c-3.438-5.158-7.993-9.332-13.536-12.408C604.486,9.157,597.638,7.603,589.678,7.603z" />
+                                        <path fill="#6C2424" d="M836.361,146.293h-37.94L730.783,37.429v108.864h-36.081V-21.064h37.708l67.873,109.093V-21.064h36.078   V146.293L836.361,146.293z M799.557,144.251h34.763V-19.022h-31.992V91.881h-2.051L731.279-19.022h-34.536v163.273h31.998V33.578   h2.051L799.557,144.251z" />
+                                    </g>
+                                </svg>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col px-0 col-12 col-xl-6 order-xl-1">
-                <div class="container py-5 pt-xl-7">
-                    <h5 class="section-title text-primary display-2 mb-4 text-xl-white">
-                        <b class="fw-bold">MISSION</b> <br class="d-none d-lg-block">STATEMENT
-                    </h5>
-                    <ul class="d-grid row-gap-3">
-                        <li>
-                            Customer Satisfaction: We strive to understand our customers&apos; requirements
-                            thoroughly
-                            and deliver solutions that exceed their expectations.
-                        </li>
-                        <li>
-                            Quality Assurance: Our commitment to quality ensures that every product and service
-                            we
-                            offer
-                            meets the highest standards.
-                        </li>
-                        <li>
-                            Timeliness: We value your time. Our eficient processes and dedicated team ensure
-                            timely
-                            delivery.
-                        </li>
-                        <li>
-                            Competitive Edge: We stay ahead of the curve by ofering competitive pricing,
-                            innovative
-                            solutions supported by comprehensive inventory for the market.
-                        </li>
-                        <li>
-                            Mutual Success: We believe in fostering strong relationships with our valuable
-                            customers,
-                            trusted suppliers, prestigious corporation and the dynamic community.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="d-none d-xl-block position-absolute end-0 w-75 opacity-75"
-        style="top: 3em; transform: translateX(35%);">
-        <img src="{{asset('assets/img/home/wording-mission.svg')}}" width="100%" height="auto" alt="">
-    </div>
-</section>
-<section>
-    <div class="container py-5 pt-xl-14 position-relative">
-        <h5 class="section-title text-primary display-2 mb-4 text-lg-white">
-            <b class="fw-bold">VISION</b> <br class="d-none d-lg-block">STATEMENT
-        </h5>
-        <p>
-            SDA Global aims to be the paragon of the value-added problem-solving instituition. We provide
-            superior
-            person-to-person individualized service to all our customers and prospects. Our vision is to be the
-            go-to
-            partner for industrial and commercial needs, offering personalized solutions that make a difference.
-            Additionally, we envision expanding our reach through e-commerce, providing seamless online
-            experiences
-            for our valued clients.
-        </p>
-    </div>
-</section>
-{{-- <section>
-    <div class="container py-5">
-        <h5 class="section-title fs-3 mb-5">
-            <b class="fw-bold">What&apos;s New?</b>
-        </h5>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
-            <div class="col">
-                <div class="card w-100 rounded-0 border-0 bg-transparent">
-                    <img src="{{asset('assets/img/home/news1.png')}}" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body px-0 py-5">
-                        <h5 class="card-title">
-                            <a href="#" target="_blank" class="link-primary">
-                                SDA Announces Community Partnership with Vendor A
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia itaque,
-                            velit tenetur
-                            repellat incidunt esse nihil. Reprehenderit veniam inventore explicabo, voluptatibus
-                            facilis
-                            reiciendis error minima dicta repellat? Libero, voluptates.
-                        </p>
-                        <p class="card-text opacity-50">
-                            <small>April 23, 2024 / Indonesia</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card w-100 rounded-0 border-0 bg-transparent">
-                    <img src="{{asset('assets/img/home/news2.png')}}" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body px-0 py-5">
-                        <h5 class="card-title">
-                            <a href="#" target="_blank" class="link-primary">
-                                SDA Announces Community Partnership with Vendor A
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia itaque,
-                            velit tenetur
-                            repellat incidunt esse nihil. Reprehenderit veniam inventore explicabo, voluptatibus
-                            facilis
-                            reiciendis error minima dicta repellat? Libero, voluptates.
-                        </p>
-                        <p class="card-text opacity-50">
-                            <small>April 23, 2024 / Indonesia</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card w-100 rounded-0 border-0 bg-transparent">
-                    <img src="{{asset('assets/img/home/news3.png')}}" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body px-0 py-5">
-                        <h5 class="card-title">
-                            <a href="#" target="_blank" class="link-primary">
-                                SDA Announces Community Partnership with Vendor A
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia itaque,
-                            velit tenetur
-                            repellat incidunt esse nihil. Reprehenderit veniam inventore explicabo, voluptatibus
-                            facilis
-                            reiciendis error minima dicta repellat? Libero, voluptates.
-                        </p>
-                        <p class="card-text opacity-50">
-                            <small>April 23, 2024 / Indonesia</small>
-                        </p>
+            <div class="col col-12 col-xl-6 order-xl-1">
+                <div class="container w-xl-100 py-xl-5">
+                    <div class="py-xl-5">
+                        <div class="py-5">
+                            <h5 class="section-title text-primary display-2 mb-4 text-xl-white">
+                                <b class="fw-bold">VISION</b> <br class="d-none d-lg-block">STATEMENT
+                            </h5>
+                            <p class="mb-0">
+                                SDA Global aims to be the paragon of the value-added problem-solving instituition. We provide superior person-to-person individualized service to all our customers and prospects. Our vision is to be the go-to partner for industrial and commercial needs, offering personalized solutions that make a difference. Additionally, we envision expanding our reach through e-commerce, providing seamless online experiences for our valued clients.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section> --}}
+</section>
+<section class="pt-xl-5">
+    <div class="container py-xl-5">
+        <h5 class="section-title text-primary display-2 mb-4">
+            <b class="fw-bold">MISSION</b> <br class="d-none d-lg-block">STATEMENT
+        </h5>
+        <ul class="bullet-list d-grid row-gap-3">
+            <li>Customer Satisfaction: We strive to understand our customers&apos; requirements thoroughly and deliver solutions that exceed their expectations.</li>
+            <li>Quality Assurance: Our commitment to quality ensures that every product and service we offer meets the highest standards.</li>
+            <li>Timeliness: We value your time. Our eficient processes and dedicated team ensure timely delivery.</li>
+            <li>Competitive Edge: We stay ahead of the curve by ofering competitive pricing, innovative solutions supported by comprehensive inventory for the market.</li>
+            <li>Mutual Success: We believe in fostering strong relationships with our valuable customers, trusted suppliers, prestigious corporation and the dynamic community.</li>
+        </ul>
+    </div>
+</section>
 @endsection
 @section('pageScripts')
 <script>
