@@ -7,7 +7,7 @@
             <div class="col col-12 col-md-auto">
                 <div class="caption bg-primary text-white py-5 px-4 px-md-5">
                     <h5 class="page-title display-3 text-center text-md-start">
-                        OUR <br class="d-none d-lg-block"><b class="fw-bold">INDUSTRIES</b>
+                        WE <br class="d-none d-lg-block"><b class="fw-bold">SERVE</b>
                     </h5>
                 </div>
             </div>
