@@ -2,7 +2,23 @@
 @section('pageStyles')
 <style>
     .img-mission {
-        --bs-aspect-ratio: calc(100% - 50vw);
+        --bs-aspect-ratio: 100%;
+    }
+
+    @media (min-width: 576px) and (max-width: 1199.98px) {
+        .img-mission {
+            --bs-aspect-ratio: calc(100% - 35vw);
+            overflow: hidden;
+        }
+
+        .img-mission > .object-fit-cover {
+            object-fit: unset !important;
+        }
+
+        .img-mission.ratio > * {
+            height: auto !important;
+            top: -45% !important;
+        }
     }
 
     @media (min-width: 1200px) {
