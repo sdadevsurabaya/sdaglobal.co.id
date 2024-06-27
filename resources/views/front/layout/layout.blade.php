@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ asset('assets/fonts/HelveticaNeue/HelveticaNeue.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/footbar.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/footbar.css') }}"> --}}
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <style>
         * {

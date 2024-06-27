@@ -5,9 +5,9 @@
                 <div class="col">
                     <div class="footbar-collapse">
                         <h5 class="footbar-title text-capitalize fs-6 fw-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFootbar1">
-                            about
+                            about us
                         </h5>
-                        <div class="collapse d-md-block" id="collapseFootbar1">
+                        <div class="collapse show">
                             <div class="pt-1">
                                 <ul class="text-capitalize">
                                     <li><a href="{{route('landing')}}">home</a></li>
@@ -24,10 +24,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-md-none">
+                {{-- <div class="col d-md-none">
                     <hr class="m-0">
-                </div>
-                <div class="col">
+                </div> --}}
+                {{-- <div class="col">
                     <div class="footbar-collapse">
                         <h5 class="footbar-title text-capitalize fs-6 fw-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFootbar2">
                             industries
@@ -44,10 +44,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col d-md-none">
+                </div> --}}
+                {{-- <div class="col d-md-none">
                     <hr class="m-0">
-                </div>
+                </div> --}}
                 <div class="col ms-md-auto">
                     <div class="d-flex flex-column row-gap-4">
                         {{-- <div>
