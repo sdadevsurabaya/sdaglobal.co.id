@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free-6.5.1-web/css/all.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/fonts/HelveticaNeue/HelveticaNeue.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}"> --}}
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/footbar.css') }}"> --}}
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <style>
@@ -67,18 +67,15 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <header class="page-header sticky-top">
-        @include('front.layout.navbar'){{-- end of navbar --}}
+        @include('front.layout.navbar-2'){{-- end of navbar --}}
     </header>
 
     <main class="page-wrapper">
         @yield('content')
     </main>
-    {{-- <main class="page-wrapper fs-xxl-4">
-        @yield('content')
-    </main> --}}
 
     <footer class="page-footer">
-        @include('front.layout.footbar'){{-- end of footbar --}}
+        @include('front.layout.footbar-2'){{-- end of footbar --}}
     </footer>
 
     <script src="{{ asset('vendor/jquery-3.6.0/jquery-3.6.0.min.js') }}"></script>
