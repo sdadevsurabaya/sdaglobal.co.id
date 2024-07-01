@@ -1,44 +1,35 @@
-@media (max-width: 767.98px) {
-    .footbar-collapse .footbar-title {
-        cursor: pointer;
-        position: relative;
-        margin: 0;
-    }
-
-    .footbar-collapse .footbar-title::before,
-    .footbar-collapse .footbar-title::after {
-        content: "\2b";
-        font-family: 'FontAwesome';
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%) rotate(45deg);
-        font-size: .875rem;
-        transition: all .36s ease-in-out;
-    }
-
-    .footbar-collapse .footbar-title.collapsed.collapsed::before,
-    .footbar-collapse .footbar-title.collapsed.collapsed::after {
-        transform: translateY(-50%) rotate(0);
-    }
-
-    .footbar-collapse .footbar-title::before {
-        left: 0;
-    }
-
-    .footbar-collapse .footbar-title::after {
-        right: 0;
-    }
+.footbar>main>* {
+    padding: 2.5em 0;
 }
 
-
-@media (min-width: 992px) {
-    .footbar main .gx-md-5 {
-        --bs-gutter-x: calc(3rem + 3vw);
-    }
+.nav-privacy {
+    text-transform: capitalize;
 }
 
-@media (min-width: 768px) {
-    .footbar-title {
-        pointer-events: none !important;
-    }
+.nav-privacy a {
+    margin-right: .5em;
+}
+
+.nav-privacy a:last-child {
+    margin-right: 0;
+}
+
+.nav-privacy a::before {
+    content: '|';
+    margin-right: .5em;
+    color: rgba(var(--color-light-rgb), .5);
+}
+
+.nav-privacy a:first-child::before {
+    display: none;
+}
+
+.footbar-sosmed>a {
+    margin-right: 1em;
+    font-size: 1.875em;
+    text-decoration: none !important;
+}
+
+.footbar-sosmed>a:last-child {
+    margin-right: 0;
 }

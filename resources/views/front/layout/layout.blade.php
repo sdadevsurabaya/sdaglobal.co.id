@@ -11,22 +11,22 @@
     <meta name="googlebot" content="all,index,follow" />
     <meta name="google" content="notranslate" />
     <title>SDA &bull; {{ $title }}</title>
-    <link rel="shortcut icon" href="{{ asset('assets/img/logo/ikon-sda.ico') }}" type="image/x-icon">
-    <link rel="stylesheet" href="{{ asset('vendor/bootstrap-5.3.2-dist/css/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free-6.5.1-web/css/all.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/fonts/HelveticaNeue/HelveticaNeue.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}"> --}}
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/footbar.css') }}"> --}}
+    <link rel="shortcut icon" href="{{asset('assets/img/logo/ikon-sda.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{asset('vendor/bootstrap-5.3.2-dist/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/fontawesome-free-6.5.1-web/css/all.min.css')}}">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="{{asset('assets/fonts/HelveticaNeue/HelveticaNeue.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/navbar.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/footbar.css')}}">
     <style>
         * {
             outline: solid 1px green;
-            outline: solid 1px transparent;
+cvc            outline: solid 1px transparent;
         }
     </style>
     @yield('pageStyles')
-    <!-- Google search console (gtag.js) -->
+    {{-- Google search console (gtag.js) --}}
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND4VECF0JZ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -38,7 +38,7 @@
 
         gtag('config', 'G-ND4VECF0JZ');
     </script>
-    <!-- Google Tag Manager -->
+    {{-- Google Tag Manager --}}
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -55,19 +55,19 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-537D36NP');
     </script>
-    <!-- End Google Tag Manager -->
+    {{-- End Google Tag Manager --}}
 </head>
 
 <body>
 
-    <!-- Google Tag Manager (noscript) -->
+    {{-- Google Tag Manager (noscript) --}}
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-537D36NP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    {{-- End Google Tag Manager (noscript) --}}
 
     <header class="page-header sticky-top">
-        @include('front.layout.navbar-2'){{-- end of navbar --}}
+        @include('front.layout.navbar.navbar'){{-- end of navbar --}}
     </header>
 
     <main class="page-wrapper">
@@ -75,14 +75,13 @@
     </main>
 
     <footer class="page-footer">
-        @include('front.layout.footbar-2'){{-- end of footbar --}}
+        @include('front.layout.footbar.footbar'){{-- end of footbar --}}
     </footer>
 
     <script src="{{ asset('vendor/jquery-3.6.0/jquery-3.6.0.min.js') }}"></script>
-    <script src="{{ asset('vendor/bootstrap-5.3.2-dist/js/bootstrap.bundle.js') }}"></script>
+    <script src="{{asset('vendor/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>{{-- Toaster js --}}
     <script src="{{ asset('assets/js/scripts.js') }}"></script>
-    <!--Toaster js-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script>
         @if ($errors->any())
             @foreach ($errors->all() as $error)

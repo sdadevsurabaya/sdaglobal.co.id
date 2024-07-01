@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Front\LandingController;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +17,5 @@
 // Route::get('/', function () {
 //     return view('comingsoon');
 // });
+
+Route::get('/', [LandingController::class, 'landing'])->name('landing');
