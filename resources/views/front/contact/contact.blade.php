@@ -73,9 +73,9 @@
                             Website : <a href="{{route('landing')}}" target="_blank">sdaglobal.co.id</a>
                         </p>
                         <p class="fw-bold">
-                            Hotline : <a href="tel:+62315468800" target="_blank">+62 31 546 8800</a>
+                            Hotline : <a href="tel:+623199008800" target="_blank">+62 31 9900 8800</a>
                             <br>
-                            WA Only : <a href="tel:+6282280808800" target="_blank">+62 822 8080 8800</a>
+                            WA Only : <a href="wa.me:+6282280808800" target="_blank">+62 822 8080 8800</a>
                         </p>
                     </div>
                 </address>
