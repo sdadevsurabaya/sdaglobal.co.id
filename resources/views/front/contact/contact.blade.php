@@ -75,7 +75,7 @@
                         <p class="fw-bold">
                             Hotline : <a href="tel:+623199008800" target="_blank">+62 31 9900 8800</a>
                             <br>
-                            WA Only : <a href="wa.me:+6282280808800" target="_blank">+62 822 8080 8800</a>
+                            WA Only : <a href="https://wa.me/+6282280808800" target="_blank">+62 822 8080 8800</a>
                         </p>
                     </div>
                 </address>
