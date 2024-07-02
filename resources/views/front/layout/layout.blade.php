@@ -22,7 +22,7 @@
     <style>
         * {
             outline: solid 1px green;
-cvc            outline: solid 1px transparent;
+            outline: solid 1px transparent;
         }
     </style>
     @yield('pageStyles')
@@ -62,7 +62,8 @@ cvc            outline: solid 1px transparent;
 
     {{-- Google Tag Manager (noscript) --}}
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-537D36NP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-537D36NP" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
     </noscript>
     {{-- End Google Tag Manager (noscript) --}}
 

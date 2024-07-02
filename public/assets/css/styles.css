@@ -1,10 +1,6 @@
 :root {
     --color-primary: #842c2d;
     --color-primary-rgb: 132, 44, 45;
-    --color-dark: #000000;
-    --color-dark-rgb: 0, 0, 0;
-    --color-light: #ffffff;
-    --color-light-rgb:255, 255, 255;
 }
 
 html {
@@ -16,9 +12,6 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    background-color: var(--color-light);
-    color: var(--color-dark);
-    font-size: calc(1rem + .125vw);
 }
 
 body>header,
@@ -31,7 +24,7 @@ body>main {
 }
 
 body>main>section {
-    margin-bottom: 4rem;
+    margin-bottom: calc(4rem + 1.5vw);
 }
 
 ol,
@@ -83,11 +76,18 @@ h3,
 h4,
 h5,
 h6 {
-    line-height: 1.1;
+    line-height: 1.1 !important;
     font-size: 1em;
 }
 
+@media (min-width: 576px) {
+    figcaption {
+        font-size: inherit !important;
+    }
+}
+
 @media (max-width: 767.98px) {
+
     .container,
     .container-fluid {
         width: 100%;
@@ -100,7 +100,7 @@ h6 {
 @media (min-width: 768px) {
     .container {
         width: 90%;
-        max-width: 100%;
+        max-width: 90%;
     }
 }
 
@@ -111,23 +111,20 @@ h6 {
     }
 }
 
+.text-primary {
+    color: var(--color-primary) !important;
+}
+
 .bg-primary {
     background-color: var(--color-primary) !important;
 }
 
-.bg-dark {
-    background-color: var(--color-dark) !important;
-}
-
-.bg-light {
-    background-color: var(--color-light) !important;
-}
-
-.text-light {
-    color: var(--color-light) !important;
-}
-
 .form-control,
-.btn {
+.btn,
+.btn-close {
     border-radius: 0;
+}
+
+.text-justify {
+    text-align: justify;
 }
