@@ -6,3 +6,7 @@ $(window).scroll(function () {
       $('body').removeClass('scrollTop');
    }
 })
+
+$('.form-control').hover(function() {
+    $(this).select();
+});

@@ -1,0 +1,91 @@
+.navbar {
+    padding: 1em 0;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        padding: 2em 0;
+    }
+}
+
+.navbar>.container {
+    display: block;
+}
+
+.navbar>.container>header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.navbrand img {
+    max-width: 132px;
+}
+
+@media (min-width: 992px) {
+    .navbrand img {
+        max-width: 186px;
+    }
+}
+
+.navbar a {
+    text-decoration: none !important;
+}
+
+.navbar a.active,
+.navbar button.active {
+    color: var(--color-primary) !important;
+    font-family: 'HelveticaNeue Bold';
+}
+
+
+@media (max-width: 991.98px) {
+    #navside {
+        max-width: 320px;
+    }
+}
+
+@media (min-width: 992px) {
+    #navside .navbar-nav {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        column-gap: calc(1em + 1vw);
+        padding-top: 2em;
+    }
+}
+
+@media (min-width: 992px) {
+    #navside .nav-link {
+        padding: 0;
+    }
+}
+
+
+
+/* ======================== SCROLLTOP */
+@media (min-width: 992px) {
+
+    .scrollTop .navbar header>*:first-child,
+    .scrollTop .navbar header>*:last-child {
+        display: none;
+    }
+
+    .scrollTop .navbar>.container {
+        display: flex;
+        align-items: center;
+    }
+
+    .scrollTop #navside .navbar-nav {
+        padding-top: 0;
+    }
+
+    .scrollTop .navbrand img {
+        max-width: 152px;
+    }
+
+    .scrollTop .navbar {
+        padding: 1.5em 0;
+    }
+}

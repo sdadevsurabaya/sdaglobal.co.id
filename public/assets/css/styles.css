@@ -12,6 +12,15 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    background-color: white;
+    color: #323232;
+    font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.125rem;
+    }
 }
 
 body>header,
@@ -39,7 +48,9 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus,
+a.active {
     text-decoration: underline;
 }
 
@@ -80,35 +91,8 @@ h6 {
     font-size: 1em;
 }
 
-@media (min-width: 576px) {
-    figcaption {
-        font-size: inherit !important;
-    }
-}
-
-@media (max-width: 767.98px) {
-
-    .container,
-    .container-fluid {
-        width: 100%;
-        max-width: 100%;
-        padding-left: 1.125em;
-        padding-right: 1.125em;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 90%;
-        max-width: 90%;
-    }
-}
-
-@media (min-width: 1400px) {
-    .container {
-        width: 86%;
-        max-width: 100%;
-    }
+figcaption {
+    font-size: inherit !important;
 }
 
 .text-primary {
@@ -127,4 +111,46 @@ h6 {
 
 .text-justify {
     text-align: justify;
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        padding-left: 1.125em;
+        padding-right: 1.125em;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 90%;
+        max-width: 1320px;
+    }
+}
+
+#nav-sosmed>a {
+    margin-right: 1em;
+}
+
+#nav-sosmed>a:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 992px) {
+    .ratio-lg-21x9 {
+        --bs-aspect-ratio: 42.8571428571%;
+    }
+}
+
+.page-title {
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    font-size: calc(1.575rem + 3.9vw);
+}
+
+@media (min-width: 1200px) {
+    .page-title {
+        font-size: 4.5rem;
+    }
 }
