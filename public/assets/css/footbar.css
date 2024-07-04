@@ -13,6 +13,7 @@
 .footbar a.active {
     text-decoration: underline !important;
     font-family: 'HelveticaNeue Bold';
+    pointer-events: none;
 }
 
 #nav-privacy a {

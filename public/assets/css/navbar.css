@@ -37,6 +37,7 @@
 .navbar button.active {
     color: var(--color-primary) !important;
     font-family: 'HelveticaNeue Bold';
+    pointer-events: none;
 }
 
 
