@@ -105,7 +105,9 @@ figcaption {
 
 .form-control,
 .btn,
-.btn-close {
+.btn-close,
+.card,
+.card-img-overlay {
     border-radius: 0;
 }
 
@@ -153,4 +155,18 @@ figcaption {
     .page-title {
         font-size: 4.5rem;
     }
+}
+
+.top-unset {
+    top: unset;
+}
+
+.page-banner {
+    background-color: #d1d2d2;
+}
+
+.page-banner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
