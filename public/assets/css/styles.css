@@ -30,6 +30,19 @@ body>footer {
 
 body>main {
     flex-grow: 1;
+    padding-top: 69.9167px;
+}
+
+@media (min-width: 992px) {
+    body>main {
+        padding-top: 173.433px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body>main {
+        padding-top: 188.433px;
+    }
 }
 
 body>main>section {

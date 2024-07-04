@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\Front\Account\ContactController;
+use App\Http\Controllers\Front\AboutController;
+use App\Http\Controllers\Front\ContactController;
 use App\Http\Controllers\Front\IndustriesController;
 use App\Http\Controllers\Front\LandingController;
 use Illuminate\Support\Facades\Route;
@@ -24,3 +25,4 @@ Route::get('/', [LandingController::class, 'landing'])->name('landing');
 Route::get('/industries', [IndustriesController::class, 'industries'])->name('industries');
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
+Route::get('/about', [AboutController::class, 'about'])->name('about');

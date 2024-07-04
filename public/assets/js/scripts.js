@@ -1,4 +1,4 @@
-$('.page-wrapper').css({'padding-top': $('.page-header').height()});
+// $('.page-wrapper').css({'padding-top': $('.page-header').height()});
 
 $(window).scroll(function () {
    if ($(window).scrollTop() >= 100) {
