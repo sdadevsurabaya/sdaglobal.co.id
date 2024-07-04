@@ -22,8 +22,8 @@
 <section>
     <div class="container">
         <h5 class="fs-4 mb-4"><b class="fw-bold">Contact Us</b></h5>
-        <div class="row row-cols-1 gy-5 row-cols-lg-2 gx-lg-5">
-            <div class="col">
+        <div class="row gy-5 gx-lg-5 justify-content-lg-between">
+            <div class="col col-12 col-lg-6">
                 <form action="{{ route('contact.store') }}" method="POST" class="d-grid row-gap-2">
                     @csrf
                     <div class="form-group">
@@ -43,11 +43,11 @@
                     </div>
                 </form>
             </div>
-            <div class="col">
+            <div class="col col-12 col-lg">
                 <div class="row row-cols-1 gy-4">
                     <div class="col">
                         <h5 class="fs-5"><b class="fw-bold">Head Office</b></h5>
-                        <p>
+                        <p style="max-width: 535px">
                             Komp. Margomulyo Indah I Blok A No. 7-8 Jl. Margomulyo Indah I, Balongsari - Tandes, Surabaya 60186, Jawa Timur - Indonesia
                             <br>
                             Telephone : <a href="telp:+62317482190" target="_blank">+62 31 748 2190</a>, <a href="tel:+62317482193" target="_blank">748 2193</a>
@@ -55,7 +55,7 @@
                     </div>
                     <div class="col">
                         <h5 class="fs-5"><b class="fw-bold">Retail Store</b></h5>
-                        <p>
+                        <p style="max-width: 535px">
                             Komp. Raden Saleh Permai Kav. 19-20 Jl. Raden Saleh No. 45, Surabaya 60174, Jawa Timur - Indonesia
                             <br>
                             Telephone : <a href="telp:+62315468800" target="_blank">+62 31 546 8800</a>, <a href="tel:+62315467700" target="_blank">5467700</a>

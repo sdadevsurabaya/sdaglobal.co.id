@@ -64,17 +64,17 @@
                                 ABOUT <br class="d-none d-lg-block"><b class="fw-bold">US</b>
                             </h5>
                             <p>
-                                SDA Global takes pride in its reputation as a reliable and customer centric organization. Since our inception on June 2, 1992, we have remained committed to fulfilling our customers' needs. Starting with hydraulic and pneumatic products, we expanded our portfolio to include industrial and commercial solutions. Our knowledgeable team offers friendly advice based on years of combined experience and friendly demeanor.
+                                SDA Global takes pride in its reputation as a reliable and customer-centric organization. Since our inception on June 2, 1992, we have remained committed to fulfilling our customers' needs.
                             </p>
                         </div>
                     </div>
                     <div class="col bg-primary text-light">
                         <div class="container pt-5 px-xl-5">
-                            <h5 class="page-title text-light">
+                            <h5 class="page-title text-light d-none">
                                 OUR <br class="d-none d-lg-block"><b class="fw-bold">GOAL</b>
                             </h5>
                             <p>
-                                Our goal at SDA Indonesia is to stay in touch with any changes in our industry, so that we can always offer you the latest and most current information and services.
+                                Starting with hydraulic and pneumatic products, we expanded our portfolio to include industrial and commercial solutions. Our knowledgeable team offers friendly advice based on years of combined experience and friendly demeanor.
                             </p>
                         </div>
                         <div class="text-end">
@@ -94,7 +94,7 @@
                     <figure class="figure">
                         <img src="{{asset('assets/img/landing/products-hydraulics.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            hydraulic
+                            Hydraulic Hoses, Tubings, Fittings, Adapters & Quick Couplings
                         </figcaption>
                     </figure>
                 </a>
@@ -104,7 +104,7 @@
                     <figure class="figure">
                         <img src="{{asset('assets/img/landing/products-pneumatics.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            pneumatic
+                            Pneumatic Products and Accessories
                         </figcaption>
                     </figure>
                 </a>
@@ -112,9 +112,9 @@
             <div class="col">
                 <a href="#">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-industrials.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <img src="{{asset('assets/img/landing/products-valve.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            industrial fittings, adapters, clamps
+                            Steel & Plastic Pipes, Fittings, Flanges & Valves
                         </figcaption>
                     </figure>
                 </a>
@@ -122,9 +122,9 @@
             <div class="col">
                 <a href="#">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-valves.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <img src="{{asset('assets/img/landing/products-steel.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            indutrial valves
+                            Steel Roof, Deck, Hollow, Truss & Clip Lock
                         </figcaption>
                     </figure>
                 </a>
@@ -132,9 +132,9 @@
             <div class="col">
                 <a href="#">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-tools.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <img src="{{asset('assets/img/landing/products-powertools.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            tools
+                            Hand & Power Tools
                         </figcaption>
                     </figure>
                 </a>
@@ -142,9 +142,29 @@
             <div class="col">
                 <a href="#">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-safety.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <img src="{{asset('assets/img/landing/products-transmission.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            fire safety & protection equipments
+                            Power Transmission
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <figure class="figure">
+                        <img src="{{asset('assets/img/landing/products-protect.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <figcaption class="figure-caption text-center text-capitalize text-primary">
+                            Fire Safety & Protection Equipment
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <figure class="figure">
+                        <img src="{{asset('assets/img/landing/products-engines.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <figcaption class="figure-caption text-center text-capitalize text-primary">
+                            Engines, Pumps & Generators
                         </figcaption>
                     </figure>
                 </a>
