@@ -10,8 +10,8 @@
     <div>
         <b class="fw-bold">
             <a class="fs-4" href="tel:+623199008800" target="_blank">
-                +62 31 9900 8800
-            </a>,
+                +62 31 9900 8800,
+            </a>
         </b>
     </div>
     <div>

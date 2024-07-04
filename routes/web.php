@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Front\IndustriesController;
 use App\Http\Controllers\Front\LandingController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [LandingController::class, 'landing'])->name('landing');
+Route::get('/industries', [IndustriesController::class, 'industries'])->name('industries');

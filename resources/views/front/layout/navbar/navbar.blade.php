@@ -37,7 +37,7 @@
                             <a href="{{route('landing')}}" class="nav-link nav-about">about SDA</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('landing')}}" class="nav-link nav-industries">industries</a>
+                            <a href="{{route('industries')}}" class="nav-link nav-industries">industries</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('landing')}}" class="nav-link nav-buy">where to buy</a>
