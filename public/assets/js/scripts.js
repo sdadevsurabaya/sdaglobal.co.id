@@ -1,11 +1,13 @@
+$('.page-wrapper').css({'padding-top': $('.page-header').height()});
+
 $(window).scroll(function () {
-   if ($(window).scrollTop() >= 200) {
+   if ($(window).scrollTop() >= 100) {
       $('body').addClass('scrollTop');
    }
-   if ($(window).scrollTop() <= 199) {
+   if ($(window).scrollTop() <= 95) {
       $('body').removeClass('scrollTop');
    }
-})
+});
 
 $('.form-control').hover(function() {
     $(this).select();

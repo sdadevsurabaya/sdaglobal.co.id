@@ -43,7 +43,7 @@
                             <a href="{{route('landing')}}" class="nav-link nav-buy">where to buy</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('landing')}}" class="nav-link nav-contact">contact</a>
+                            <a href="{{route('contact')}}" class="nav-link nav-contact">contact</a>
                         </li>
                     </ul>
                 </div>

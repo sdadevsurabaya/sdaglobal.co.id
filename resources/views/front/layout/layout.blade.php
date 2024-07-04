@@ -67,7 +67,7 @@
     </noscript>
     {{-- End Google Tag Manager (noscript) --}}
 
-    <header class="page-header sticky-top">
+    <header class="page-header fixed-top">
         @include('front.layout.navbar.navbar'){{-- end of navbar --}}
     </header>
 
