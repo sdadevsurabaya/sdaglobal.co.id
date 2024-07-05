@@ -1,4 +1,4 @@
-<ul class="text-capitalize">
+<ul class="list-unstyled text-capitalize">
     <li><a href="{{route('landing')}}" class="nav-home">home</a></li>
     <li><a href="{{route('about')}}" class="nav-about">about SDA</a></li>
     <li><a href="{{route('industries')}}" class="nav-industries">industries</a></li>

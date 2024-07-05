@@ -40,8 +40,8 @@
         <div class="container">
             <div class="py-4 d-flex flex-column align-items-center text-center row-gap-3 flex-lg-row flex-lg-wrap column-gap-lg-5 align-items-lg-baseline justify-content-lg-between text-lg-start">
                 <nav id="nav-privacy" class="text-capitalize">
-                    <a href="{{route('landing')}}" target="_blank">privacy policy</a>
-                    <a href="{{route('landing')}}" target="_blank">terms & conditions</a>
+                    <a href="{{route('policy.policy')}}" target="_blank">privacy policy</a>
+                    <a href="{{route('policy.terms')}}" target="_blank">terms & conditions</a>
                 </nav>
                 <p class="opacity-50">
                     Copyright &copy; <script>document.write(new Date().getFullYear())</script> SDA. All rights reserved.

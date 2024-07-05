@@ -114,7 +114,7 @@
                 <h5 class="page-title">
                     <b class="fw-bold">MISSION</b> <br class="d-none d-lg-block">STATEMENT
                 </h5>
-                <ul class="list-bullet">
+                <ul>
                     <li>Customer Satisfaction: We strive to understand our customers' requirements thoroughly and deliver solutions that exceed their expectations.</li>
                     <li>Quality Assurance: Our commitment to quality ensures that every product and service we offer meets the highest standards.</li>
                     <li>Timeliness: We value your time. Our efficient processes and dedicated team ensure timely delivery.</li>

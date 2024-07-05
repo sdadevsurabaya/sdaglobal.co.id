@@ -29,7 +29,7 @@
                     </button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav text-capitalize">
+                    <ul class="navbar-nav text-capitalize list-unstyled">
                         <li class="nav-item">
                             <a href="{{route('landing')}}" class="nav-link nav-home">home</a>
                         </li>
