@@ -5,9 +5,8 @@
         margin-bottom: 0;
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: calc(4rem + 1.5vw);
-        padding-top: calc(4rem + 1.5vw);
-        padding-bottom: calc(4rem + 1.5vw);
+        row-gap: 4em;
+        padding: 4em 0;
     }
 
     .ratio {
@@ -17,6 +16,64 @@
     @media (min-width: 576px) {
         .ratio {
             --bs-aspect-ratio: 60%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .img-mission,
+        .img-infrastructure,
+        .img-customer1 {
+            position: relative
+        }
+    }
+
+    @media (min-width: 992px) {
+        .img-mission .ratio,
+        .img-infrastructure .ratio {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .img-mission .ratio {
+            --bs-aspect-ratio: 230%;
+            max-height: 720px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .img-infrastructure .ratio {
+            --bs-aspect-ratio: 125%;
+            max-height: 420px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .img-customer1 .ratio {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .img-customer1 .ratio {
+            --bs-aspect-ratio: 125%;
+            max-height: 420px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .page-wrapper>section:nth-child(3) {
+            padding-bottom: 6em;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .page-wrapper>section:nth-child(4) {
+            padding-top: 6em;
         }
     }
 </style>
@@ -47,8 +104,10 @@
     <div class="container">
         <div class="row gy-4 gy-lg-0 gx-lg-5">
             <div class="col col-12 col-lg-5 order-lg-2">
-                <div class="ratio img-mission">
-                    <img src="{{asset('assets/img/about/img-mission.jpg')}}" class="object-fit-cover" alt="">
+                <div class="img-mission">
+                    <div class="ratio">
+                        <img src="{{asset('assets/img/about/img-mission.jpg')}}" class="object-fit-cover" alt="">
+                    </div>
                 </div>
             </div>
             <div class="col col-12 col-lg-7 order-lg-1">
@@ -78,8 +137,10 @@
     <div class="container">
         <div class="row gy-4 gy-lg-0 gx-lg-5">
             <div class="col col-12 col-lg-5">
-                <div class="ratio img-infrastructure">
-                    <img src="{{asset('assets/img/about/img-sophisticated.jpg')}}" class="object-fit-cover" alt="">
+                <div class="img-infrastructure">
+                    <div class="ratio">
+                        <img src="{{asset('assets/img/about/img-sophisticated.jpg')}}" class="object-fit-cover" alt="">
+                    </div>
                 </div>
             </div>
             <div class="col col-12 col-lg-7">
@@ -97,8 +158,10 @@
     <div class="container">
         <div class="row gy-4 gy-lg-0 gx-lg-5">
             <div class="col col-12 col-lg-5 order-lg-2">
-                <div class="ratio img-customer1">
-                    <img src="{{asset('assets/img/about/img-competitive.jpg')}}" class="object-fit-cover" alt="">
+                <div class="img-customer1 h-100">
+                    <div class="ratio">
+                        <img src="{{asset('assets/img/about/img-competitive.jpg')}}" class="object-fit-cover" alt="">
+                    </div>
                 </div>
             </div>
             <div class="col col-12 col-lg-7 order-lg-1">
