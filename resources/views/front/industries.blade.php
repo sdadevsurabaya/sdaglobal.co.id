@@ -25,11 +25,22 @@
             opacity: 1;
         }
     }
+
+    .page-banner {
+        background-position-x: 70%;
+        background-image: linear-gradient(to top, white, transparent), url({{asset('assets/img/industries/banner-industries.jpg')}});
+    }
+
+    @media (min-width: 992px) {
+        .page-banner {
+            background-image: url({{asset('assets/img/industries/banner-industries.jpg')}});
+        }
+    }
 </style>
 @endsection
 @section('content')
 <section>
-    <div class="page-banner py-5" style="background-image: url({{asset('assets/img/industries/banner-industries.jpg')}})">
+    <div class="page-banner py-5">
         <div class="container py-5">
             <div class="row row-cols-md-auto py-5">
                 <div class="col py-5">
@@ -55,7 +66,7 @@
                         </div>
                         <div class="card-img-overlay bg-primary text-light top-unset text-center">
                             <h5 class="card-title text-capitalize">
-                                <b class="fw-bold">Agriculture</b>
+                                <b class="fw-bold">agriculture</b>
                             </h5>
                         </div>
                     </div>

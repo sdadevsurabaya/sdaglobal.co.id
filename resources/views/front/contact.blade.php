@@ -12,11 +12,22 @@
             max-width: 585px;
         }
     }
+
+    .page-banner {
+        background-position-x: 70%;
+        background-image: linear-gradient(to top, white, transparent), url({{asset('assets/img/contact/banner-contact.jpg')}})
+    }
+
+    @media (min-width: 992px) {
+        .page-banner {
+            background-image: url({{asset('assets/img/contact/banner-contact.jpg')}})
+        }
+    }
 </style>
 @endsection
 @section('content')
 <section>
-    <div class="page-banner py-5" style="background-image: url({{asset('assets/img/contact/banner-contact.jpg')}})">
+    <div class="page-banner py-5">
         <div class="container py-5">
             <div class="row row-cols-md-auto py-5">
                 <div class="col py-5">

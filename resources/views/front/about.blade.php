@@ -76,11 +76,21 @@
             padding-top: 6em;
         }
     }
+
+    .page-banner {
+        background-image: linear-gradient(to top, rgb(var(--color-primary-rgb)), transparent), url({{asset('assets/img/industries/banner-industries.jpg')}});
+    }
+
+    @media (min-width: 992px) {
+        .page-banner {
+            background-image: url({{asset('assets/img/industries/banner-industries.jpg')}});
+        }
+    }
 </style>
 @endsection
 @section('content')
 <section class="p-0">
-    <div class="page-banner py-5" style="background-image: url({{asset('assets/img/industries/banner-industries.jpg')}})">
+    <div class="page-banner py-5">
         <div class="container py-5">
             <div class="row row-cols-md-auto py-5">
                 <div class="col py-5">

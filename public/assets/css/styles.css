@@ -179,7 +179,7 @@ figcaption {
 .page-banner {
     background-repeat: no-repeat;
     background-position-x: 60%;
-    background-position-y: 50%;
+    background-position-y: bottom;
     background-size: cover;
 }
 

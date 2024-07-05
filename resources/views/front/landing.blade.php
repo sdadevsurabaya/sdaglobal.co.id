@@ -154,7 +154,7 @@
                     <figure class="figure">
                         <img src="{{asset('assets/img/landing/products-protect.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            Fire Safety & Protection Equipment
+                            Fire Fighting & Protection Equipment
                         </figcaption>
                     </figure>
                 </a>
