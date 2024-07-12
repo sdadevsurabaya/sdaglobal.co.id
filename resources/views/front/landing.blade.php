@@ -102,6 +102,26 @@
             <div class="col">
                 <a href="#">
                     <figure class="figure">
+                        <img src="{{asset('assets/img/landing/products-industrial-rubber.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <figcaption class="figure-caption text-center text-capitalize text-primary">
+                            Industrial Rubber & Plastic Hoses and Connectors
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <figure class="figure">
+                        <img src="{{asset('assets/img/landing/products-industrial.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <figcaption class="figure-caption text-center text-capitalize text-primary">
+                            Industrial Components
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <figure class="figure">
                         <img src="{{asset('assets/img/landing/products-pneumatics.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
                             Pneumatic Products and Accessories
@@ -154,7 +174,7 @@
                     <figure class="figure">
                         <img src="{{asset('assets/img/landing/products-protect.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            Fire Fighting & Protection Equipment
+                            Fire Fighting & Protection Equipments
                         </figcaption>
                     </figure>
                 </a>

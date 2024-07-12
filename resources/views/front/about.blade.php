@@ -83,7 +83,7 @@
 
     @media (min-width: 992px) {
         .page-banner {
-            background-image: url({{asset('assets/img/industries/banner-industries.jpg')}});
+            background-image: url({{asset('assets/img/about/banner-about.jpg')}});
         }
     }
 </style>
