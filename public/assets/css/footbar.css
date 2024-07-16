@@ -1,35 +1,23 @@
-.footbar main .desktop {
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: auto 35%;
-}
-
-@media (min-width: 1200px) {
-    .footbar main .desktop {
+@media (min-width: 992px) {
+    #footbar>.bg-primary {
+        background-image: url('../img/corner-solution.png');
+        background-repeat: no-repeat;
+        background-position: right bottom;
         background-size: auto 50%;
     }
 }
 
-.footbar a.active {
+#footbar a.active {
     text-decoration: underline !important;
     font-family: 'HelveticaNeue Bold';
     pointer-events: none;
 }
 
-#nav-privacy a {
-    margin-right: .5em;
+#footbar .breadcrumb-item {
+    color: inherit !important;
 }
 
-#nav-privacy a:last-child {
-    margin-right: 0;
-}
-
-#nav-privacy a::before {
-    content: '|';
-    color: rgba(255, 255, 255, .5);
-    margin-right: .5em;
-}
-
-#nav-privacy a:first-child::before {
-    display: none;
+#footbar .breadcrumb-item + .breadcrumb-item::before {
+    color: inherit !important;
+    opacity: .5 !important;
 }
