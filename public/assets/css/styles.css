@@ -12,6 +12,15 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    background-color: white;
+    color: #323232;
+    font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.125rem;
+    }
 }
 
 body>header,
@@ -21,16 +30,27 @@ body>footer {
 
 body>main {
     flex-grow: 1;
+    padding-top: 69.9167px;
+}
+
+@media (min-width: 992px) {
+    body>main {
+        padding-top: 173.433px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body>main {
+        padding-top: 188.433px;
+    }
 }
 
 body>main>section {
-    margin-bottom: 4rem;
+    margin-bottom: calc(4rem + 1.5vw);
 }
 
 ol,
 ul {
-    list-style: none;
-    padding-left: 0;
     margin: 0;
 }
 
@@ -39,7 +59,9 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus,
+a.active {
     text-decoration: underline;
 }
 
@@ -60,15 +82,56 @@ svg {
     border: currentColor;
 }
 
-.container {
-    width: 100%;
-    max-width: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1 !important;
+    font-size: 1em;
+}
+
+figcaption {
+    font-size: inherit !important;
+}
+
+.text-primary {
+    color: var(--color-primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+
+.form-control,
+.btn,
+.btn-close,
+.card,
+.card-img-overlay {
+    border-radius: 0;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 @media (max-width: 575.98px) {
     .container {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+        padding-left: 1.125em;
+        padding-right: 1.125em;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -79,103 +142,59 @@ svg {
     }
 }
 
-@media (min-width: 1200px) {
-    .container-xl {
-        width: 90%;
-        max-width: 1320px;
+#nav-sosmed>a {
+    margin-right: 1em;
+}
+
+#nav-sosmed>a:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 992px) {
+    .ratio-lg-21x9 {
+        --bs-aspect-ratio: 42.8571428571%;
     }
 }
 
-.breadcrumb-dark .breadcrumb-item+.breadcrumb-item::before {
-    color: #b4b4b4;
-}
-
-.dropdown-menu {
-    border-radius: 0;
-    border-color: var(--color-primary);
-}
-
-.dropdown-item {
-    text-decoration: none !important;
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus,
-.dropdown-item.active {
-    background: #f1f2f2 !important;
-}
-
-.dropdown:hover>.dropdown-menu {
-    display: block;
-}
-
-.text-underline-none,
-.text-underline-none>a {
-    text-decoration: none !important;
-}
-
-.btn,
-.btn-close,
-.form-control {
-    border-radius: 0;
-    text-decoration: none !important;
-}
-
-.bg-primary {
-    background-color: var(--color-primary) !important;
-}
-
-.link-disabled {
-    text-decoration: none !important;
-    pointer-events: none !important;
-    opacity: .5 !important;
-}
-
-.btn-primary {
-    background-color: var(--color-primary) !important;
-    border-color: var(--color-primary) !important;
-    color: white !important;
-}
-
-.text-primary {
-    color: var(--color-primary) !important;
+.page-title {
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    font-size: calc(1.575rem + 3.9vw);
 }
 
 @media (min-width: 1200px) {
-    .bg-xl-primary {
-        background-color: var(--color-primary) !important;
+    .page-title {
+        font-size: 4.5rem;
     }
 }
 
-@media (min-width: 1200px) {
-    .text-xl-white {
-        color: white !important;
-    }
+.top-unset {
+    top: unset;
 }
 
-.bullet-list>li {
+.page-banner {
+    background-color: #d1d2d2;
+}
+
+.page-banner {
+    background-repeat: no-repeat;
+    background-position-x: 60%;
+    background-position-y: bottom;
+    background-size: cover;
+}
+
+.list-bullet>li {
+    padding-left: 1.5rem;
     position: relative;
-    padding-left: 1.25rem;
 }
 
-.bullet-list>li::before {
+.list-bullet>li::before {
     content: "\f111";
-    font-size: .4rem;
     font-family: 'FontAwesome';
     position: absolute;
-    top: .5rem;
+    top: 0;
     left: 0;
     color: inherit;
-}
-
-@media (min-width: 1200px) {
-    .w-xl-100 {
-        width: 100% !important;
-    }
-}
-
-@media (min-width: 1200px) {
-    .position-xl-absolute {
-        position: absolute !important;
-    }
+    font-size: .325em;
+    transform: translateY(100%);
 }

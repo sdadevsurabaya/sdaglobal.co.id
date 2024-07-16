@@ -1,44 +1,35 @@
-@media (max-width: 767.98px) {
-    .footbar-collapse .footbar-title {
-        cursor: pointer;
-        position: relative;
-        margin: 0;
-    }
+.footbar main .desktop {
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 35%;
+}
 
-    .footbar-collapse .footbar-title::before,
-    .footbar-collapse .footbar-title::after {
-        content: "\2b";
-        font-family: 'FontAwesome';
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%) rotate(45deg);
-        font-size: .875rem;
-        transition: all .36s ease-in-out;
-    }
-
-    .footbar-collapse .footbar-title.collapsed.collapsed::before,
-    .footbar-collapse .footbar-title.collapsed.collapsed::after {
-        transform: translateY(-50%) rotate(0);
-    }
-
-    .footbar-collapse .footbar-title::before {
-        left: 0;
-    }
-
-    .footbar-collapse .footbar-title::after {
-        right: 0;
+@media (min-width: 1200px) {
+    .footbar main .desktop {
+        background-size: auto 50%;
     }
 }
 
-
-@media (min-width: 992px) {
-    .footbar main .gx-md-5 {
-        --bs-gutter-x: calc(3rem + 3vw);
-    }
+.footbar a.active {
+    text-decoration: underline !important;
+    font-family: 'HelveticaNeue Bold';
+    pointer-events: none;
 }
 
-@media (min-width: 768px) {
-    .footbar-title {
-        pointer-events: none !important;
-    }
+#nav-privacy a {
+    margin-right: .5em;
+}
+
+#nav-privacy a:last-child {
+    margin-right: 0;
+}
+
+#nav-privacy a::before {
+    content: '|';
+    color: rgba(255, 255, 255, .5);
+    margin-right: .5em;
+}
+
+#nav-privacy a:first-child::before {
+    display: none;
 }
