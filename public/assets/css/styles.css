@@ -133,6 +133,7 @@ figcaption {
 }
 
 @media (max-width: 575.98px) {
+
     .container,
     .container-sm-fluid {
         padding-left: 1.125em;
@@ -208,4 +209,11 @@ figcaption {
     color: inherit;
     font-size: .325em;
     transform: translateY(100%);
+}
+
+@media (min-width: 992px) {
+    .text-lg-light {
+        --bs-text-opacity: 1;
+        color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+    }
 }

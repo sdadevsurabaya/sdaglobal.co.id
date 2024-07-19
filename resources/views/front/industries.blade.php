@@ -43,15 +43,15 @@
 </style>
 @endsection
 @section('content')
-<section>
-    <div class="page-banner py-5">
-        <div class="container py-5">
-            <div class="row row-cols-md-auto py-5">
+<section class="p-0">
+    <div class="page-banner">
+        <div class="container h-100">
+            <div class="row row-cols-lg-auto h-100 align-items-end align-items-lg-center">
                 <div class="col py-5">
-                    <div class="p-4 bg-primary text-light px-md-5">
-                        <h5 class="display-4 text-center text-md-start">
+                    <div class="p-4 bg-lg-primary text-primary text-lg-light px-md-5">
+                        <h5 class="display-3 text-center text-lg-start">
                             INDUSTRIES
-                            <br><b class="fw-bold">WE SERVE</b>
+                            <br class="d-none d-lg-inline"><b class="fw-bold">WE SERVE</b>
                         </h5>
                     </div>
                 </div>
@@ -65,12 +65,12 @@
 
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/agriculture.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">agriculture</b>
                             </h5>
                             <p class="card-text small">
@@ -82,12 +82,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/automotive.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">automotive</b>
                             </h5>
                             <p class="card-text small">
@@ -99,12 +99,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/construction.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">construction</b>
                             </h5>
                             <p class="card-text small">
@@ -116,12 +116,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/consumer-product.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">consumer products</b>
                             </h5>
                             <p class="card-text small">
@@ -133,12 +133,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/f&b.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">food & beverages</b>
                             </h5>
                             <p class="card-text small">
@@ -150,12 +150,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/manufacturing.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">general manufacturing</b>
                             </h5>
                             <p class="card-text small">
@@ -167,12 +167,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/industiral.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">heavy duty industrial equipments</b>
                             </h5>
                             <p class="card-text small">
@@ -184,12 +184,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/hvac.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">HVAC</b>
                             </h5>
                             <p class="card-text small">
@@ -201,12 +201,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/garden.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">lawn, garden & professional lanscaping</b>
                             </h5>
                             <p class="card-text small">
@@ -218,12 +218,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/machines.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">machine tools & precission equipment</b>
                             </h5>
                             <p class="card-text small">
@@ -235,12 +235,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/micromobility.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">micromobility</b>
                             </h5>
                             <p class="card-text small">
@@ -252,12 +252,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/mining.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">mining</b>
                             </h5>
                             <p class="card-text small">
@@ -269,12 +269,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/oil.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">oil & gas</b>
                             </h5>
                             <p class="card-text small">
@@ -286,12 +286,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/sports.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">powersports</b>
                             </h5>
                             <p class="card-text small">
@@ -303,12 +303,12 @@
             </div>
             <div class="col">
                 <a href="#" class="text-decoration-none">
-                    <div class="card overflow-hidden h-100">
-                        <div class="ratio ratio-16x9 ratio-lg-1x1 bg-secondary">
+                    <div class="card overflow-hidden h-100 border-0">
+                        <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/truck.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
                         <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-5">
+                            <h5 class="card-title text-uppercase fs-4">
                                 <b class="fw-bold">truck & bus</b>
                             </h5>
                             <p class="card-text small">
