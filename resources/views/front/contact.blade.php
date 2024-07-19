@@ -1,18 +1,6 @@
 @extends('front/layout/layout')
 @section('pageStyles')
 <style>
-    @media (min-width: 992px) {
-        .column-form {
-            width: 100%;
-            max-width: 50%;
-        }
-
-        .column-address {
-            width: 100%;
-            max-width: 585px;
-        }
-    }
-
     .page-banner {
         background-position-x: 70%;
         background-image: linear-gradient(to top, white, transparent), url({{asset('assets/img/contact/banner-contact.jpg')}})
@@ -23,18 +11,24 @@
             background-image: url({{asset('assets/img/contact/banner-contact.jpg')}})
         }
     }
+
+    @media (min-width: 576px) {
+        #column-address {
+            max-width: 420px;
+        }
+    }
 </style>
 @endsection
 @section('content')
-<section>
-    <div class="page-banner py-5">
-        <div class="container py-5">
-            <div class="row row-cols-md-auto py-5">
+<section class="p-0">
+    <div class="page-banner">
+        <div class="container h-100">
+            <div class="row row-cols-lg-auto h-100 align-items-end align-items-lg-center">
                 <div class="col py-5">
-                    <div class="p-4 bg-primary text-light px-md-5">
-                        <h5 class="display-4 text-center text-md-start">
+                    <div class="p-4 bg-lg-primary text-primary text-lg-light px-md-5">
+                        <h5 class="display-3 text-center text-lg-start">
                             CONTACT
-                            <br><b class="fw-bold">US</b>
+                            <br class="d-none d-lg-inline"><b class="fw-bold">US</b>
                         </h5>
                     </div>
                 </div>
@@ -44,58 +38,60 @@
 </section>
 <section>
     <div class="container">
-        <h5 class="fs-4 mb-4"><b class="fw-bold">Contact Us</b></h5>
-        <div class="row row-cols-1 gy-5 row-cols-lg-auto gx-lg-5 justify-content-lg-between">
-            <div class="col column-form">
-                <form action="{{ route('contact.store') }}" method="POST" class="d-grid row-gap-2">
-                    @csrf
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="nama" placeholder="Full Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" name="email" placeholder="Email Address">
-                    </div>
-                    <div class="form-group">
-                        <input type="number" class="form-control" name="phone" placeholder="Contact Number">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="" id="" cols="1" rows="10" class="form-control" name="pesan" placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-group pt-3">
-                        <button type="submit" class="btn btn-lg bg-primary text-light w-100">Submit</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col column-address">
-                <div>
-                    <div class="row row-cols-1 gy-4">
-                        <div class="col">
+        <h5 class="fs-4 mb-4 d-none d-lg-block text-primary"><b class="fw-bold">Contact Us</b></h5>
+        <div>
+            <div class="row g-0 gap-5 justify-content-xl-between">
+                <div class="col col-12 col-lg-7">
+                    <form action="{{ route('contact.store') }}" method="POST" class="d-grid row-gap-2">
+                        @csrf
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" name="nama" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-lg" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control form-control-lg" name="phone" placeholder="Contact Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="" cols="1" rows="10" class="form-control form-control-lg" name="pesan" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group pt-3">
+                            <button type="submit" class="btn btn-lg bg-primary text-light w-100">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="column-address" class="col col-12 col-sm-auto">
+                    <ul class="list-unstyled m-0 d-flex flex-column row-gap-4">
+                        <li>
                             <h5 class="fs-5"><b class="fw-bold">Head Office</b></h5>
                             <p>
-                                Komp. Margomulyo Indah I Blok A No. 7-8 Jl. Margomulyo Indah I, Balongsari - Tandes, Surabaya 60186, Jawa Timur - Indonesia
+                                Jl. Margomulyo Indah 1A No. 7-8 Surabaya 60186, Jawa Timur - Indonesia
                                 <br>
                                 Telephone : <a href="telp:+62317482190" target="_blank">+62 31 748 2190</a>, <a href="tel:+62317482193" target="_blank">748 2193</a>
                             </p>
-                        </div>
-                        <div class="col">
+                        </li>
+                        <li>
                             <h5 class="fs-5"><b class="fw-bold">Retail Store</b></h5>
                             <p>
-                                Komp. Raden Saleh Permai Kav. 19-20 Jl. Raden Saleh No. 45, Surabaya 60174, Jawa Timur - Indonesia
+                                Komp. Raden Saleh Permai Kav. 19-20
+                                <br>
+                                Jl. Raden Saleh No. 45, Surabaya 60174, Jawa Timur - Indonesia
                                 <br>
                                 Telephone : <a href="telp:+62315468800" target="_blank">+62 31 546 8800</a>, <a href="tel:+62315467700" target="_blank">5467700</a>
                             </p>
-                        </div>
-                        <div class="col">
+                        </li>
+                        <li>
                             <img src="{{asset('assets/img/qrcode.svg')}}" width="100%" height="auto" style="max-width: 152px;" alt="">
-                        </div>
-                        <div class="col">
+                        </li>
+                        <li>
                             <p>
                                 Email : <a href="mailto:cs@sdaglobal.co.id" target="_blank">cs@sdaglobal.co.id</a>
                                 <br>
                                 Website : <a href="https://sdaglobal.co.id" target="_blank">sdaglobal.co.id</a>
                             </p>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
