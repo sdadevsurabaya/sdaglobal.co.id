@@ -88,11 +88,25 @@
 </section>
 <section>
     <div class="container">
+        <h5 class="page-title text-primary">
+            OUR <b class="fw-bold">PRODUCTS</b>
+        </h5>
+        <p>
+            We specialize in manufacturing and supplying high-quality industrial products. With a commitment to excellence, we deliver reliable solutions that empower businesses across various sectors.
+            <br>
+            Our expertise lies in supplying a wide range of industrial products tailored for use in industrial environments such as hoses, pipes, tubings, fittings, valves, tools and the like.
+            <br><br>
+            We recognise the manufacturing challenges you encounter and are dedicated to provide solutions that enhance efficiency, reduce downtime and support you in achieving your safety, quality, delivery and working performance. Let us be your go-to source for industrial excellence.
+        </p>
+    </div>
+</section>
+<section>
+    <div class="container">
         <div class="row row-cols-2 g-2 g-md-3 row-cols-lg-3 g-xl-4">
             <div class="col">
                 <a href="#">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-hydraulics.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <img src="{{asset('assets/img/landing/product-hydraulic-hoses.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
                             Hydraulic Hoses, Tubings, Fittings, Adapters & Quick Couplings
                         </figcaption>
@@ -102,9 +116,9 @@
             <div class="col">
                 <a href="#">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-industrial-rubber.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <img src="{{asset('assets/img/landing/product-industrial-hoses.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            Industrial Rubber & Plastic Hoses and Connectors
+                            Industrial Hoses & Connectors
                         </figcaption>
                     </figure>
                 </a>
@@ -112,9 +126,9 @@
             <div class="col">
                 <a href="#">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-industrial.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <img src="{{asset('assets/img/landing/product-pneumatic.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            Industrial Components
+                            Pneumatic Products & Accessories
                         </figcaption>
                     </figure>
                 </a>
@@ -122,47 +136,7 @@
             <div class="col">
                 <a href="#">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-pneumatics.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
-                        <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            Pneumatic Products and Accessories
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col">
-                <a href="#">
-                    <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-valve.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
-                        <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            Steel & Plastic Pipes, Fittings, Flanges & Valves
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col">
-                <a href="#">
-                    <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-steel.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
-                        <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            Steel Roof, Deck, Hollow, Truss & Clip Lock
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col">
-                <a href="#">
-                    <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-powertools.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
-                        <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            Hand & Power Tools
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col">
-                <a href="#">
-                    <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-transmission.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <img src="{{asset('assets/img/landing/product-power-transmission.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
                             Power Transmission
                         </figcaption>
@@ -172,7 +146,17 @@
             <div class="col">
                 <a href="#">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-protect.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <img src="{{asset('assets/img/landing/product-plastic-pipes.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <figcaption class="figure-caption text-center text-capitalize text-primary">
+                            Steel & Plastic Pipes, Fittings, Flanges & Valves
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <figure class="figure">
+                        <img src="{{asset('assets/img/landing/product-fire-fighting.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
                             Fire Fighting & Protection Equipments
                         </figcaption>
@@ -182,9 +166,19 @@
             <div class="col">
                 <a href="#">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/products-engines.jpg')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <img src="{{asset('assets/img/landing/product-steel-roof.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
-                            Engines, Pumps & Generators
+                            Light Gauge Steel Roof, Deck, Hollow, Truss, Rooftile & Clip Lock
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <figure class="figure">
+                        <img src="{{asset('assets/img/landing/product-power-tools.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <figcaption class="figure-caption text-center text-capitalize text-primary">
+                            Hand & Power Tools
                         </figcaption>
                     </figure>
                 </a>
