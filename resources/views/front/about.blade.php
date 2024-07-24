@@ -80,7 +80,7 @@
     }
 
     .page-banner {
-        background-image: linear-gradient(to top, rgb(var(--color-primary-rgb)), transparent), url({{asset('assets/img/about/banner-about.jpg')}});
+        background-image: linear-gradient(to top, rgb(var(--color-primary-rgb)), transparent, transparent), url({{asset('assets/img/about/banner-about.jpg')}});
     }
 
     @media (min-width: 992px) {

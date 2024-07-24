@@ -3,7 +3,7 @@
 <style>
     .page-banner {
         background-position-x: 70%;
-        background-image: linear-gradient(to top, white, transparent), url({{asset('assets/img/industries/banner-industries.jpg')}});
+        background-image: linear-gradient(to top, white, transparent, transparent), url({{asset('assets/img/industries/banner-industries.jpg')}});
     }
 
     @media (min-width: 992px) {

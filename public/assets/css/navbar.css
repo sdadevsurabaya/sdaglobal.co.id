@@ -43,7 +43,8 @@
 
 @media (max-width: 991.98px) {
     #navside {
-        max-width: 320px;
+        width: 100%;
+        max-width: 100%;
     }
 }
 

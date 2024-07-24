@@ -23,13 +23,11 @@
         </header>
         <main>
             <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="navside" aria-labelledby="navsideLabel">
-                <div class="offcanvas-header bg-dark">
-                    <button class="btn btn-sm btn-outline-light ms-auto" data-bs-toggle="offcanvas" data-bs-target="#navside">
-                        CLOSE
+                <div class="offcanvas-body d-flex align-items-center position-relative d-lg-block">
+                    <button class="position-absolute top-0 end-0 btn my-3 me-3 ms-auto d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#navside">
+                        <i class="fas fa-x fa-xl"></i>
                     </button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav text-capitalize list-unstyled">
+                    <ul class="navbar-nav text-capitalize list-unstyled text-center w-100 row-gap-3">
                         <li class="nav-item">
                             <a href="{{route('landing')}}" class="nav-link nav-home">home</a>
                         </li>

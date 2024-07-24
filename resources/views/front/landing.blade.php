@@ -8,9 +8,13 @@
         }
     }
 
-    @media (max-width: 991.98px) {
+    .img-goal {
+        width: 36%;
+        height: auto;
+    }
+    @media (max-width: 767.98px) {
         .img-goal {
-            max-width: 210px;
+            max-width: 121px;
         }
     }
 
@@ -52,7 +56,7 @@
 </section>
 <section>
     <div class="container-fluid p-0">
-        <div class="row g-0 row-cols-1 row-cols-lg-2">
+        <div class="row g-0 row-cols-1 row-cols-md-2">
             <div class="col bg-dark position-relative overflow-hidden">
                 <img src="{{asset('assets/img/landing/warehouse.jpg')}}" class="object-fit-cover position-absolute top-50 start-50 translate-middle" alt="">
             </div>
@@ -78,7 +82,7 @@
                             </p>
                         </div>
                         <div class="text-end">
-                            <img src="{{asset('assets/img/goal-bg.png')}}" width="50%" height="auto" alt="" class="img-goal">
+                            <img src="{{asset('assets/img/goal-bg.png')}}" alt="" class="img-goal">
                         </div>
                     </div>
                 </div>
@@ -92,9 +96,7 @@
             OUR <b class="fw-bold">PRODUCTS</b>
         </h5>
         <p>
-            We specialize in manufacturing and supplying high-quality industrial products. With a commitment to excellence, we deliver reliable solutions that empower businesses across various sectors.
-            <br>
-            Our expertise lies in supplying a wide range of industrial products tailored for use in industrial environments such as hoses, pipes, tubings, fittings, valves, tools and the like.
+            We specialize in manufacturing and supplying high-quality industrial products. With a commitment to excellence, we deliver reliable solutions that empower businesses across various sectors. Our expertise lies in supplying a wide range of industrial products tailored for use in industrial environments such as hoses, pipes, tubings, fittings, valves, tools and the like.
             <br><br>
             We recognise the manufacturing challenges you encounter and are dedicated to provide solutions that enhance efficiency, reduce downtime and support you in achieving your safety, quality, delivery and working performance. Let us be your go-to source for industrial excellence.
         </p>
