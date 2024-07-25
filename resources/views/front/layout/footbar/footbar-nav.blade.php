@@ -1,4 +1,4 @@
-<ul class="list-unstyled text-capitalize">
+<ul class="list-unstyled text-capitalize d-flex flex-column row-gap-2">
     <li><a href="{{route('landing')}}" class="nav-home">home</a></li>
     <li><a href="{{route('about')}}" class="nav-about">about SDA</a></li>
     <li><a href="{{route('industries')}}" class="nav-industries">industries</a></li>

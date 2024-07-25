@@ -66,7 +66,9 @@
                         <li>
                             <h5 class="fs-5"><b class="fw-bold">Head Office</b></h5>
                             <p>
-                                Jl. Margomulyo Indah 1A No. 7-8 Surabaya 60186, Jawa Timur - Indonesia
+                                Jl. Margomulyo Indah 1A No. 7-8
+                                <br>
+                                Surabaya 60186, Jawa Timur - Indonesia
                                 <br>
                                 Telephone : <a href="telp:+62317482190" target="_blank">+62 31 748 2190</a>, <a href="tel:+62317482193" target="_blank">748 2193</a>
                             </p>
@@ -76,7 +78,9 @@
                             <p>
                                 Komp. Raden Saleh Permai Kav. 19-20
                                 <br>
-                                Jl. Raden Saleh No. 45, Surabaya 60174, Jawa Timur - Indonesia
+                                Jl. Raden Saleh No. 45
+                                <br>
+                                Surabaya 60174, Jawa Timur - Indonesia
                                 <br>
                                 Telephone : <a href="telp:+62315468800" target="_blank">+62 31 546 8800</a>, <a href="tel:+62315467700" target="_blank">5467700</a>
                             </p>
