@@ -102,7 +102,7 @@
         </p>
     </div>
 </section>
-<section>
+<section id="home-products">
     <div class="container">
         <div class="row row-cols-2 g-2 g-md-3 row-cols-lg-3 g-xl-4">
             <div class="col">

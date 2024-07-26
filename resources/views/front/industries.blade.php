@@ -74,7 +74,11 @@
                                 <b class="fw-bold">agriculture</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                Our goal is to provide you with the most advanced and efficient solutions that will help you maximize your farm's productivity and profitability.
+                                <br>
+                                In addition to our range of hoses, belts, and hydraulic solutions, we also offer comprehensive support and maintenance services to ensure the longevity and optimal performance of your equipment. We understand the importance of minimizing downtime and maximizing uptime, and we are committed to providing timely and reliable assistance whenever you need it.
+                                <br>
+                                At SDA Global, we value the trust and partnership we have with our customers. We strive to build long-lasting relationships by consistently delivering top-quality products and exceptional customer service.
                             </p>
                         </div>
                     </div>
@@ -91,7 +95,7 @@
                                 <b class="fw-bold">automotive</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                Our commitment is to quality, reliability, and performance. We supply advanced materials compounded with an experienced team of engineers who continually set new industry standards supports for our high-quality products. As we face the challenges presented by future seasons, you can rely on us to be your reliable and dedicated partner.
                             </p>
                         </div>
                     </div>
@@ -108,7 +112,7 @@
                                 <b class="fw-bold">construction</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                Equipment in construction environments is subject to harsh conditions such as sun exposure, chemical exposure, abrasion, and weathering. Costly downtime can result from these conditions, which can lead to premature equipment failure. With a commitment to efficiency, SDA Global provides the necessary products to help you get the job done. We are committed to ensuring that you have the necessary products to efficiently complete your job. Reach out to us for help with your most challenging applications.
                             </p>
                         </div>
                     </div>
@@ -125,7 +129,7 @@
                                 <b class="fw-bold">consumer products</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                SDA Global is dedicated to delivering reliable solutions to diverse sectors, including off-shore oil operations and commercial agriculture. We extend our dedication to providing exceptional solutions to everyday applications, ensuring peak performance for your tools, machines, and appliances. Our products, such as belts and industrial hoses, are engineered for superior performance through meticulous research and high-quality materials, surpassing competitors in durability.
                             </p>
                         </div>
                     </div>
@@ -142,7 +146,7 @@
                                 <b class="fw-bold">food & beverages</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                We serve as a prominent symbol of innovation in providing products for the food and beverage manufacturing industry. We offer cutting-edge hygienic conveyor belts, food grade industrial hoses, and clean power transmission solutions. Our products are carefully designed to enhance performance, decrease the need for maintenance, and lower the risk of contamination, all while meeting the industry's demanding standards for efficiency, quality, and safety.
                             </p>
                         </div>
                     </div>
@@ -193,7 +197,7 @@
                                 <b class="fw-bold">HVAC</b>
                             </h5>
                             <p class="card-text small">
-                                The global HVACR systems market is experiencing growth due to the demand for innovative, eco friendly products that can be accessed from a distance. Manufacturers are embracing the challenge of complying with rigorous environmental regulations, overcoming supply chain disruptions caused by the COVID-19 pandemic, and striving to develop products that adhere to elevated air quality standards.
+                                The global HVAC systems market is experiencing growth due to the demand for innovative, eco friendly products that can be accessed from a distance. Manufacturers are embracing the challenge of complying with rigorous environmental regulations, overcoming supply chain disruptions caused by the COVID-19 pandemic, and striving to develop products that adhere to elevated air quality standards.
                             </p>
                         </div>
                     </div>
