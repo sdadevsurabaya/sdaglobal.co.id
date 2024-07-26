@@ -32,7 +32,7 @@
                             <a href="{{route('landing')}}" class="nav-link nav-home">home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#home-products" class="nav-link nav-home">products</a>
+                            <a href="#home-products" class="nav-link">products</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('about')}}" class="nav-link nav-about">about SDA</a>
