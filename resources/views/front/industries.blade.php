@@ -163,7 +163,11 @@
                                 <b class="fw-bold">general manufacturing</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                Acknowledging the obstacles inherent in your production operations, we are firmly devoted to utilizing our extensive industry experience to offer solutions that optimize efficiency, mitigate downtime, and support your endeavors in attaining safety, quality, delivery, and financial performance targets.
+                                <br><br>
+                                The unwavering commitment we have to excellence is exemplified by our decision to replace outdated roller chains with advanced maintenance-free synchronous belt drives, as well as our efforts to supply hose and hydraulic systems in order to simplify maintenance procedures and strengthen safety measures.
+                                <br><br>
+                                SDA Global is devoted to supplying essential resources, support, and cutting-edge solutions to foster advancement in the manufacturing process.
                             </p>
                         </div>
                     </div>
@@ -180,7 +184,7 @@
                                 <b class="fw-bold">heavy duty industrial equipments</b>
                             </h5>
                             <p class="card-text small">
-                                The industrial manufacturing sector is going through significant transformation due to the emergence of advanced technologies. This shift involves the integration of intelligent and autonomous systems with data analytics and machine learning. This integration is driving the development of smart factories where equipment, processes, personnel, and devices are interconnected. Our products are designed with sublime innovation to enhance plant efficiency and productivity, while also minimising costs, effluent and other waste.
+                                Within the heavy-duty industries, SDA Global is renowned for delivering dependable belt, industrial hose, and hydraulic solutions that are meticulously designed to optimize efficiency and mitigate operational disruptions.
                             </p>
                         </div>
                     </div>
@@ -197,7 +201,7 @@
                                 <b class="fw-bold">HVAC</b>
                             </h5>
                             <p class="card-text small">
-                                The global HVAC systems market is experiencing growth due to the demand for innovative, eco friendly products that can be accessed from a distance. Manufacturers are embracing the challenge of complying with rigorous environmental regulations, overcoming supply chain disruptions caused by the COVID-19 pandemic, and striving to develop products that adhere to elevated air quality standards.
+                                The current expansion of the global HVACR systems market is attributed to the increasing need for advanced, environmentally friendly products that offer remote accessibility.
                             </p>
                         </div>
                     </div>
@@ -231,7 +235,7 @@
                                 <b class="fw-bold">machine tools & precission equipment</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                SDA Global has earned a prestigious reputation for its capability to enhance industrial applications by providing high-performance, high-precision power transmission solutions, along with safe and reliable hydraulic solutions.
                             </p>
                         </div>
                     </div>
