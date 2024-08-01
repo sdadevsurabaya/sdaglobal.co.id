@@ -69,8 +69,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/agriculture.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">agriculture</b>
                             </h5>
                             <p class="card-text small">
@@ -90,8 +90,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/automotive.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">automotive</b>
                             </h5>
                             <p class="card-text small">
@@ -107,8 +107,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/construction.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">construction</b>
                             </h5>
                             <p class="card-text small">
@@ -124,8 +124,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/consumer-product.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">consumer products</b>
                             </h5>
                             <p class="card-text small">
@@ -141,8 +141,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/f&b.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">food & beverages</b>
                             </h5>
                             <p class="card-text small">
@@ -158,8 +158,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/manufacturing.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">general manufacturing</b>
                             </h5>
                             <p class="card-text small">
@@ -179,8 +179,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/industiral.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">heavy duty industrial equipments</b>
                             </h5>
                             <p class="card-text small">
@@ -196,8 +196,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/hvac.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">HVAC</b>
                             </h5>
                             <p class="card-text small">
@@ -213,8 +213,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/garden.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">LAWN, GARDEN & PROFESSIONAL LANDSCAPING</b>
                             </h5>
                             <p class="card-text small">
@@ -230,8 +230,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/machines.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">MACHINE TOOL & PRECISION EQUIPMENT</b>
                             </h5>
                             <p class="card-text small">
@@ -247,8 +247,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/micromobility.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">micromobility</b>
                             </h5>
                             <p class="card-text small">
@@ -264,8 +264,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/mining.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">mining</b>
                             </h5>
                             <p class="card-text small">
@@ -281,8 +281,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/oil.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">oil & gas</b>
                             </h5>
                             <p class="card-text small">
@@ -298,8 +298,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/sports.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">powersports</b>
                             </h5>
                             <p class="card-text small">
@@ -315,8 +315,8 @@
                         <div class="ratio ratio-21x9 ratio-lg-1x1 bg-secondary">
                             <img src="{{asset('assets/img/industries/truck.jpg')}}" class="object-fit-cover" alt="...">
                         </div>
-                        <div class="card-body bg-primary text-light">
-                            <h5 class="card-title text-uppercase fs-4">
+                        <div class="card-body bg-primary text-light d-lg-block">
+                            <h5 class="card-title text-uppercase fs-4 mb-3">
                                 <b class="fw-bold">truck & bus</b>
                             </h5>
                             <p class="card-text small">
