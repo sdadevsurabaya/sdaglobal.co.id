@@ -75,10 +75,8 @@
                             </h5>
                             <p class="card-text small">
                                 Misi utama kami adalah menyediakan solusi paling tepat dan efektif guna memaksimalkan produktivitas serta profitabilitas usaha pertanian Anda.
-                                <br>
-                                Selain berbagai selang, sabuk mesin, dan sistem hidraulik, kami juga menyediakan layanan pemeliharaan prima guna menjaga performa peralatan Anda tetap optimal. Kami paham pentingnya efisiensi, dan karena itu kami menyediakan layanan tepat waktu dan penuh komitmen.
-                                <br>
-                                Di SDA Global kami menjunjung tinggi nilai kepercayaan dan kerja sama dalam jangka panjang. Untuk itu, kami akan terus memberikan lini produk dan pelayanan terbaik.
+                                <br><br>
+                                Selain berbagai selang, sabuk mesin, dan sistem hidraulik, kami juga menyediakan layanan pemeliharaan prima guna menjaga performa peralatan Anda tetap optimal. Kami paham pentingnya efisiensi, dan karena itu kami menyediakan layanan tepat waktu dan penuh komitmen. Di SDA Global kami menjunjung tinggi nilai kepercayaan dan kerja sama dalam jangka panjang. Untuk itu, kami akan terus memberikan lini produk dan pelayanan terbaik.
                             </p>
                         </div>
                     </div>
@@ -160,10 +158,12 @@
                         </div>
                         <div class="card-body bg-primary text-light">
                             <h5 class="card-title text-uppercase fs-4">
-                                <b class="fw-bold">general manufacturing</b>
+                                <b class="fw-bold">MANUFAKTUR UMUM</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                Guna memahami setiap kendala dalam proses manufaktur, kita perlu memahami kapasitas dan pengalaman, lalu menemukan solusi untuk mengoptimalkan produksi, efisiensi, serta meminimalisir kerugian sehingga target performa dan keuangan tercapai.
+                                <br><br>
+                                Kami senantiasa memperbarui alat dengan inovasi terbaru, termasuk memperbarui sistem selang, sabuk, dan sistem hidraulik yang banyak dipakai. Komitmen kami adalah menyalurkan alat dan perlengkapan terbaik, sistem pendukung, serta hal-hal lain yang mendorong proses manufaktur lebih baik.
                             </p>
                         </div>
                     </div>
@@ -211,7 +211,7 @@
                         </div>
                         <div class="card-body bg-primary text-light">
                             <h5 class="card-title text-uppercase fs-4">
-                                <b class="fw-bold">lawn, garden & professional lanscaping</b>
+                                <b class="fw-bold">LAWN, GARDEN & PROFESSIONAL LANDSCAPING</b>
                             </h5>
                             <p class="card-text small">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
@@ -228,10 +228,10 @@
                         </div>
                         <div class="card-body bg-primary text-light">
                             <h5 class="card-title text-uppercase fs-4">
-                                <b class="fw-bold">machine tools & precission equipment</b>
+                                <b class="fw-bold">MESIN DAN PERALATAN PRESISI</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                SDA Global telah lama diakui untuk meningkatkan kapasitas industrial dengan sistem power transmisi yang tepat guna dan presisi. Selain itu, juga diakui sebagai  konsultan utama penyediaan solusi hidraulik yang dibutuhkan banyak industri.
                             </p>
                         </div>
                     </div>
@@ -245,7 +245,7 @@
                         </div>
                         <div class="card-body bg-primary text-light">
                             <h5 class="card-title text-uppercase fs-4">
-                                <b class="fw-bold">micromobility</b>
+                                <b class="fw-bold">MICROMOBILITY</b>
                             </h5>
                             <p class="card-text small">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
@@ -313,7 +313,7 @@
                         </div>
                         <div class="card-body bg-primary text-light">
                             <h5 class="card-title text-uppercase fs-4">
-                                <b class="fw-bold">truck & bus</b>
+                                <b class="fw-bold">truk & bus</b>
                             </h5>
                             <p class="card-text small">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?

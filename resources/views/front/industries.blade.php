@@ -215,7 +215,7 @@
                         </div>
                         <div class="card-body bg-primary text-light">
                             <h5 class="card-title text-uppercase fs-4">
-                                <b class="fw-bold">lawn, garden & professional lanscaping</b>
+                                <b class="fw-bold">LAWN, GARDEN & PROFESSIONAL LANDSCAPING</b>
                             </h5>
                             <p class="card-text small">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
@@ -232,7 +232,7 @@
                         </div>
                         <div class="card-body bg-primary text-light">
                             <h5 class="card-title text-uppercase fs-4">
-                                <b class="fw-bold">machine tools & precission equipment</b>
+                                <b class="fw-bold">MACHINE TOOL & PRECISION EQUIPMENT</b>
                             </h5>
                             <p class="card-text small">
                                 SDA Global has earned a prestigious reputation for its capability to enhance industrial applications by providing high-performance, high-precision power transmission solutions, along with safe and reliable hydraulic solutions.
