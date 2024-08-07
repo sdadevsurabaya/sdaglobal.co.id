@@ -93,6 +93,52 @@
         @if (session('success'))
             toastr.success("{{ session('success') }}");
         @endif
+
+        function langen() {
+            // alert("Tombol diklik english!");
+            var langen = document.getElementById("btn-langen");
+            var langid = document.getElementById("btn-langid");
+
+            $.ajax({
+                url: "{{ url('/sessionlang') }}",
+                type: 'POST',
+                data: {
+                        "lang": "langen",
+                    },
+                success: function(response) {
+                    langen.classList.add("active");
+                    langid.classList.remove("active");
+                    location.reload();
+                    // console.log(response.data)
+                },
+                error: function(xhr) {
+                    alert('An error occurred');
+                }
+            });
+        }
+
+        function langid() {
+            // alert("Tombol diklik indo!");
+            var langen = document.getElementById("btn-langen");
+            var langid = document.getElementById("btn-langid");
+
+            $.ajax({
+                url: "{{ url('/sessionlang') }}",
+                type: 'POST',
+                data: {
+                        "lang": "langid",
+                    },
+                success: function(response) {
+                    langen.classList.remove("active");
+                    langid.classList.add("active");
+                    location.reload();
+                    // console.log(response.data)
+                },
+                error: function(xhr) {
+                    alert('An error occurred');
+                }
+            });
+        }
     </script>
     @yield('pageScripts')
 

@@ -10,6 +10,13 @@ class AboutController extends Controller
     public function about()
     {
         $title = 'About Us';
-        return view('front.about', compact('title'));
+
+        $lang = session()->get('lang');
+        if ($lang != "langid") {
+            return view('front.about', compact('title'));
+        } else {
+            return view('front.id.about', compact('title'));
+        }
+
     }
 }

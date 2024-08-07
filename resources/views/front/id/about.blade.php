@@ -102,7 +102,7 @@
                 <div class="col py-5">
                     <div class="p-4 bg-lg-primary text-light px-md-5">
                         <h5 class="display-3 text-center text-lg-start">
-                            ABOUT
+                            TENTANG
                             <br class="d-none d-lg-inline"><b class="fw-bold">SDA</b>
                         </h5>
                     </div>
@@ -114,7 +114,7 @@
 <section class="bg-primary text-light">
     <div class="container">
         <p>
-            SDA Global takes pride in its reputation as a reliable and customer-centric organization. Since our inception on June 2, 1992, we have remained committed to fulfilling our customers' needs. Starting with hydraulic and pneumatic products, we expanded our portfolio to include industrial solutions. Our knowledgeable team offers friendly advice based on years of combined experience and friendly demeanor.
+            SDA Global bangga dengan prinsip organisasi yang mengedepankan pengalaman terbaik bagi pelanggan. Sejak didirikan pada 2 Juni 1992, kami terus berkomitmen memenuhi kebutuhan para pelanggan kami dengan baik. Dimulai dengan produk-produk hidraulik dan pneumatik, portofolio kami terus berkembang meliputi berbagai solusi industrial. Tim berwawasan teknis dengan keramahan yang khas siap melayani setiap kebutuhan Anda.
         </p>
     </div>
     <div class="container">
@@ -128,33 +128,33 @@
             </div>
             <div class="col col-12 col-lg-7 col-xl-6 order-lg-1" style="padding-bottom: 4em;">
                 <h5 class="page-title">
-                    <b class="fw-bold">MISSION</b> <br class="d-none d-lg-block">STATEMENT
+                    <b class="fw-bold">MISI</b> <br class="d-none d-lg-block">KAMI
                 </h5>
                 <ul class="list-unstyled d-flex flex-column row-gap-3">
                     <li>
-                        <b class="fw-bold fs-5">Customer Satisfaction</b>
+                        <b class="fw-bold fs-5">Kepuasan Pelanggan</b>
                         <br>
-                        We strive to understand our customers' requirements thoroughly and deliver solutions that exceed their expectations.
+                        Kami terus memahami kebutuhan pelanggan secara cermat guna memberikan solusi paling tepat.
                     </li>
                     <li>
-                        <b class="fw-bold fs-5">Quality Assurance</b>
+                        <b class="fw-bold fs-5">Penjaminan Mutu</b>
                         <br>
-                        Our commitment to quality ensures that every product and service we offer meets the highest standards.
+                        Komitmen kami memastikan kualitas setiap produk dan pelayanan memenuhi standar tinggi.
                     </li>
                     <li>
-                        <b class="fw-bold fs-5">Timeliness</b>
+                        <b class="fw-bold fs-5">Menghargai Waktu</b>
                         <br>
-                        We value your time. Our efficient processes and dedicated team ensure timely delivery.
+                        Kami menghargai waktu Anda. Proses kami sangat efisien guna menjamin semua proses pelayanan lebih cepat dan tepat.
                     </li>
                     <li>
-                        <b class="fw-bold fs-5">Competitive Edge</b>
+                        <b class="fw-bold fs-5">Keunggulan Kompetitif</b>
                         <br>
-                        We stay ahead of the curve by offering competitive pricing, innovative solutions supported by comprehensive inventory for the market.
+                        Kami unggul dalam hal harga, inovasi solusi, serta pelayanan didukung oleh sistem inventori yang lengkap.
                     </li>
                     <li>
-                        <b class="fw-bold fs-5">Mutual Success</b>
+                        <b class="fw-bold fs-5">Sukses Bersama</b>
                         <br>
-                        We believe in fostering strong relationships with our valuable customers, trusted suppliers, prestigious corporation and the dynamic community.
+                        Kami percaya sukses berawal dari hubungan baik yang dipupuk dengan pelanggan, penyalur, korporasi, serta masyarakat luas yang dinamis.
                     </li>
                 </ul>
             </div>
@@ -164,10 +164,10 @@
 <section>
     <div class="container">
         <h5 class="page-title text-primary">
-            <b class="fw-bold">VISION</b> <br class="d-none d-lg-block">STATEMENT
+            <b class="fw-bold">VISI</b> <br class="d-none d-lg-block">KAMI
         </h5>
         <p>
-            SDA Global aims to be the paragon of the value-added problem-solving institution. We provide superior person-to-person individualized service to all our customers and prospects. Our vision is to be the go-to partner for industrial supply, offering personalized solutions that make a difference. Additionally, we envision expanding our reach through e-commerce, providing seamless online experiences for our valued clients.
+            SDA Global hadir menjadi pemimpin industri yang menyediakan solusi. Kami menyediakan layanan guna memenuhi kebutuhan khusus setiap pelanggan dan prospek. Visi kami adalah menjadi rekan utama pemenuhan kebutuhan industri, dengan solusi jitu bagi setiap pelanggan. Kami juga memperluas cakupan pasar kami lewat e-commerce dan melayani pelanggan lebih banyak lagi.
         </p>
     </div>
     <div class="container">
@@ -181,10 +181,10 @@
             </div>
             <div class="col col-12 col-lg-7">
                 <h5 class="display-5 mb-3 text-primary">
-                    SOPHISTICATED <br class="d-none d-lg-block"><b class="fw-bold">INFRASTRUCTURE</b>
+                    INFRASTRUKTUR <br class="d-none d-lg-block"><b class="fw-bold">CANGGIH</b>
                 </h5>
                 <p>
-                    Our robust and expansive warehouse empowers us to fulfill orders of any quantity, whether they are substantial or modest, regardless of the location. Our extensive dealer network ensures timely product delivery across the country. The dedication and expertise of our experienced staff have been instrumental in our remarkable success.
+                    Jaringan gudang dan galeri toko kami menyokong pemenuhan pesanan dan konsultasi dalam berbagai skala dan jumlah, tanpa batasan lokasi. Jaringan dealer dan distributor juga memastikan penyaluran produk tepat waktu ke semua daerah. Tim berpengalaman kami memastikan sistem pelayanan ini bekerja dengan baik dengan tingkat keberhasilan yang tinggi.
                 </p>
             </div>
         </div>
@@ -202,28 +202,28 @@
             </div>
             <div class="col col-12 col-lg-7 order-lg-1">
                 <h5 class="display-5 mb-3">
-                    COMPETITIVE <br class="d-none d-lg-block"><b class="fw-bold">STRENGTHS</b>
+                    KEUNGGULAN <br class="d-none d-lg-block"><b class="fw-bold">KOMPETITIF</b>
                 </h5>
                 <ul class="list-unstyled d-flex flex-column row-gap-3">
                     <li>
-                        <b class="fw-bold fs-5">Technical Proficiency</b>
+                        <b class="fw-bold fs-5">Keahlian Teknis</b>
                         <br>
-                        Supported by a team of skilled and knowledgeable staff.
+                        Didukung oleh tim ahli dan berwawasan di bidangnya.
                     </li>
                     <li>
-                        <b class="fw-bold fs-5">Quality Assurance</b>
+                        <b class="fw-bold fs-5">Penjaminan Mutu</b>
                         <br>
-                        Meeting customer requirements and industry standards consistently.
+                        Konsisten memenuhi kebutuhan konsumen dan standar industri yang semakin tinggi.
                     </li>
                     <li>
-                        <b class="fw-bold fs-5">Timely Deliveries</b>
+                        <b class="fw-bold fs-5">Pelayanan Tepat Waktu</b>
                         <br>
-                        Ensuring products are delivered promptly every time.
+                        Memastikan produk disediakan dan disalurkan secara cepat dan tepat.
                     </li>
                     <li>
-                        <b class="fw-bold fs-5">Affordable Pricing</b>
+                        <b class="fw-bold fs-5">Harga Terjangkau</b>
                         <br>
-                        Offering market-friendly prices that provide value for both clients and end users.
+                        Menawarkan harga yang ramah dengan nilai terbaik bagi pelanggan dan pengguna.
                     </li>
                 </ul>
             </div>
@@ -238,10 +238,10 @@
             </div>
             <div class="col col-12 col-lg-7 order-lg-1">
                 <h5 class="display-5 mb-3">
-                    CUSTOMERS' <br class="d-none d-lg-block"><b class="fw-bold">SATISFACTION</b>
+                    KEPUASAN <br class="d-none d-lg-block"><b class="fw-bold">PELANGGAN</b>
                 </h5>
                 <p>
-                    Our dedicated professionals have built strong relationships with clients by consistently delivering an extensive range of economical, high-performing, durable, and safe industrial products. We prioritize customer satisfaction, actively seeking and valuing customer feedback. This input helps us enhance product quality while ensuring competitive pricing, ultimately bringing immense gratification to clients across Indonesia.
+                    Tim profesional kami senantiasa membangun hubungan baik dengan konsumen guna memenuhi kebutuhan produk dan layanan yang terbaik, andal, dan tepat guna. Kami mengutamakan kepuasan pelanggan, juga senantiasa menerima masukan, kritik, dan saran. Ini membantu kami terus menyediakan kualitas terbaik, juga pelayanan yang memuaskan di seluruh wilayah operasional kami.
                 </p>
             </div>
         </div>
@@ -271,10 +271,10 @@
                     <div class="row g-0 align-items-center">
                         <div class="col col-12 col-sm-8">
                             <h5 class="display-5 mb-3 text-primary">
-                                PRECISION <br class="d-none d-lg-block"><b class="fw-bold">ENGINEERING</b>
+                                LAYANAN <br class="d-none d-lg-block"><b class="fw-bold">TEKNIK PRESISI</b>
                             </h5>
                             <p>
-                                At SDA Global, we offer a comprehensive one-stop solution for all your precision engineering needs. Where skilled machinists create intricate parts with precision using cutting-edge machinery.
+                                Kami juga menyediakan solusi komplit untuk kebutuhan alat atau suku cadang presisi. Mekanik berkeahlian khusus membantu Anda membuat dan menguji alat-alat presisi ini menggunakan teknologi tercanggih.
                             </p>
                         </div>
                         <div class="col col-12 col-sm-4">

@@ -24,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [LandingController::class, 'landing'])->name('landing');
+Route::post('/sessionlang', [LandingController::class, 'sessionlang'])->name('sessionlang');
 Route::get('/industries', [IndustriesController::class, 'industries'])->name('industries');
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');

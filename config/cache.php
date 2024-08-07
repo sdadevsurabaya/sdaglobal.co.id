@@ -55,6 +55,11 @@ return [
             'lock_path' => storage_path('framework/cache/data'),
         ],
 
+        'redis' => [
+            'driver' => 'redis',
+            'connection' => 'default',
+        ],
+
         'memcached' => [
             'driver' => 'memcached',
             'persistent_id' => env('MEMCACHED_PERSISTENT_ID'),
@@ -74,11 +79,32 @@ return [
             ],
         ],
 
-        'redis' => [
-            'driver' => 'redis',
-            'connection' => 'cache',
-            'lock_connection' => 'default',
-        ],
+        // 'memcached' => [
+        //     'driver' => 'memcached',
+        //     'persistent_id' => env('MEMCACHED_PERSISTENT_ID'),
+        //     'sasl' => [
+        //         env('MEMCACHED_USERNAME'),
+        //         env('MEMCACHED_PASSWORD'),
+        //     ],
+        //     'options' => [
+        //         // Some options may require the php-memcached extension to be installed.
+        //         // See: https://github.com/php-memcached-dev/php-memcached#options
+        //         // Memcached::OPT_CONNECT_TIMEOUT => 2000,
+        //     ],
+        //     'servers' => [
+        //         [
+        //             'host' => env('MEMCACHED_HOST', '127.0.0.1'),
+        //             'port' => env('MEMCACHED_PORT', 11211),
+        //             'weight' => 100,
+        //         ],
+        //     ],
+        // ],
+
+        // 'redis' => [
+        //     'driver' => 'redis',
+        //     'connection' => 'cache',
+        //     'lock_connection' => 'default',
+        // ],
 
         'dynamodb' => [
             'driver' => 'dynamodb',

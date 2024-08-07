@@ -50,8 +50,8 @@
                 <div class="col py-5">
                     <div class="p-4 bg-lg-primary text-primary text-lg-light px-md-5">
                         <h5 class="display-3 text-center text-lg-start">
-                            INDUSTRIES
-                            <br class="d-none d-lg-inline"><b class="fw-bold">WE SERVE</b>
+                            ANDALAN
+                            <br class="d-none d-lg-inline"><b class="fw-bold">BERBAGAI INDUSTRI</b>
                         </h5>
                     </div>
                 </div>
@@ -71,14 +71,12 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">agriculture</b>
+                                <b class="fw-bold">PERTANIAN</b>
                             </h5>
                             <p class="card-text small">
-                                Our goal is to provide you with the most advanced and efficient solutions that will help you maximize your farm's productivity and profitability.
-                                <br>
-                                In addition to our range of hoses, belts, and hydraulic solutions, we also offer comprehensive support and maintenance services to ensure the longevity and optimal performance of your equipment. We understand the importance of minimizing downtime and maximizing uptime, and we are committed to providing timely and reliable assistance whenever you need it.
-                                <br>
-                                At SDA Global, we value the trust and partnership we have with our customers. We strive to build long-lasting relationships by consistently delivering top-quality products and exceptional customer service.
+                                Misi utama kami adalah menyediakan solusi paling tepat dan efektif guna memaksimalkan produktivitas serta profitabilitas usaha pertanian Anda.
+                                <br><br>
+                                Selain berbagai selang, sabuk mesin, dan sistem hidraulik, kami juga menyediakan layanan pemeliharaan prima guna menjaga performa peralatan Anda tetap optimal. Kami paham pentingnya efisiensi, dan karena itu kami menyediakan layanan tepat waktu dan penuh komitmen. Di SDA Global kami menjunjung tinggi nilai kepercayaan dan kerja sama dalam jangka panjang. Untuk itu, kami akan terus memberikan lini produk dan pelayanan terbaik.
                             </p>
                         </div>
                     </div>
@@ -92,10 +90,10 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">automotive</b>
+                                <b class="fw-bold">OTOMOTIF</b>
                             </h5>
                             <p class="card-text small">
-                                Our commitment is to quality, reliability, and performance. We supply advanced materials compounded with an experienced team of engineers who continually set new industry standards supports for our high-quality products. As we face the challenges presented by future seasons, you can rely on us to be your reliable and dedicated partner.
+                                Komitmen kami bertumpu pada kualitas, layanan, serta performa otomotif yang andal. Untuk itu kami hanya menyuplai material-material terbaik yang diuji dan diawasi langsung oleh tim teknis ahli dengan standar dan hasil kerja terbaik. Guna menghadapi tantangan industri di masa depan, percayakan performa dan pemeliharaan otomotif Anda kepada kami.
                             </p>
                         </div>
                     </div>
@@ -109,10 +107,10 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">construction</b>
+                                <b class="fw-bold">KONSTRUKSI</b>
                             </h5>
                             <p class="card-text small">
-                                Equipment in construction environments is subject to harsh conditions such as sun exposure, chemical exposure, abrasion, and weathering. Costly downtime can result from these conditions, which can lead to premature equipment failure. With a commitment to efficiency, SDA Global provides the necessary products to help you get the job done. We are committed to ensuring that you have the necessary products to efficiently complete your job. Reach out to us for help with your most challenging applications.
+                                Peralatan konstruksi kerap menghadapi lingkungan yang keras dan berbahaya, seperti terik matahari, paparan bahan kimia, abrasi, sampai risiko cuaca, berimbas pada menurunnya fungsi dan berujung kerugian. Dengan komitmen tinggi pada efisiensi operasional, SDA Global menyediakan produk-produk prima demi performa proyek yang lebih baik. Kami percaya bahwa efektivitas dan efisiensi pekerjaan sangat penting dalam industri konstruksi, termasuk bagi bisnis Anda. Bersama kami, temukan solusi untuk setiap tantangan proyek yang Anda hadapi.
                             </p>
                         </div>
                     </div>
@@ -126,10 +124,10 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">consumer products</b>
+                                <b class="fw-bold">MANUFAKTUR PRODUK KONSUMEN/FMCG</b>
                             </h5>
                             <p class="card-text small">
-                                SDA Global is dedicated to delivering reliable solutions to diverse sectors, including off-shore oil operations and commercial agriculture. We extend our dedication to providing exceptional solutions to everyday applications, ensuring peak performance for your tools, machines, and appliances. Our products, such as belts and industrial hoses, are engineered for superior performance through meticulous research and high-quality materials, surpassing competitors in durability.
+                                SDA Global bertekad menyediakan solusi industrial lengkap untuk berbagai sektor, termasuk manufaktur produk konsumen yang bergerak cepat (FMCG). Kami menyediakan solusi operasional yang andal, termasuk peralatan produksi, sistem kerja mesin beserta pemeliharaannya. Produk-produk kami seperti sabuk mesin dan selang-selang industri dirancang dan diuji khusus untuk performa tinggi dan operasi terus-menerus, memaksimalkan keuntungan ekonomi dalam jangka panjang.
                             </p>
                         </div>
                     </div>
@@ -143,10 +141,10 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">food & beverages</b>
+                                <b class="fw-bold">MAKANAN & MINUMAN</b>
                             </h5>
                             <p class="card-text small">
-                                We serve as a prominent symbol of innovation in providing products for the food and beverage manufacturing industry. We offer cutting-edge hygienic conveyor belts, food grade industrial hoses, and clean power transmission solutions. Our products are carefully designed to enhance performance, decrease the need for maintenance, and lower the risk of contamination, all while meeting the industry's demanding standards for efficiency, quality, and safety.
+                                Kami menjadi simbol inovasi dalam menunjang industri manufaktur yang terus tumbuh. Berbagai inovasi dalam bentuk sabuk konveyor, selang industrial food grade, sampai transmisi mesin telah lama dipercayakan pada kami. Lini produk kami dirancang khusus untuk performa tinggi, minim pemeliharaan, dan minim risiko kontaminasi. Semua demi meningkatkan standar industri yang semakin berkualitas, efisien, dan aman.
                             </p>
                         </div>
                     </div>
@@ -160,14 +158,12 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">general manufacturing</b>
+                                <b class="fw-bold">MANUFAKTUR UMUM</b>
                             </h5>
                             <p class="card-text small">
-                                Acknowledging the obstacles inherent in your production operations, we are firmly devoted to utilizing our extensive industry experience to offer solutions that optimize efficiency, mitigate downtime, and support your endeavors in attaining safety, quality, delivery, and financial performance targets.
+                                Guna memahami setiap kendala dalam proses manufaktur, kita perlu memahami kapasitas dan pengalaman, lalu menemukan solusi untuk mengoptimalkan produksi, efisiensi, serta meminimalisir kerugian sehingga target performa dan keuangan tercapai.
                                 <br><br>
-                                The unwavering commitment we have to excellence is exemplified by our decision to replace outdated roller chains with advanced maintenance-free synchronous belt drives, as well as our efforts to supply hose and hydraulic systems in order to simplify maintenance procedures and strengthen safety measures.
-                                <br><br>
-                                SDA Global is devoted to supplying essential resources, support, and cutting-edge solutions to foster advancement in the manufacturing process.
+                                Kami senantiasa memperbarui alat dengan inovasi terbaru, termasuk memperbarui sistem selang, sabuk, dan sistem hidraulik yang banyak dipakai. Komitmen kami adalah menyalurkan alat dan perlengkapan terbaik, sistem pendukung, serta hal-hal lain yang mendorong proses manufaktur lebih baik.
                             </p>
                         </div>
                     </div>
@@ -181,10 +177,10 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">heavy duty industrial equipments</b>
+                                <b class="fw-bold">ALAT BERAT INDUSTRIAL</b>
                             </h5>
                             <p class="card-text small">
-                                Within the heavy-duty industries, SDA Global is renowned for delivering dependable belt, industrial hose, and hydraulic solutions that are meticulously designed to optimize efficiency and mitigate operational disruptions.
+                                Sektor industrial manufaktur terus mengalami transformasi seiring munculnya beragam teknologi baru. Pertumbuhan positif ini melibatkan sistem pintar dan autonomus berbasis data dan pemrograman cerdas. Integrasi ini terbukti menggenjot sektor manufaktur yang cerdas pula, baik dalam hal peralatan berat, proses, manajemen personel, sampai sistem operasional terpadu. Produk-produk kami dirancang untuk kebutuhan serbacepat ini, memastikan produktivitas serta efisiensi dalam setiap proses industri.
                             </p>
                         </div>
                     </div>
@@ -198,10 +194,10 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">HVAC</b>
+                                <b class="fw-bold">PENDINGIN & SIRKULASI UDARA (HVAC)</b>
                             </h5>
                             <p class="card-text small">
-                                The current expansion of the global HVACR systems market is attributed to the increasing need for advanced, environmentally friendly products that offer remote accessibility.
+                                Pasar sistem pengaturan suhu & sirkulasi udara (HVAC) sedang tumbuh pesat seiring permintaan global dan tumbuhnya inovasi yang memunculkan produk-produk eco-friendly yang mudah digunakan. Manufaktur berhadapan dengan aturan terkait lingkungan, tantangan supply chain pasca-pandemi, dengan menghasilkan produk-produk yang meningkatkan standar kualitas udara.
                             </p>
                         </div>
                     </div>
@@ -232,10 +228,10 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">MACHINE TOOL & PRECISION EQUIPMENT</b>
+                                <b class="fw-bold">MESIN DAN PERALATAN PRESISI</b>
                             </h5>
                             <p class="card-text small">
-                                SDA Global has earned a prestigious reputation for its capability to enhance industrial applications by providing high-performance, high-precision power transmission solutions, along with safe and reliable hydraulic solutions.
+                                SDA Global telah lama diakui untuk meningkatkan kapasitas industrial dengan sistem power transmisi yang tepat guna dan presisi. Selain itu, juga diakui sebagai  konsultan utama penyediaan solusi hidraulik yang dibutuhkan banyak industri.
                             </p>
                         </div>
                     </div>
@@ -249,7 +245,7 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">micromobility</b>
+                                <b class="fw-bold">MICROMOBILITY</b>
                             </h5>
                             <p class="card-text small">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
@@ -283,10 +279,10 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">oil & gas</b>
+                                <b class="fw-bold">MINYAK & GAS</b>
                             </h5>
                             <p class="card-text small">
-                                In the oil and gas industry, there are common trends influenced by the global shift towards renewable energy. Technological advancements, such as surface rock drilling and natural gas extraction, enhance productivity across all sectors. We provide the essential hardware to support our customers' goals.
+                                Tren global mulai bergeser pada pemenuhan kebutuhan energi baru & terbarukan. Pemenuhan teknologi seperti pengeboran darat dan penyaluran gas alam semakin memerlukan teknologi produktivitas di berbagai sektor. Kami menyediakan alat-alat penting guna mendukung operasi spesifik semacam ini.
                             </p>
                         </div>
                     </div>
@@ -317,7 +313,7 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">truck & bus</b>
+                                <b class="fw-bold">truk & bus</b>
                             </h5>
                             <p class="card-text small">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?

@@ -114,6 +114,12 @@ figcaption {
     background-color: var(--color-primary) !important;
 }
 
+@media (min-width: 992px) {
+    .bg-lg-primary {
+        background-color: var(--color-primary) !important;
+    }
+}
+
 .form-control,
 .btn,
 .btn-close,
@@ -127,7 +133,9 @@ figcaption {
 }
 
 @media (max-width: 575.98px) {
-    .container {
+
+    .container,
+    .container-sm-fluid {
         padding-left: 1.125em;
         padding-right: 1.125em;
         width: 100%;
@@ -148,6 +156,12 @@ figcaption {
 
 #nav-sosmed>a:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 992px) {
+    .ratio-lg-1x1 {
+        --bs-aspect-ratio: 100%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -173,12 +187,10 @@ figcaption {
 }
 
 .page-banner {
+    height: 560px;
     background-color: #d1d2d2;
-}
-
-.page-banner {
     background-repeat: no-repeat;
-    background-position-x: 60%;
+    background-position-x: center;
     background-position-y: bottom;
     background-size: cover;
 }
@@ -197,4 +209,11 @@ figcaption {
     color: inherit;
     font-size: .325em;
     transform: translateY(100%);
+}
+
+@media (min-width: 992px) {
+    .text-lg-light {
+        --bs-text-opacity: 1;
+        color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+    }
 }
