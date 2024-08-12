@@ -130,6 +130,8 @@
                             </h5>
                             <p class="card-text small">
                                 SDA Global is dedicated to delivering reliable solutions to diverse sectors, including off-shore oil operations and commercial agriculture. We extend our dedication to providing exceptional solutions to everyday applications, ensuring peak performance for your tools, machines, and appliances. Our products, such as belts and industrial hoses, are engineered for superior performance through meticulous research and high-quality materials, surpassing competitors in durability.
+                                <br>
+                                This means that you can rely on our products to help you complete tasks effectively and quickly.
                             </p>
                         </div>
                     </div>
@@ -163,7 +165,7 @@
                                 <b class="fw-bold">general manufacturing</b>
                             </h5>
                             <p class="card-text small">
-                                Acknowledging the obstacles inherent in your production operations, we are firmly devoted to utilizing our extensive industry experience to offer solutions that optimize efficiency, mitigate downtime, and support your endeavors in attaining safety, quality, delivery, and financial performance targets.
+                                Acknowledging the obstacles inherent in your production operations, we are firmly devoted to utilizing our extensive industry experience to offer solutions that optimize efficiency, mitigate downtime, and support your endeavours in attaining safety, quality, delivery, and financial performance targets.
                                 <br><br>
                                 The unwavering commitment we have to excellence is exemplified by our decision to replace outdated roller chains with advanced maintenance-free synchronous belt drives, as well as our efforts to supply hose and hydraulic systems in order to simplify maintenance procedures and strengthen safety measures.
                                 <br><br>
@@ -184,7 +186,7 @@
                                 <b class="fw-bold">heavy duty industrial equipments</b>
                             </h5>
                             <p class="card-text small">
-                                Within the heavy-duty industries, SDA Global is renowned for delivering dependable belt, industrial hose, and hydraulic solutions that are meticulously designed to optimize efficiency and mitigate operational disruptions.
+                                Within the heavy-duty industries, SDA Global is renowned for delivering dependable belt, industrial hose, and hydraulic solutions that are meticulously designed to optimize efficiency and mitigate operational disruptions. By choosing SDA Global's heavy duty industrial equipment solutions, you can elevate your operations and overcome any challenges that come your way.
                             </p>
                         </div>
                     </div>
@@ -201,7 +203,7 @@
                                 <b class="fw-bold">HVAC</b>
                             </h5>
                             <p class="card-text small">
-                                The current expansion of the global HVACR systems market is attributed to the increasing need for advanced, environmentally friendly products that offer remote accessibility.
+                                SDA Global provides HVAC solutions that not only reduce maintenance and lower energy costs but also ensure uninterrupted operations in a wide range of buildings. When you choose our supply of belt driven HVAC systems, you are choosing a solution that will help you decrease power consumption, minimize replacement costs, and eliminate the need for time-consuming maintenance tasks.
                             </p>
                         </div>
                     </div>
@@ -218,7 +220,7 @@
                                 <b class="fw-bold">LAWN, GARDEN & PROFESSIONAL LANDSCAPING</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                We understand the importance of reliable outdoor equipment when it comes to maintaining your yard. That is the reason why we work closely with top outdoor equipment manufacturers to provide suitable equipment for your garden. You can trust our products to perform optimally, minimizing any downtime during your yard work. Whether you need replacement parts or new accessories, our trusted partnership with leading manufacturers guarantees that you will find the perfect solution to beautify your garden.
                             </p>
                         </div>
                     </div>
@@ -235,7 +237,7 @@
                                 <b class="fw-bold">MACHINE TOOL & PRECISION EQUIPMENT</b>
                             </h5>
                             <p class="card-text small">
-                                SDA Global has earned a prestigious reputation for its capability to enhance industrial applications by providing high-performance, high-precision power transmission solutions, along with safe and reliable hydraulic solutions.
+                                SDA Global has earned a prestigious reputation for its capability to enhance industrial applications by providing high-performance, high-precision power transmission solutions, along with safe and reliable hydraulic solutions. With unwavering precision, we persist in providing the market with suitable products. Our equipment applications seamlessly integrate attention to detail, ensuring accuracy in every aspect. Our solutions are crafted to cater to your unique requirements.
                             </p>
                         </div>
                     </div>

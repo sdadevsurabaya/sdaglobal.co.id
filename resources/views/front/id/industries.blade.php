@@ -127,7 +127,7 @@
                                 <b class="fw-bold">MANUFAKTUR PRODUK KONSUMEN/FMCG</b>
                             </h5>
                             <p class="card-text small">
-                                SDA Global bertekad menyediakan solusi industrial lengkap untuk berbagai sektor, termasuk manufaktur produk konsumen yang bergerak cepat (FMCG). Kami menyediakan solusi operasional yang andal, termasuk peralatan produksi, sistem kerja mesin beserta pemeliharaannya. Produk-produk kami seperti sabuk mesin dan selang-selang industri dirancang dan diuji khusus untuk performa tinggi dan operasi terus-menerus, memaksimalkan keuntungan ekonomi dalam jangka panjang.
+                                SDA Global bertekad menyediakan solusi industrial lengkap untuk berbagai sektor, termasuk manufaktur produk konsumen yang bergerak cepat (FMCG). Kami menyediakan solusi operasional yang andal, termasuk peralatan produksi, sistem kerja mesin beserta pemeliharaannya. Produk-produk kami seperti sabuk mesin dan selang-selang industri dirancang dan diuji khusus untuk performa tinggi dan operasi terus-menerus, memaksimalkan keuntungan ekonomi dalam jangka panjang. Percayakan pada produk-produk kami menyelesaikan proses manufaktur secara cepat dan efektif.
                             </p>
                         </div>
                     </div>
@@ -161,9 +161,11 @@
                                 <b class="fw-bold">MANUFAKTUR UMUM</b>
                             </h5>
                             <p class="card-text small">
-                                Guna memahami setiap kendala dalam proses manufaktur, kita perlu memahami kapasitas dan pengalaman, lalu menemukan solusi untuk mengoptimalkan produksi, efisiensi, serta meminimalisir kerugian sehingga target performa dan keuangan tercapai.
+                                Memahami berbagai tantangan produksi dan operasi membantu kita menemukan solusi, memperbaiki efisiensi, dan memitigasi masalah. Misi kami adalah membantu Anda menyelesaikan tugas manufaktur secara paripurna, termasuk dalam hal perencanaan, penganggaran, dan pelaksanaan.
                                 <br><br>
-                                Kami senantiasa memperbarui alat dengan inovasi terbaru, termasuk memperbarui sistem selang, sabuk, dan sistem hidraulik yang banyak dipakai. Komitmen kami adalah menyalurkan alat dan perlengkapan terbaik, sistem pendukung, serta hal-hal lain yang mendorong proses manufaktur lebih baik.
+                                Komitmen setia kami pada hasil terbaik terbukti dengan pemeliharaan teratur pada rantai dan sabuk-sabuk mesin, sistem hidraulik, serta evaluasi standar keamanan menyeluruh.
+                                <br><br>
+                                SDA Global setia mengiringi Anda dalam menyediakan solusi manufaktur terbaik bagi pertumbuhan bisnis Anda.
                             </p>
                         </div>
                     </div>
@@ -180,7 +182,7 @@
                                 <b class="fw-bold">ALAT BERAT INDUSTRIAL</b>
                             </h5>
                             <p class="card-text small">
-                                Sektor industrial manufaktur terus mengalami transformasi seiring munculnya beragam teknologi baru. Pertumbuhan positif ini melibatkan sistem pintar dan autonomus berbasis data dan pemrograman cerdas. Integrasi ini terbukti menggenjot sektor manufaktur yang cerdas pula, baik dalam hal peralatan berat, proses, manajemen personel, sampai sistem operasional terpadu. Produk-produk kami dirancang untuk kebutuhan serbacepat ini, memastikan produktivitas serta efisiensi dalam setiap proses industri.
+                                Dalam sektor alat beral industrial yang terus mengalami transformasi, kami hadir sebagai solusi meningkatkan efisiensi dan meminimalisir gangguan operasi. Produk-produk kami dirancang untuk kebutuhan serbacepat ini, memastikan produktivitas serta efisiensi dalam setiap proses industri. Tingkatkan output operasional, atasi setiap tantangan Anda bersama kami.
                             </p>
                         </div>
                     </div>
@@ -197,7 +199,7 @@
                                 <b class="fw-bold">PENDINGIN & SIRKULASI UDARA (HVAC)</b>
                             </h5>
                             <p class="card-text small">
-                                Pasar sistem pengaturan suhu & sirkulasi udara (HVAC) sedang tumbuh pesat seiring permintaan global dan tumbuhnya inovasi yang memunculkan produk-produk eco-friendly yang mudah digunakan. Manufaktur berhadapan dengan aturan terkait lingkungan, tantangan supply chain pasca-pandemi, dengan menghasilkan produk-produk yang meningkatkan standar kualitas udara.
+                                SDA Global menyediakan solusi sistem pengaturan suhu & sirkulasi udara yang tidak hanya menekan biaya energi, tetapi juga memastikan operasi berkesinambungan dan terpadu. Solusi kami membantu Anda menekan biaya dan kebutuhan pemeliharaan sekecil mungkin.
                             </p>
                         </div>
                     </div>
@@ -211,10 +213,10 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">LAWN, GARDEN & PROFESSIONAL LANDSCAPING</b>
+                                <b class="fw-bold">PEMELIHARAAN TAMAN DAN LANSEKAP</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                Kami memahami pentingnya peralatan pemeliharaan outdoor, termasuk pertamanan dan lansekap. Kami bermitra dengan produsen alat pertamanan paling mutakhir guna mempercantik taman dan lansekap Anda. Percantik semuanya dengan solusi alat pertamanan paling lengkap bersama kami.
                             </p>
                         </div>
                     </div>
@@ -231,7 +233,7 @@
                                 <b class="fw-bold">MESIN DAN PERALATAN PRESISI</b>
                             </h5>
                             <p class="card-text small">
-                                SDA Global telah lama diakui untuk meningkatkan kapasitas industrial dengan sistem power transmisi yang tepat guna dan presisi. Selain itu, juga diakui sebagai  konsultan utama penyediaan solusi hidraulik yang dibutuhkan banyak industri.
+                                SDA Global telah lama diakui untuk meningkatkan kapasitas industrial dengan sistem power transmisi yang tepat guna dan presisi. Selain itu, juga diakui sebagai  konsultan utama penyediaan solusi hidraulik yang dibutuhkan banyak industri. Dengan tingkat presisi yang andal, alat-alat kami terintegrasi baik dan dirancang khusus untuk berbagai peralatan.
                             </p>
                         </div>
                     </div>
