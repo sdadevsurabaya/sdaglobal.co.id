@@ -49,9 +49,9 @@
                         <li class="nav-item">
                             <a href="{{route('industries')}}" class="nav-link nav-industries">industries</a>
                         </li>
-                        <li class="nav-item opacity-50">
-                            <a href="#" target="_blank" class="nav-link nav-buy" style="pointer-events: none;">where to buy</a>
-                        </li>
+                        {{-- <li class="nav-item opacity-50">
+                            <a href="#" target="_blank" class="nav-link nav-buy " style="pointer-events: none;">where to buy</a>
+                        </li> --}}
                         <li class="nav-item">
                             <a href="{{route('contact')}}" class="nav-link nav-contact">contact</a>
                         </li>

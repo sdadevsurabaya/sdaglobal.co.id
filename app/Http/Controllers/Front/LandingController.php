@@ -28,7 +28,8 @@ class LandingController extends Controller
         // $user_ip = "127.0.0.1";
 
         $geo = json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $user_ip));
-        $codeCountry = $geo->geoplugin_countryCode;
+        // $codeCountry = $geo->geoplugin_countryCode;
+        $codeCountry = "EN";
 
         // dump($_SERVER['REMOTE_ADDR']);
         // dump(getenv('REMOTE_ADDR'));
@@ -46,15 +47,15 @@ class LandingController extends Controller
 
         // session()->forget('lang');
 
-        if ($code != session()->get('lang')) {
-           if (session()->get('lang') == "langen") {
-                session()->put('lang', "langen");
-            } else {
-                session()->put('lang', "langid");
-            }
-        } else {
-            session()->put('lang', $code);
-        }
+        // if ($code != session()->get('lang')) {
+        //    if (session()->get('lang') == "langen") {
+        //         session()->put('lang', "langen");
+        //     } else {
+        //         session()->put('lang', "langid");
+        //     }
+        // } else {
+        //     session()->put('lang', $code);
+        // }
 
         if (session()->get('lang') != null ) {
             if ($code != session()->get('lang')) {
