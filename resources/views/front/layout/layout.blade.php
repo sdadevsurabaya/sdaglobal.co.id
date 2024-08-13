@@ -94,6 +94,29 @@
             toastr.success("{{ session('success') }}");
         @endif
 
+        $(document).ready(function() {
+            fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('ip').textContent = data.ip;
+                console.log(data.ip);
+
+                $.ajax({
+                    url: "{{ url('/userip') }}",
+                    type: 'POST',
+                    data: {
+                        "userip": data.ip,
+                    },
+                    success: function(response) {
+                        // langen.classList.add("active");
+                        // langid.classList.remove("active");
+                        // location.reload();
+                        console.log(response.data)
+                    }
+                });
+            });
+        });
+
         function langen() {
             // alert("Tombol diklik english!");
             var langen = document.getElementById("btn-langen");
