@@ -9,17 +9,17 @@ use Illuminate\Support\Facades\Session;
 
 class AboutController extends Controller
 {
-    // public function about()
-    // {
-    //     $title = 'About Us';
+    public function about()
+    {
+        $title = 'About Us';
 
-    //     $lang = session()->get('lang');
-    //     if ($lang != "langid") {
-    //         return view('front.about', compact('title'));
-    //     } else {
-    //         return view('front.id.about', compact('title'));
-    //     }
-    // }
+        $lang = session()->get('lang');
+        if ($lang != "langid") {
+            return view('front.about', compact('title'));
+        } else {
+            return view('front.id.about', compact('title'));
+        }
+    }
 
     // }
 
@@ -55,37 +55,37 @@ class AboutController extends Controller
     //         }
     // }
 
-    public function about()
-    {
-        $title = 'About Us';
+    // public function about()
+    // {
+    //     $title = 'About Us';
 
-        if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-            $ip = $_SERVER['HTTP_CLIENT_IP'];
-        } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-            $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-        } else {
-            $ip = $_SERVER['REMOTE_ADDR'];
-        }
-        $ipdat = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip));
-        $country = $ipdat->geoplugin_countryName;
-        // $country = "id";
-        // dd("$lang");
-        $data = [];
-        if (isset($_GET['lang'])) {
-            $lang = $_GET['lang'];
-            if ($lang == 'langen') {
-                return view('front.about', compact('title', 'lang'));
-            } else {
-                return view('front.id.about', compact('title', 'lang'));
-            }
-        } else {
-            $lang = '';
-            if ($country == "Indonesia") {
-                return view('front.id.about', compact('title', 'lang'));
-            } else {
-                return view('front.about', compact('title', 'lang'));
-            }
-            dd("$lang");
-        }
-    }
+    //     if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+    //         $ip = $_SERVER['HTTP_CLIENT_IP'];
+    //     } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    //         $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    //     } else {
+    //         $ip = $_SERVER['REMOTE_ADDR'];
+    //     }
+    //     $ipdat = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip));
+    //     $country = $ipdat->geoplugin_countryName;
+    //     // $country = "id";
+    //     // dd("$lang");
+    //     $data = [];
+    //     if (isset($_GET['lang'])) {
+    //         $lang = $_GET['lang'];
+    //         if ($lang == 'langen') {
+    //             return view('front.about', compact('title', 'lang'));
+    //         } else {
+    //             return view('front.id.about', compact('title', 'lang'));
+    //         }
+    //     } else {
+    //         $lang = '';
+    //         if ($country == "Indonesia") {
+    //             return view('front.id.about', compact('title', 'lang'));
+    //         } else {
+    //             return view('front.about', compact('title', 'lang'));
+    //         }
+    //         dd("$lang");
+    //     }
+    // }
 }
