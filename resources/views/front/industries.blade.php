@@ -254,7 +254,7 @@
                                 <b class="fw-bold">micromobility</b>
                             </h5>
                             <p class="card-text small">
-                                Our belts products are at the forefront of a revolution in personal and micromobility, changing the way people travel from point A to point B. Whether it’s bicycles, electric bikes, electric motorcycles, or e-scooters, we provide the belt drive solutions and engineering support to swiftly turn your concept into a market-ready product.
+                                Our belts products are at the forefront of a revolution in personal and micromobility, changing the way people travel from point A to point B. Whether it's bicycles, electric bikes, electric motorcycles, or e-scooters, we provide the belt drive solutions and engineering support to swiftly turn your concept into a market-ready product.
                             </p>
                         </div>
                     </div>
@@ -271,7 +271,7 @@
                                 <b class="fw-bold">mining</b>
                             </h5>
                             <p class="card-text small">
-                                In the global mining industry, operational challenges are the norm, but overcoming them is our specialty. SDA’s mining solutions are designed to enhance your productivity, uptime, and safety, supported by our unmatched assistance and on-site services tailored to your mining operations. Our complete range of heavy-duty hydraulic hoses, couplings, and power transmission solutions are built to withstand the rigorous demands of your mining applications.
+                                In the global mining industry, operational challenges are the norm, but overcoming them is our specialty. SDA's mining solutions are designed to enhance your productivity, uptime, and safety, supported by our unmatched assistance and on-site services tailored to your mining operations. Our complete range of heavy-duty hydraulic hoses, couplings, and power transmission solutions are built to withstand the rigorous demands of your mining applications.
                             </p>
                         </div>
                     </div>

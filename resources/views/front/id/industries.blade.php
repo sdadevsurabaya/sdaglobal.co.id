@@ -247,10 +247,10 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">MICROMOBILITY</b>
+                                <b class="fw-bold">Mikromobilitas</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                Lini produk sabuk mesin kami jadi tumpuan revolusi industri kendaraan pribadi dan mobilitas mikro yang mengubah gaya berkendara masyarakat umum. Sepeda, sepeda listrik atau e-skuter jadi tren baru transportasi pribadi yang ramah lingkungan dan ekonomis. Kami menyediakan solusi sabuk penggerak yang mengubah konsep Anda menjadi produk utuh siap pakai.
                             </p>
                         </div>
                     </div>
@@ -264,10 +264,10 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">mining</b>
+                                <b class="fw-bold">Pertambangan</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                Industri pertambangan global lekat dengan berbagai tantangan operasional, dan kami paham cara mengatasinya. Solusi pertambangan dari SDA dirancang khusus untuk meningkatkan produktivitas hasil tambang, standar keamanan, serta efisiensi. Penerapannya disempurnakan dengan pelayanan terpadu di lokasi tambang. Lini produk pertambangan kami meliputi selang hidraulik heavy duty, coupling, dan solusi transmisi yang dirancang khusus untuk medan pekerjaan berat dan operasi yang menantang.
                             </p>
                         </div>
                     </div>
@@ -298,10 +298,10 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">powersports</b>
+                                <b class="fw-bold">Kendaraan Sport</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                Sistem hidraulik dan transmisi penggerak berperan krusial dalam meningkatkan performa kendaraan sport dan mesin olahraga ekstrem, seperti ATV, motor cross, dan motor salju. Sistem terpadu kami memastikan kinerja kendaraan sport dalam menghadapi berbagai rintangan alam dan arena, meningkatkan performa serta kenyamanan berkendara.
                             </p>
                         </div>
                     </div>
@@ -315,10 +315,10 @@
                         </div>
                         <div class="card-body bg-primary text-light d-lg-block">
                             <h5 class="card-title text-uppercase fs-4 mb-3">
-                                <b class="fw-bold">truk & bus</b>
+                                <b class="fw-bold">Truk & Bus</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                Kami bekerja sama dengan sektor  kendaraan berat, komersial, dan industrial dengan menyediakan sabuk penggerak, selang mesin, dan komponen sistem yang lengkap guna menjamin bisnis transportasi dan logistik Anda berjalan baik, efisien dalam biaya, serta mengoptimalkan sumber daya yang ada.
                             </p>
                         </div>
                     </div>
