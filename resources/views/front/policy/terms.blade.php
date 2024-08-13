@@ -43,7 +43,7 @@
                     <strong>Country</strong> refers to: Indonesia
                 </li>
                 <li>
-                    <strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to PT. Sumber Daya Abadi, Komp. Margomulyo Indah I Blok A No. 7-8, Jl. Margomulyo Indah I, Balongsari - Tandes, Surabaya 60186, Jawa Timur - Indonesia.
+                    <strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to PT. SDA Global, Komp. Margomulyo Indah I Blok A No. 7-8, Jl. Margomulyo Indah I, Balongsari - Tandes, Surabaya 60186, Jawa Timur - Indonesia.
                 </li>
                 <li>
                     <strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.
@@ -199,7 +199,7 @@
             </p>
             <ul class="list">
                 <li>
-                    By email: <a href="mailto:info@sdaglobal.co.id">info@sdaglobal.co.id</a>
+                    By email: <a href="mailto:cs@sdaglobal.co.id">cs@sdaglobal.co.id</a>
                 </li>
             </ul>
         </div>

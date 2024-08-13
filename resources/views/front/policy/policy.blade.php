@@ -36,7 +36,7 @@
                     <strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.
                 </li>
                 <li>
-                    <strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to PT. Sumber Daya Abadi, Komp. Margomulyo Indah I Blok A No. 7-8, Jl. Margomulyo Indah I, Balongsari - Tandes, Surabaya 60186, Jawa Timur - Indonesia.
+                    <strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to PT. SDA Global, Komp. Margomulyo Indah I Blok A No. 7-8, Jl. Margomulyo Indah I, Balongsari - Tandes, Surabaya 60186, Jawa Timur - Indonesia.
                 </li>
                 <li>
                     <strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.
@@ -313,7 +313,7 @@
             </p>
             <ul class="list">
                 <li>
-                    By email: <a href="mailto:info@sdaglobal.co.id">info@sdaglobal.co.id</a>
+                    By email: <a href="mailto:cs@sdaglobal.co.id">cs@sdaglobal.co.id</a>
                 </li>
             </ul>
         </div>
