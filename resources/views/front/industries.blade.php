@@ -254,7 +254,7 @@
                                 <b class="fw-bold">micromobility</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                Our belts products are at the forefront of a revolution in personal and micromobility, changing the way people travel from point A to point B. Whether it’s bicycles, electric bikes, electric motorcycles, or e-scooters, we provide the belt drive solutions and engineering support to swiftly turn your concept into a market-ready product.
                             </p>
                         </div>
                     </div>
@@ -271,7 +271,7 @@
                                 <b class="fw-bold">mining</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                In the global mining industry, operational challenges are the norm, but overcoming them is our specialty. SDA’s mining solutions are designed to enhance your productivity, uptime, and safety, supported by our unmatched assistance and on-site services tailored to your mining operations. Our complete range of heavy-duty hydraulic hoses, couplings, and power transmission solutions are built to withstand the rigorous demands of your mining applications.
                             </p>
                         </div>
                     </div>
@@ -305,7 +305,7 @@
                                 <b class="fw-bold">powersports</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                Hydraulic and power transmission systems play a crucial role in powersports, enhancing performance and efficiency in vehicles like ATVs, motorcycles, and snowmobiles. These systems ensure that powersports vehicles can handle diverse and challenging environments while maintaining high performance and reliability.
                             </p>
                         </div>
                     </div>
@@ -322,7 +322,7 @@
                                 <b class="fw-bold">truck & bus</b>
                             </h5>
                             <p class="card-text small">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores perspiciatis, nesciunt veniam impedit, voluptates ullam cupiditate quos aliquam consectetur modi iusto adipisci? Voluptatibus rerum minima culpa obcaecati quia temporibus?
+                                We collaborate with the heavy-duty, commercial, and industrial vehicle sectors to provide belt drives, engine hoses, and system components that keep your business running smoothly, while reducing maintenance costs, downtime, and labor expenses.
                             </p>
                         </div>
                     </div>
