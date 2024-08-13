@@ -55,6 +55,10 @@
     </div>
 </section>
 <section>
+    {{-- <h1>Your Public IP Address</h1>
+    <p id="ip"></p> --}}
+
+
     <div class="container-fluid p-0">
         <div class="row g-0 row-cols-1 row-cols-md-2">
             <div class="col bg-dark position-relative overflow-hidden">
