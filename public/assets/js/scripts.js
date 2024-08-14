@@ -12,3 +12,7 @@ $(window).scroll(function () {
 $('.form-control').hover(function() {
     $(this).select();
 });
+
+$('.navbar-nav .nav-link').click(function() {
+    $('#navside').offcanvas('hide');
+});

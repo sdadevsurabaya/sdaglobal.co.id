@@ -54,7 +54,7 @@
        </button>
     </div>
 </section>
-<section>
+<section class="mb-0">
     {{-- <h1>Your Public IP Address</h1>
     <p id="ip"></p> --}}
 
@@ -94,7 +94,7 @@
         </div>
     </div>
 </section>
-<section>
+<section id="home-products" style="padding-top: calc(4rem + 1.5vw);">
     <div class="container">
         <h5 class="page-title text-primary">
             OUR <b class="fw-bold">PRODUCTS</b>
@@ -106,7 +106,7 @@
         </p>
     </div>
 </section>
-<section id="home-products">
+<section>
     <div class="container">
         <div class="row row-cols-2 g-2 g-md-3 row-cols-lg-3 g-xl-4">
             <div class="col">
