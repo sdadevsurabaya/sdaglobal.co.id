@@ -41,7 +41,7 @@
                             <a href="{{route('landing')}}" class="nav-link nav-home">home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('landing')}}#home-products" class="nav-link">products</a>
+                            <a data-bs-toggle="offcanvas" data-bs-target="#navside" href="{{route('landing')}}#home-products" class="nav-link">products</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('about')}}" class="nav-link nav-about">about SDA</a>
