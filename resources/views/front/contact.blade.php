@@ -54,7 +54,7 @@
                             <input type="number" class="form-control form-control-lg" name="phone" placeholder="Contact Number">
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="1" rows="10" class="form-control form-control-lg" name="pesan" placeholder="Message"></textarea>
+                            <textarea id="" cols="1" rows="10" class="form-control form-control-lg" name="pesan" placeholder="Message"></textarea>
                         </div>
                         <div class="form-group pt-3">
                             <button type="submit" class="btn btn-lg bg-primary text-light w-100">Submit</button>
