@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="SDA Group, SDA Global, SDA Global Group, SDA, SDA Indonesia">
-    <meta name="description" content="SDA Global Group">
+    <meta name="keywords" content="SDA, SDA Group, SDA Global,SDA Indonesia, Hydraulic, Hydraulic Indonesia, Hydraulic Surabaya, Pneumatic, Industrial">
+    <meta name="description" content="SDA Global Group is one of the leading Hydraulic, Pneumatic, Industrial suppliers in Indonesia">
     <meta name="robots" content="all,index,follow" />
     <meta name="googlebot" content="all,index,follow" />
     <meta name="google" content="notranslate" />

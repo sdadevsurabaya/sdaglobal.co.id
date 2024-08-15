@@ -11,7 +11,7 @@ class LandingController extends Controller
 {
     public function landing(Request $request)
     {
-        $title = 'SDA Global';
+        $title = 'SDA Global | Solution For Every Industries';
 
         // $user_ip = getenv('REMOTE_ADDR');
         // $geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$user_ip"));
