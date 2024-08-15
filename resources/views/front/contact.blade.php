@@ -54,7 +54,7 @@
                             <input type="number" class="form-control form-control-lg" name="phone" placeholder="Contact Number">
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="1" rows="10" class="form-control form-control-lg" name="pesan" placeholder="Message"></textarea>
+                            <textarea id="" cols="1" rows="10" class="form-control form-control-lg" name="pesan" placeholder="Message"></textarea>
                         </div>
                         <div class="form-group pt-3">
                             <button type="submit" class="btn btn-lg bg-primary text-light w-100">Submit</button>
@@ -62,9 +62,10 @@
                     </form>
                 </div>
                 <div id="column-address" class="col col-12 col-sm-auto">
+                    <h5 class="fs-4 mb-4"><b class="fw-bold">PT. SDA GLOBAL</b></h5>
                     <ul class="list-unstyled m-0 d-flex flex-column row-gap-4">
                         <li>
-                            <h5 class="fs-5"><b class="fw-bold">Head Office</b></h5>
+                            <h5 class="fs-6"><b class="fw-bold">Head Office</b></h5>
                             <p>
                                 Jl. Margomulyo Indah 1A No. 7-8
                                 <br>
@@ -74,7 +75,7 @@
                             </p>
                         </li>
                         <li>
-                            <h5 class="fs-5"><b class="fw-bold">Retail Store</b></h5>
+                            <h5 class="fs-6"><b class="fw-bold">Retail Store</b></h5>
                             <p>
                                 Komp. Raden Saleh Permai Kav. 19-20
                                 <br>
