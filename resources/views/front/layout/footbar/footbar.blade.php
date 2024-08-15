@@ -7,9 +7,9 @@
                         <div>
                             @include('front.layout.footbar.footbar-nav')
                         </div>
-                        <div>
+                        {{-- <div>
                             @include('front.layout.footbar.footbar-signup')
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="col">
