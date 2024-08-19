@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'HelveticaNeue Bold';
+	src: url(../fonts/HelveticaNeue-Bold.woff2) format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+.helvetica-bold {
+	font-family: 'HelveticaNeue Bold';
+}

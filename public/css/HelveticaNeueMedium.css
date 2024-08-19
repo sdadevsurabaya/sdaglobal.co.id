@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'HelveticaNeue Medium';
+	src: url(../fonts/HelveticaNeue-Medium.woff2) format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+.helvetica-medium {
+	font-family: 'HelveticaNeue Medium';
+}

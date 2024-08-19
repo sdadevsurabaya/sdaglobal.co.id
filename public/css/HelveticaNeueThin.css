@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'HelveticaNeue Thin';
+	src: url(../fonts/HelveticaNeue-Thin.woff2) format('woff2');
+	font-weight: 200;
+	font-style: normal;
+}
+
+.helvetica-thin {
+	font-family: 'HelveticaNeue Thin';
+}
