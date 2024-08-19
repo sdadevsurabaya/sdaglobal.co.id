@@ -110,9 +110,11 @@
     <div class="container">
         <div class="row row-cols-2 g-2 g-md-3 row-cols-lg-3 g-xl-4">
             <div class="col">
-                <a href="#">
+                <a data-bs-toggle="modal" href="#modalHydraulicHoses">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/product-hydraulic-hoses.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <div class="ratio ratio-4x3">
+                            <img src="{{asset('assets/img/landing/product-hydraulic-hoses.png')}}" class="object-fit-cover w-100 h-100" alt="...">
+                        </div>
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
                             Hydraulic Hoses, Tubings, Fittings, Adapters & Quick Couplings
                         </figcaption>
@@ -120,9 +122,11 @@
                 </a>
             </div>
             <div class="col">
-                <a href="#">
+                <a data-bs-toggle="modal" href="#modalIndustrialHoses">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/product-industrial-hoses.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <div class="ratio ratio-4x3">
+                            <img src="{{asset('assets/img/landing/product-industrial-hoses.png')}}" class="object-fit-cover w-100 h-100" alt="...">
+                        </div>
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
                             Industrial Hoses & Connectors
                         </figcaption>
@@ -130,9 +134,11 @@
                 </a>
             </div>
             <div class="col">
-                <a href="#">
+                <a data-bs-toggle="modal" href="#modalPneumatic">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/product-pneumatic.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <div class="ratio ratio-4x3">
+                            <img src="{{asset('assets/img/landing/product-pneumatic.png')}}" class="object-fit-cover w-100 h-100" alt="...">
+                        </div>
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
                             Pneumatic Products & Accessories
                         </figcaption>
@@ -140,9 +146,11 @@
                 </a>
             </div>
             <div class="col">
-                <a href="#">
+                <a data-bs-toggle="modal" href="#modalPowerTransmission">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/product-power-transmission.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <div class="ratio ratio-4x3">
+                            <img src="{{asset('assets/img/landing/product-power-transmission.png')}}" class="object-fit-cover w-100 h-100" alt="...">
+                        </div>
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
                             Power Transmission
                         </figcaption>
@@ -150,9 +158,11 @@
                 </a>
             </div>
             <div class="col">
-                <a href="#">
+                <a data-bs-toggle="modal" href="#modalPlasticPipes">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/product-plastic-pipes.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <div class="ratio ratio-4x3">
+                            <img src="{{asset('assets/img/landing/product-plastic-pipes.png')}}" class="object-fit-cover w-100 h-100" alt="...">
+                        </div>
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
                             Steel & Plastic Pipes, Fittings, Flanges & Valves
                         </figcaption>
@@ -160,9 +170,11 @@
                 </a>
             </div>
             <div class="col">
-                <a href="#">
+                <a data-bs-toggle="modal" href="#modalFireFighting">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/product-fire-fighting.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <div class="ratio ratio-4x3">
+                            <img src="{{asset('assets/img/landing/product-fire-fighting.png')}}" class="object-fit-cover w-100 h-100" alt="...">
+                        </div>
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
                             Fire Fighting & Protection Equipments
                         </figcaption>
@@ -170,9 +182,11 @@
                 </a>
             </div>
             <div class="col">
-                <a href="#">
+                <a data-bs-toggle="modal" href="#modalRoof">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/product-steel-roof.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <div class="ratio ratio-4x3">
+                            <img src="{{asset('assets/img/landing/product-steel-roof.png')}}" class="object-fit-cover w-100 h-100" alt="...">
+                        </div>
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
                             Light Gauge Steel Roof, Deck, Hollow, Truss, Rooftile & Clip Lock
                         </figcaption>
@@ -180,9 +194,11 @@
                 </a>
             </div>
             <div class="col">
-                <a href="#">
+                <a data-bs-toggle="modal" href="#modalPowerTools">
                     <figure class="figure">
-                        <img src="{{asset('assets/img/landing/product-power-tools.png')}}" class="ratio ratio-4x3 figure-img img-fluid m-0" alt="...">
+                        <div class="ratio ratio-4x3">
+                            <img src="{{asset('assets/img/landing/product-power-tools.png')}}" class="object-fit-cover w-100 h-100" alt="...">
+                        </div>
                         <figcaption class="figure-caption text-center text-capitalize text-primary">
                             Hand & Power Tools
                         </figcaption>
@@ -192,6 +208,136 @@
         </div>
     </div>
 </section>
+@endsection
+@section('pageAdds')
+{{-- modal Hydraulic Hoses, Tubings, Fittings, Adapters & Quick Couplings --}}
+<div class="modal fade" id="modalHydraulicHoses" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalHydraulicHosesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0 align-items-start column-gap-3">
+                <h1 class="modal-title fs-5" id="modalLabel">Hydraulic Hoses, Tubings, Fittings, Adapters & Quick Couplings</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-4x3 w-100">
+                    <img src="{{asset('assets/img/landing/product-hydraulic-hoses.png')}}" class="object-fit-cover w-100 h-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{-- modal Industrial Hoses & Connectors --}}
+<div class="modal fade" id="modalIndustrialHoses" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalIndustrialHosesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0 align-items-start column-gap-3">
+                <h1 class="modal-title fs-5" id="modalLabel">Industrial Hoses & Connectors</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-4x3 w-100">
+                    <img src="{{asset('assets/img/landing/product-industrial-hoses.png')}}" class="object-fit-cover w-100 h-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{-- modal Pneumatic Products & Accessories --}}
+<div class="modal fade" id="modalPneumatic" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalPneumaticLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0 align-items-start column-gap-3">
+                <h1 class="modal-title fs-5" id="modalLabel">Pneumatic Products & Accessories</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-4x3 w-100">
+                    <img src="{{asset('assets/img/landing/product-pneumatic.png')}}" class="object-fit-cover w-100 h-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{-- modal Power Transmission --}}
+<div class="modal fade" id="modalPowerTransmission" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalPowerTransmissionLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0 align-items-start column-gap-3">
+                <h1 class="modal-title fs-5" id="modalLabel">Power Transmission</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-4x3 w-100">
+                    <img src="{{asset('assets/img/landing/product-power-transmission.png')}}" class="object-fit-cover w-100 h-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{-- modal Steel & Plastic Pipes, Fittings, Flanges & Valves --}}
+<div class="modal fade" id="modalPlasticPipes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalPlasticPipesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0 align-items-start column-gap-3">
+                <h1 class="modal-title fs-5" id="modalLabel">Steel & Plastic Pipes, Fittings, Flanges & Valves</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-4x3 w-100">
+                    <img src="{{asset('assets/img/landing/product-plastic-pipes.png')}}" class="object-fit-cover w-100 h-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{-- modal Fire Fighting & Protection Equipments --}}
+<div class="modal fade" id="modalFireFighting" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalFireFightingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0 align-items-start column-gap-3">
+                <h1 class="modal-title fs-5" id="modalLabel">Fire Fighting & Protection Equipments</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-4x3 w-100">
+                    <img src="{{asset('assets/img/landing/product-fire-fighting.png')}}" class="object-fit-cover w-100 h-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{-- modal Light Gauge Steel Roof, Deck, Hollow, Truss, Rooftile & Clip Lock --}}
+<div class="modal fade" id="modalRoof" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalRoofLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0 align-items-start column-gap-3">
+                <h1 class="modal-title fs-5" id="modalLabel">Light Gauge Steel Roof, Deck, Hollow, Truss, Rooftile & Clip Lock</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-4x3 w-100">
+                    <img src="{{asset('assets/img/landing/product-steel-roof.png')}}" class="object-fit-cover w-100 h-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{-- modal Hand & Power Tools --}}
+<div class="modal fade" id="modalPowerTools" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalPowerToolsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0 align-items-start column-gap-3">
+                <h1 class="modal-title fs-5" id="modalLabel">Hand & Power Tools</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-4x3 w-100">
+                    <img src="{{asset('assets/img/landing/product-power-tools.png')}}" class="object-fit-cover w-100 h-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 @section('pageScripts')
 <script>
