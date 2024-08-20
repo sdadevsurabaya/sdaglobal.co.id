@@ -68,6 +68,13 @@
           </a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="{{ url('/message') }}">
+              <span class="menu-title">Message</span>
+              <i class="mdi mdi-message menu-icon"></i>
+            </a>
+        </li>
+
+        {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#data_master" aria-expanded="false" aria-controls="data_master">
               <span class="menu-title">Data Master</span>
               <i class="menu-arrow"></i>
@@ -78,7 +85,7 @@
                 <li class="nav-item"> <a class="nav-link" href="#"> Level / Posision </a></li>
               </ul>
             </div>
-          </li>
+        </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#lowongan" aria-expanded="false" aria-controls="lowongan">
             <span class="menu-title">Lowongan</span>
@@ -91,12 +98,7 @@
               <li class="nav-item"> <a class="nav-link" href="#"> List All Candidate </a></li>
             </ul>
           </div>
-        </li>
-        {{-- <li class="nav-item">
-          <a class="nav-link" href="pages/charts/chartjs.html">
-            <span class="menu-title">Karyawan Masuk</span>
-            <i class="mdi mdi mdi-login-variant menu-icon"></i>
-          </a>
         </li> --}}
+
       </ul>
     </nav>

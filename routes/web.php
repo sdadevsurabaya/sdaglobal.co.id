@@ -42,7 +42,8 @@ Route::post('/register/action', [RegisterController::class, 'actionregister'])->
 
 // admin page
 Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard')->middleware('auth');
-// Route::get('/dashboard/chart_batang/{id}', [AdminController::class, 'chart_batang'])->name('admin.chart_batang');
+Route::get('/message', [AdminController::class, 'message'])->name('admin.message');
+Route::get('/read_message/{id}', [AdminController::class, 'read_message'])->name('admin.read_message');
 
 Route::get('/', [LandingController::class, 'landing'])->name('landing');
 Route::post('/userip', [LandingController::class, 'userip'])->name('userip');
