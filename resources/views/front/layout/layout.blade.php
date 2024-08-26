@@ -79,6 +79,7 @@
         @include('front.layout.footbar.footbar'){{-- end of footbar --}}
     </footer>
 
+    @yield('pageAdds')
     <script src="{{ asset('vendor/jquery-3.6.0/jquery-3.6.0.min.js') }}"></script>
     <script src="{{asset('vendor/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js')}}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>{{-- Toaster js --}}

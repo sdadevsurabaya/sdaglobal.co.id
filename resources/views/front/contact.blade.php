@@ -74,7 +74,7 @@
                                 <br>
                                 Surabaya 60186, Jawa Timur - Indonesia
                                 <br>
-                                Telephone : <a href="telp:+62317482190" target="_blank">+62 31 748 2190</a>, <a href="tel:+62317482193" target="_blank">748 2193</a>
+                                Telephone : <a href="tel:+62317482190" target="_blank">+62 31 748 2190</a>, <a href="tel:+62317482193" target="_blank">748 2193</a>
                             </p>
                         </li>
                         <li>
@@ -86,7 +86,7 @@
                                 <br>
                                 Surabaya 60174, Jawa Timur - Indonesia
                                 <br>
-                                Telephone : <a href="telp:+62315468800" target="_blank">+62 31 546 8800</a>, <a href="tel:+62315467700" target="_blank">5467700</a>
+                                Telephone : <a href="tel:+62315468800" target="_blank">+62 31 546 8800</a>, <a href="tel:+62315467700" target="_blank">546 7700</a>
                             </p>
                         </li>
                         <li>
