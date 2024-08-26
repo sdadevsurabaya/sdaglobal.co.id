@@ -22,6 +22,21 @@ class AdminController extends Controller
     public function read_message($id) {
         $message = ContactUsModel::find($id);
 
+        date_default_timezone_set('Asia/Jakarta');
+        $dateNow = date('Y-m-d');
+        $timeNow = date('H:i:s');
+        $dateBaca = $dateNow. " " .$timeNow;
+
+        if (empty($message->sudah_baca)) {
+            $data = [
+                'sudah_baca' => $dateBaca,
+            ];
+        } else {
+            $data = [];
+        }
+
+        $message->update($data);
+
         return response()->json([
             'success' => true,
             'data'    => $message

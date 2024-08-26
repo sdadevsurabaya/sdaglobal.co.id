@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="{{ url('/') }}/admin/assets/css/style.css">
     <!-- End layout styles -->
 
+    <!-- Include stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
 </head>
 
 <body>

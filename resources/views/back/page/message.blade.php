@@ -31,7 +31,7 @@
                                         $no = 1;
                                     @endphp
                                     @foreach ($message as $key => $data)
-                                        <tr style="font-weight: bold;">
+                                        <tr style="{{ empty($data->sudah_baca) ? 'font-weight: bold;' : '' }}">
                                             <td>{{$no++}}</td>
                                             <td>{{ $data->nama }}</td>
                                             <td>{{ $data->email }}</td>
@@ -109,9 +109,11 @@
     <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap4.min.js"></script>
     {{-- ckEditor --}}
-    {{-- <script src="{{ url('/') }}/ckeditor/ckeditor.js"></script> --}}
-    <script src="//cdn.ckeditor.com/4.24.0-lts/standard/ckeditor.js"></script>
+    <script src="{{ url('/') }}/ckeditor/ckeditor.js"></script>
+    {{-- <script src="https://cdn.ckeditor.com/4.24.0-lts/standard/ckeditor.js"></script> --}}
 
+    <!-- Include the Quill library -->
+    {{-- <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script> --}}
 
     <script type="text/javascript">
         new DataTable('#example');
@@ -122,6 +124,12 @@
         });
         CKEDITOR.config.allowedContent = true;
 
+        // CKEDITOR.replace( 'reply' );
+
+        // const quill = new Quill('#reply', {
+        //     theme: 'snow'
+        // });
+
         // baca message
         function baca(id) {
             $.ajax({
@@ -131,7 +139,7 @@
                 success: function(response) {
                     //fill data to form
                     // console.log(response.data);
-                    // CKEDITOR.instances['reply'].setData('');
+                    CKEDITOR.instances['reply'].setData('');
                     document.getElementById('nama').innerText = response.data.nama;
                     document.getElementById('email').innerText = response.data.email;
                     document.getElementById('phone').innerText = response.data.phone;

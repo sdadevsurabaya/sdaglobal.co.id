@@ -28,24 +28,25 @@ use App\Http\Controllers\Back\AdminController;
 // });
 
 Route::middleware([RedirectIfAuthenticated::class])->group(function () {
+    Route::get('/', [LandingController::class, 'landing'])->name('landing');
     // login page
     Route::get('/login', [LoginController::class, 'login'])->name('login');
     Route::post('/actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
+
+    // register page
+    Route::get('/register', [RegisterController::class, 'register'])->name('register');
+    Route::post('/register/action', [RegisterController::class, 'actionregister'])->name('actionregister');
+
+    // admin page
+    Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard')->middleware('auth');
 });
 
 // Logout
 Route::get('/actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
-// register page
-Route::get('/register', [RegisterController::class, 'register'])->name('register');
-Route::post('/register/action', [RegisterController::class, 'actionregister'])->name('actionregister');
-
-// admin page
-Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard')->middleware('auth');
 Route::get('/message', [AdminController::class, 'message'])->name('admin.message');
 Route::get('/read_message/{id}', [AdminController::class, 'read_message'])->name('admin.read_message');
 
-Route::get('/', [LandingController::class, 'landing'])->name('landing');
 Route::post('/userip', [LandingController::class, 'userip'])->name('userip');
 Route::post('/sessionlang', [LandingController::class, 'sessionlang'])->name('sessionlang');
 Route::get('/industries', [IndustriesController::class, 'industries'])->name('industries');
