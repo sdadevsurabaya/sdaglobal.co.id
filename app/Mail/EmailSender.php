@@ -95,6 +95,7 @@ class EmailSender extends Mailable
                         'phone' => $this->data["phone"],
                         'subject' => $this->data["subject"],
                         'pesan' => $this->data["pesan"],
+                        'usernama' => $this->data["usernama"],
                     ])
                     ;
     }

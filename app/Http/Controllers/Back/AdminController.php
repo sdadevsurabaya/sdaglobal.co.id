@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Back;
 use App\Http\Controllers\Controller;
 use App\Models\ContactUsModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\EmailSender;
+use Validator;
 
 class AdminController extends Controller
 {
@@ -41,5 +44,56 @@ class AdminController extends Controller
             'success' => true,
             'data'    => $message
         ]);
+    }
+
+    public function reply_message(Request $request) {
+        // dd($request->id);
+
+        $validator = Validator::make(
+            $request->all(),
+            [
+                'reply' => 'required',
+            ],
+            [
+                'reply.required' => 'The reply message field is required.',
+            ]
+        );
+
+        //check if validation fails
+        if ($validator->passes()) {
+            // update to db
+            $data = ContactUsModel::find($request->id);
+            $data->reply = $request->reply;
+            $data->save();
+
+            // send email
+            $txtPesan = strip_tags($request->reply);
+            $data = [
+                'nama' => "SDA Global",
+                'email' => "cs@sdagobal.co.id",
+                'usernama' => $request->user_nama,
+                'useremail' => $request->user_email,
+                'phone' => "+62 822 8080 8800",
+                'subject' => "jawaban kami",
+                'pesan' => $txtPesan,
+            ];
+            $this->sendMessage($data);
+
+            return response()->json(['message' => 'Reply message succesfully!']);
+        }
+
+        return response()->json(['error' => $validator->errors()->all()]);
+    }
+
+    function sendMessage($data)
+    {
+        try {
+            Mail::to($data["useremail"])->send(new EmailSender($data));
+            $text = 'SUKSES';
+        } catch (\Exception $e) {
+            $text = 'GAGAL : ' . $e->getMessage();
+        }
+
+        // dd($text);
     }
 }

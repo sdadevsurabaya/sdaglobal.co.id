@@ -46,6 +46,7 @@ Route::get('/actionlogout', [LoginController::class, 'actionlogout'])->name('act
 
 Route::get('/message', [AdminController::class, 'message'])->name('admin.message');
 Route::get('/read_message/{id}', [AdminController::class, 'read_message'])->name('admin.read_message');
+Route::post('/reply_message/{id}', [AdminController::class, 'reply_message'])->name('admin.reply_message');
 
 Route::post('/userip', [LandingController::class, 'userip'])->name('userip');
 Route::post('/sessionlang', [LandingController::class, 'sessionlang'])->name('sessionlang');

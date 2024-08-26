@@ -36,6 +36,7 @@ class ContactController extends Controller
         $data = [
             'nama' => $request->nama,
             'email' => $request->email,
+            'usernama' => null,
             'phone' => $request->phone,
             'subject' => $request->subject,
             'pesan' => $request->pesan,

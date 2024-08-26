@@ -130,10 +130,15 @@
 
 					<tr><td valign="top" align="left">
 						<table width="640" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 640px!important;border-bottom:solid 1px #878787"><tbody>
-							<tr><td valign="top" align="left" height="7"><h5 style="margin-top:30px; font-size: 1rem; font-family: sans-serif;">
-							Message
-							</h5>
+							<tr><td valign="top" align="left" height="7">
+                                <h5 style="margin-top:30px; font-size: 1rem; font-family: sans-serif;">
+							        Message
+							    </h5>
 								<p style="font-family: sans-serif; padding: 0; margin-top: 0;">
+                                    @if (!empty($usernama))
+                                        Hi {{ $usernama }}, <br>
+                                    @endif
+
 									{{ $pesan }}
 								</p>
 							</td></tr>

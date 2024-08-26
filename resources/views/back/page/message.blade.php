@@ -78,11 +78,14 @@
                                 <label for="reply"><b>Message : </b> </label> <label id="pesan"></label>
                             </div>
                             <hr>
-                            <div class="alert alert-danger print-error-msg-add" style="display:none">
+                            <div class="alert alert-danger print-error-msg-reply" style="display:none">
                                 <ul></ul>
                             </div>
                             <div class="form-group">
                                 <label for="reply"><b>Reply Message</b></label>
+                                <input type="hidden" class="form-control" id="id" name="id">
+                                <input type="hidden" class="form-control" id="user_nama" name="user_nama">
+                                <input type="hidden" class="form-control" id="user_email" name="user_email">
                                 <textarea type="text" class="form-control" id="reply" name="reply" cols="1" rows="10" placeholder="Level"> </textarea>
                             </div>
                         </div>
@@ -143,10 +146,66 @@
                     document.getElementById('nama').innerText = response.data.nama;
                     document.getElementById('email').innerText = response.data.email;
                     document.getElementById('phone').innerText = response.data.phone;
+                    $('#id').val(response.data.id);
+                    $('#user_nama').val(response.data.nama);
+                    $('#user_email').val(response.data.email);
                     document.getElementById('pesan').innerText = response.data.pesan;
                     //open modal
                     $('#ModalReadMessage').modal('show');
                 }
+            });
+        }
+
+        $('#send_reply_message').submit(function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+            // formData.append('reply', CKEDITOR.instances['reply'].getData());
+            let id = formData.get("id");
+            var user_nama   = formData.get("user_nama");
+            var user_email  = formData.get("user_email");
+            var reply       = CKEDITOR.instances['reply'].getData();
+            let token       = $("meta[name='csrf-token']").attr("content");
+            // console.log(user_email);
+
+            $.ajax({
+                type: 'POST',
+                url: "{{ url('reply_message') }}/" + id,
+                // data : formData,
+                data: {
+                    "user_nama": user_nama,
+                    "user_email": user_email,
+                    "reply" : reply,
+                    "_token": token
+                },
+                // contentType: false,
+                // processData: false,
+                cache: false,
+                success:function(data){
+                    // console.log(data);
+                    if($.isEmptyObject(data.error)){
+                        Swal.fire({
+                            icon: 'success',
+                            type: "success",
+                            title: 'Berhasil!',
+                            text: `${data.message}`,
+                            // showConfirmButton: false,
+                            timer: 3000
+                        });
+                        // alert(data.message);
+                        window.location.href = "{{ url('message')}}";
+                    }else{
+                        printErrorMsgReplyMessage(data.error);
+                    }
+                }
+            });
+        });
+
+        function printErrorMsgReplyMessage (msg) {
+            $(".print-error-msg-reply").find("ul").html('');
+            $(".print-error-msg-reply").css('display','block');
+
+            $.each( msg, function( key, value ) {
+                $(".print-error-msg-reply").find("ul").append('<li>'+value+'</li>');
             });
         }
     </script>

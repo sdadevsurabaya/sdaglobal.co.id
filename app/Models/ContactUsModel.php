@@ -17,6 +17,7 @@ class ContactUsModel extends Model
         'subject',
         'pesan',
         'sudah_baca',
+        'reply',
     ];
 
     public static function boot() {
