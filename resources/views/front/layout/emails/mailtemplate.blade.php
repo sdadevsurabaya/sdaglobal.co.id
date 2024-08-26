@@ -3,7 +3,7 @@
 		<meta charset="utf-8">
 
 		<title>SDA Global</title>
-		<link rel="stylesheet icon" type="text" href="https://www.sdaglobal.co.id/assets/img/logo/logo-sda-global.svg">
+		<link rel="stylesheet icon" type="text" href="https://www.sdaglobal.co.id/assets/img/logo/logo-sda-global.png">
 	</head>
 	<body style="padding: 0; margin: 0; background-color: #ffffff; width: 100%!important">
 
@@ -18,7 +18,7 @@
 							<tr><td valign="top" align="left" height="10"></td></tr>
 							<tr><td valign="top" align="left">
 								<p style="font-size: 0; margin-bottom: 25px;">
-									<img loading="lazy" src="https://www.sdaglobal.co.id/assets/img/logo/logo-sda-global.svg" width="171" style="width:100%;height:auto;max-width:171px;margin-left:1.5px;">
+									<img loading="lazy" src="https://www.sdaglobal.co.id/assets/img/logo/logo-sda-global.png" width="171" style="width:100%;height:auto;max-width:171px;margin-left:1.5px;">
 								</p>
 							</td></tr>
 
