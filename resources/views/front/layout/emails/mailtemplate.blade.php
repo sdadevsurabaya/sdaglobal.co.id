@@ -144,6 +144,12 @@
 							</td></tr>
 							<tr><td valign="top" align="left">
 
+                                <tr style="display: none; max-height: 0; overflow: hidden;">
+                                    <td>
+                                        <img src="https://www.cosmosender.supresso.co.id/edmsavelog/index.php?to=read&edm=240827&act=open&email={email}" width="0" height="0" style="vertical-align: sub">
+                                    </td>
+                                </tr>
+
 							</td></tr>
 							</tbody></table>
 

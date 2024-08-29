@@ -91,7 +91,15 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-gradient-danger btn-fw" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-gradient-success btn-fw">Send Message</button>
+                            <button id="send" type="submit" class="btn btn-gradient-success btn-fw">Send Message</button>
+
+                            <div id="loading" style="display:none;">
+                                <button class="btn btn-gradient-success btn-fw" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    Loading...
+                                </button>
+                            </div>
+
                         </div>
                     </form>
                 </div>
@@ -165,6 +173,7 @@
             var user_email  = formData.get("user_email");
             var reply       = CKEDITOR.instances['reply'].getData();
             let token       = $("meta[name='csrf-token']").attr("content");
+            var myButtonSend = document.getElementById('send');
             // console.log(user_email);
 
             $.ajax({
@@ -179,7 +188,13 @@
                 },
                 // contentType: false,
                 // processData: false,
-                cache: false,
+                beforeSend: function() {
+                    // Menyembunyikan tombol dengan menambahkan style "display: none;"
+                    myButtonSend.style.display = 'none';
+
+                    // Menampilkan animasi loading sebelum request dimulai
+                    $('#loading').show();
+                },
                 success:function(data){
                     // console.log(data);
                     if($.isEmptyObject(data.error)){
@@ -196,7 +211,15 @@
                     }else{
                         printErrorMsgReplyMessage(data.error);
                     }
-                }
+                },
+                complete: function() {
+                    // Menampilkan tombol dengan menambahkan style "display: block;"
+                    myButtonSend.style.display = 'block';
+
+                    // Menyembunyikan animasi loading setelah request selesai
+                    $('#loading').hide();
+                },
+                cache: false
             });
         });
 

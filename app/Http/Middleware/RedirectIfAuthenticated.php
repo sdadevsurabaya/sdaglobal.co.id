@@ -30,8 +30,17 @@ class RedirectIfAuthenticated
 
     public function handle(Request $request, Closure $next)
     {
+        // dd(Auth::check());
+
         if (Auth::check()) {
             return redirect('/dashboard');
+            // $user = Auth::user();
+            // dd($user);
+        }
+        else {
+            // User belum login
+            // return redirect('/login');
+            // dd("page login");
         }
 
         return $next($request);
