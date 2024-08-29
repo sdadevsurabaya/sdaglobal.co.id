@@ -36,8 +36,8 @@
        </div>
        <div class="carousel-inner bg-dark">
            <div class="carousel-item active">
-               <img src="{{asset('assets/img/home-banner/home-banner-default-mobile.jpg')}}" class="img-mobile ratio ratio-4x3 d-lg-none" alt="...">
-               <img src="{{asset('assets/img/home-banner/home-banner-default-desktop.jpg')}}" class="img-mobile ratio ratio-lg-21x9 d-none d-lg-block" alt="...">
+               <img src="{{asset('assets/img/home-banner/home-banner-default-mobile2.jpg')}}" class="img-mobile ratio ratio-4x3 d-lg-none" alt="...">
+               <img src="{{asset('assets/img/home-banner/home-banner-default-desktop2.jpg')}}" class="img-mobile ratio ratio-lg-21x9 d-none d-lg-block" alt="...">
            </div>
            <div class="carousel-item">
                <img src="..." class="img-mobile ratio ratio-4x3 d-lg-none" alt="...">
