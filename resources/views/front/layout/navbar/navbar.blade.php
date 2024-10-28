@@ -13,7 +13,8 @@
                     </a>
                 </h1>
             </div>
-            <div>
+
+            {{-- <div>
                 <div class="d-flex align-items-center column-gap-1 float-end">
                     @if (session()->get('lang') == "langen")
                         <button class="active" id="btn-langen" onclick="langen()">EN</button>
@@ -25,6 +26,23 @@
                         <button class="active" id="btn-langid" onclick="langid()">ID</button>
                     @else
                         <button class="" id="btn-langid" onclick="langid()">ID</button>
+                    @endif
+
+                </div>
+            </div> --}}
+
+            <div style="visibility: hidden;">
+                <div class="d-flex align-items-center column-gap-1 float-end">
+                    @if (session()->get('lang') == "langen")
+                        <button class="active" id="btn-langen" onclick="langen()">EN</button>
+                    @else
+                        <button class="" id="btn-langen" onclick="langen()" style="pointer-events: none">EN</button>
+                    @endif
+                    <div class="opacity-50">|</div>
+                    @if (session()->get('lang') == "langid")
+                        <button class="active" id="btn-langid" onclick="langid()" style="pointer-events: none">ID</button>
+                    @else
+                        <button class="" id="btn-langid" onclick="langid()" style="pointer-events: none">ID</button>
                     @endif
 
                 </div>
