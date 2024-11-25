@@ -11,7 +11,7 @@
     <meta name="googlebot" content="all,index,follow" />
     <meta name="google" content="notranslate" />
     <title>{{ $title }}</title>
-    <link rel="shortcut icon" href="{{asset('assets/img/logo/ikon-sda.ico')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('assets/img/logo/icon-new-24.ico')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{asset('vendor/bootstrap-5.3.2-dist/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('vendor/fontawesome-free-6.5.1-web/css/all.min.css')}}">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">

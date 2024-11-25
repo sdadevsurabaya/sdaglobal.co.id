@@ -1,2 +1,6 @@
 User-agent: *
-Disallow:
+allow: /
+
+disallow: https://www.sdaglobal.co.id
+
+Sitemap: https://www.sdaglobal.co.id/public/SitemapPage.xml
