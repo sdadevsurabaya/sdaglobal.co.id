@@ -2,18 +2,25 @@
 
 namespace App\Http\Controllers\Back;
 
-use App\Http\Controllers\Controller;
-use App\Models\ContactUsModel;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\EmailSender;
 use Validator;
+use App\Mail\EmailSender;
+use Illuminate\Http\Request;
+use App\Models\ContactUsModel;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class AdminController extends Controller
 {
     public function index() {
         $title = 'Dashboard | SDA Global';
-        return view('back.page.dashboard', compact('title'));
+        if (Auth::user()->role == "Administrator") {
+            // dd("ini admin");
+            return view('back.page.dashboard', compact('title'));
+        } else if (Auth::user()->role == "HCS") {
+            // dd("ini hcs");
+            return view('back.page.dashboardhcs', compact('title'));
+        }
     }
 
     public function message() {

@@ -62,43 +62,44 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('/dashboard') }}">
-            <span class="menu-title">Dashboard</span>
-            <i class="mdi mdi-home menu-icon"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ url('/message') }}">
-              <span class="menu-title">Message</span>
-              <i class="mdi mdi-message menu-icon"></i>
+            <a class="nav-link" href="{{ url('/dashboard') }}">
+              <span class="menu-title">Dashboard</span>
+              <i class="mdi mdi-home menu-icon"></i>
             </a>
         </li>
-
-        {{-- <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#data_master" aria-expanded="false" aria-controls="data_master">
-              <span class="menu-title">Data Master</span>
-              <i class="menu-arrow"></i>
-              <i class="mdi mdi-database-plus menu-icon"></i>
-            </a>
-            <div class="collapse" id="data_master">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="#"> Level / Posision </a></li>
-              </ul>
-            </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#lowongan" aria-expanded="false" aria-controls="lowongan">
-            <span class="menu-title">Lowongan</span>
-            <i class="menu-arrow"></i>
-            <i class="mdi mdi-account-search menu-icon"></i>
-          </a>
-          <div class="collapse" id="lowongan">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="#"> Post Lowongan </a></li>
-              <li class="nav-item"> <a class="nav-link" href="#"> List All Candidate </a></li>
-            </ul>
-          </div>
-        </li> --}}
-
+        @if (Auth::user()->role == "Administrator")
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/message') }}">
+                <span class="menu-title">Message</span>
+                <i class="mdi mdi-message menu-icon"></i>
+                </a>
+            </li>
+        @elseif (Auth::user()->role == "HCS")
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#data_master" aria-expanded="false" aria-controls="data_master">
+                    <span class="menu-title">Data Master</span>
+                    <i class="menu-arrow"></i>
+                    <i class="mdi mdi-database-plus menu-icon"></i>
+                </a>
+                <div class="collapse" id="data_master">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> <a class="nav-link" href="#"> Level / Posision </a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#lowongan" aria-expanded="false" aria-controls="lowongan">
+                    <span class="menu-title">Lowongan</span>
+                    <i class="menu-arrow"></i>
+                    <i class="mdi mdi-account-search menu-icon"></i>
+                </a>
+                <div class="collapse" id="lowongan">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> <a class="nav-link" href="#"> Post Lowongan </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="#"> List All Candidate </a></li>
+                    </ul>
+                </div>
+            </li>
+        @endif
       </ul>
     </nav>
