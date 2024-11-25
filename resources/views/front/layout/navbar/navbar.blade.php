@@ -73,6 +73,10 @@
                         <li class="nav-item">
                             <a href="{{route('contact')}}" class="nav-link nav-contact">contact</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('career')}}" class="nav-link nav-career">Career</a>
+                        </li>
                     </ul>
                 </div>
             </div>
