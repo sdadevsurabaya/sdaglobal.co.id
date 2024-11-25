@@ -3,6 +3,7 @@
 use App\Http\Middleware\RedirectIfAuthenticated;
 use App\Http\Controllers\Front\AboutController;
 use App\Http\Controllers\Front\ContactController;
+use App\Http\Controllers\Front\KarirController;
 use App\Http\Controllers\Front\IndustriesController;
 use App\Http\Controllers\Front\LandingController;
 use App\Http\Controllers\Front\Policy\PolicyController;
@@ -59,3 +60,9 @@ Route::post('/contact/store', [ContactController::class, 'store'])->name('contac
 Route::get('/about', [AboutController::class, 'about'])->name('about');
 Route::get('/policy', [PolicyController::class, 'policy'])->name('policy.policy');
 Route::get('/terms', [TermsController::class, 'terms'])->name('policy.terms');
+
+
+// karir
+
+Route::get('/career', [KarirController::class, 'career'])->name('career');
+

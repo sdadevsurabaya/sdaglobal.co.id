@@ -20,12 +20,12 @@
 }
 
 .navbrand img {
-    max-width: 132px;
+    max-width: 155px;
 }
 
 @media (min-width: 992px) {
     .navbrand img {
-        max-width: 186px;
+        max-width: 210px;
     }
 }
 

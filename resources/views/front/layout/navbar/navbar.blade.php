@@ -9,7 +9,7 @@
             <div>
                 <h1 class="navbrand">
                     <a href="{{route('landing')}}">
-                        <img src="{{asset('assets/img/logo/logo-sda-global.svg')}}" width="100%" height="auto" alt="SDA Global">
+                        <img src="{{asset('assets/img/logo/Logo-SDA-FPC-B.svg')}}" width="100%" height="auto" alt="SDA Global">
                     </a>
                 </h1>
             </div>
@@ -72,6 +72,10 @@
                         </li> --}}
                         <li class="nav-item">
                             <a href="{{route('contact')}}" class="nav-link nav-contact">contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('career')}}" class="nav-link nav-career">Career</a>
                         </li>
                     </ul>
                 </div>
