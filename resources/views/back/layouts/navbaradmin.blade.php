@@ -83,7 +83,7 @@
                 </a>
                 <div class="collapse" id="data_master">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"> <a class="nav-link" href="#"> Level / Posision </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.level') }}"> Level / Posision </a></li>
                     </ul>
                 </div>
             </li>

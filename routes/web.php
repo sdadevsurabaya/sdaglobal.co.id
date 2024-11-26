@@ -1,17 +1,18 @@
 <?php
 
-use App\Http\Middleware\RedirectIfAuthenticated;
-use App\Http\Controllers\Front\AboutController;
-use App\Http\Controllers\Front\ContactController;
-use App\Http\Controllers\Front\KarirController;
-use App\Http\Controllers\Front\IndustriesController;
-use App\Http\Controllers\Front\LandingController;
-use App\Http\Controllers\Front\Policy\PolicyController;
-use App\Http\Controllers\Front\Policy\TermsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Back\AdminController;
+use App\Http\Controllers\Back\LevelController;
+use App\Http\Controllers\Front\AboutController;
+use App\Http\Controllers\Front\KarirController;
+use App\Http\Middleware\RedirectIfAuthenticated;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Front\ContactController;
+use App\Http\Controllers\Front\LandingController;
+use App\Http\Controllers\Front\IndustriesController;
+use App\Http\Controllers\Front\Policy\TermsController;
+use App\Http\Controllers\Front\Policy\PolicyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,9 +62,13 @@ Route::get('/about', [AboutController::class, 'about'])->name('about');
 Route::get('/policy', [PolicyController::class, 'policy'])->name('policy.policy');
 Route::get('/terms', [TermsController::class, 'terms'])->name('policy.terms');
 
-
 // karir
-
 Route::get('/career', [KarirController::class, 'career'])->name('career');
 Route::get('/form_career', [KarirController::class, 'form_career'])->name('form_career');
 
+// master level
+Route::get('/level', [LevelController::class, 'index'])->name('admin.level');
+Route::post('/level/store', [LevelController::class, 'store'])->name('admin.level_store');
+Route::get('/level/show/{id}', [LevelController::class, 'show'])->name('admin.level_show');
+Route::get('/level/destroy/{id}', [LevelController::class, 'destroy'])->name('admin.level_destroy');
+Route::post('/level/update', [LevelController::class, 'update'])->name('admin.level_update');
