@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\Back;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use App\Models\ModelLevel;
 use Validator;
+use App\Models\ModelLevel;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Session;
 
 class LevelController extends Controller
 {
@@ -16,9 +17,13 @@ class LevelController extends Controller
      */
     public function index()
     {
-        $title = 'Master level | SDA Global';
-        $levels = ModelLevel::all();
-        return view('back.page.level', compact('levels', 'title'));
+        if (!Session::get('email')) {
+            return redirect('login');
+        } else {
+            $title = 'Master level | SDA Global';
+            $levels = ModelLevel::all();
+            return view('back.page.level', compact('levels', 'title'));
+        }
     }
 
     /**

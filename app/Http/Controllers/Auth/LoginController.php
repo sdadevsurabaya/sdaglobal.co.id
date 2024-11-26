@@ -24,6 +24,7 @@ class LoginController extends Controller
 
         if (Auth::Attempt($data)) {
             // dd("berhasil login");
+            Session::put('email',$data['email']);
             return redirect('/dashboard');
         }else{
             Session::flash('error', 'Email atau Password Salah');
