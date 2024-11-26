@@ -38,4 +38,5 @@ Route::get('/terms', [TermsController::class, 'terms'])->name('policy.terms');
 // karir
 
 Route::get('/career', [KarirController::class, 'career'])->name('career');
+Route::get('/form_career', [KarirController::class, 'form_career'])->name('form_career');
 

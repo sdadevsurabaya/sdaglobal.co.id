@@ -21,72 +21,6 @@
 @endsection
     @section('content')
 
-    {{-- <section class="p-0 border-0">
-
-        <!-- banner -->
-        <script src="{{ url('/') }}/js/karir-banner.js"></script>
-        <style>
-            .banner>.jumbotron.mb-5 {
-                margin-bottom: 2rem !important;
-            }
-            #lowongan .btn {
-                min-width: 152px;
-            }
-        </style>
-
-        <div class="container">
-            <p class="mb-4">
-                Kami mencari talenta-talenta untuk pekerjaan yang sesuai dalam berbagai tingkatan organisasi. Proses
-                rekrutmen dilakukan secara selektif agar mendapat calon karyawan terbaik. Berikut alur proses rekrutmen
-                di INDRACO GLOBAL INDONESIA mulai dari mengirimkan lamaran sampai ke tahap penerimaan karyawan.
-            </p>
-
-            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
-                <div class="col">
-                    <div class="text-center">
-                        <img loading="lazy" src="{{ url('/') }}/img/karir/ikon-tahap1.svg" height="auto" class="w-50" alt="">
-                    </div>
-                    <p class="text-center helvetica-medium mb-5 mb-lg-0">
-                        1.<br>Aplikasi Masuk
-                    </p>
-                </div>
-                <div class="col">
-                    <div class="text-center">
-                        <img loading="lazy" src="{{ url('/') }}/img/karir/ikon-tahap2.svg" height="auto" class="w-50" alt="">
-                    </div>
-                    <p class="text-center helvetica-medium mb-5 mb-lg-0">
-                        2.<br>Tes Tertulis & Tes Keahlian
-                    </p>
-                </div>
-                <div class="col">
-                    <div class="text-center">
-                        <img loading="lazy" src="{{ url('/') }}/img/karir/ikon-tahap3.svg" height="auto" class="w-50" alt="">
-                    </div>
-                    <p class="text-center helvetica-medium mb-5 mb-lg-0">
-                        3.<br>Interview
-                    </p>
-                </div>
-                <div class="col">
-                    <div class="text-center">
-                        <img loading="lazy" src="{{ url('/') }}/img/karir/ikon-tahap4.svg" height="auto" class="w-50" alt="">
-                    </div>
-                    <p class="text-center helvetica-medium mb-5 mb-md-0">
-                        4.<br>Medical Checkup
-                    </p>
-                </div>
-                <div class="col">
-                    <div class="text-center">
-                        <img loading="lazy" src="{{ url('/') }}/img/karir/ikon-tahap5.svg" height="auto" class="w-50" alt="">
-                    </div>
-                    <p class="text-center helvetica-medium mb-0">
-                        5.<br>Selamat Bergabung
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </section> --}}
-
     <section class="p-0">
         <div class="page-banner">
             <div class="container h-100">
@@ -139,38 +73,38 @@
                        @if ($job->status == "Open")
                            @php
                                date_default_timezone_set('Asia/Jakarta');
-                           @endphp
+                           @endphp --}}
 
                            <li class="list-group-item px-0 py-5">
                                <div class="row align-items-md-center ">
                                    <div class="col-md order-md-1">
-                                       <h2 class="mb-2">{{ $job->title }}</h2>
+                                       <h2 class="mb-2">{{--{{ $job->title }}--}}</h2>
                                        <p class="mb-3 mb-md-0 small text-black-50">
-                                           Level : {{ $job->title_level}}
+                                           Level : {{-- {{ $job->title_level}} --}}
                                            <br>
-                                           Berlaku Hingga : {{date('d M Y',strtotime($job->end_date))}}
+                                           Berlaku Hingga : {{-- {{date('d M Y',strtotime($job->end_date))}} --}}
                                        </p>
                                    </div>
                                    <div class="col-md-auto mb-2 order-md-2 mb-md-0 pr-md-0">
-                                       @if ($lang == 'en')
-                                           <button class="btn btn-outline-success btn-block" data-toggle="collapse" data-target="#lowongan{{ $job->id }}">Qualification</button>
-                                       @else
-                                           <button class="btn btn-outline-success btn-block" data-toggle="collapse" data-target="#lowongan{{ $job->id }}">Kualifikasi</button>
-                                       @endif
+                                      {{-- @if ($lang == 'en')  --}}
+                                           <button class="btn btn-outline-success btn-block" data-toggle="collapse" data-target="#lowongan{{-- {{ $job->id }} --}}">Qualification</button>
+                                      {{-- @else --}}
+                                           <button class="btn btn-outline-success btn-block" data-toggle="collapse" data-target="#lowongan{{-- {{ $job->id }} --}}">Kualifikasi</button>
+                                      {{-- @endif --}}
                                    </div>
                                    <div class="col-12 order-md-4">
-                                       <div class="collapse" id="lowongan{{ $job->id }}" data-parent="#lowongan{{ $job->id }}">
+                                       <div class="collapse" id="lowongan{{-- {{ $job->id }} --}}" data-parent="#lowongan {{-- {{ $job->id }} --}}">
                                            <div class="pt-5">
-                                               {!! $job->description !!}
+                                              {{-- {!! $job->description !!}  --}}
                                            </div>
                                        </div>
                                    </div>
                                    <div class="col-md-auto order-md-3">
-                                       <a href="{{ route('home.identitas', $job->id.'?lang='.$lang) }}" class="btn btn-outline-dark btn-block">Lamar</a>
+                                       <a href="{{ route('form_career'){{--, $job->id.'?lang='.$lang)--}} }}" class="btn btn-outline-dark btn-block">Lamar</a>
                                    </div>
                                </div>
                            </li>
-                       @endif
+                       {{-- @endif
                    @endforeach
                @else
                    <li class="list-group-item px-0 py-5">
