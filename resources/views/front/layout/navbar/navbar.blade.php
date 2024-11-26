@@ -14,7 +14,7 @@
                 </h1>
             </div>
 
-            {{-- <div>
+            <div>
                 <div class="d-flex align-items-center column-gap-1 float-end">
                     @if (session()->get('lang') == "langen")
                         <button class="active" id="btn-langen" onclick="langen()">EN</button>
@@ -29,9 +29,9 @@
                     @endif
 
                 </div>
-            </div> --}}
+            </div>
 
-            <div style="visibility: hidden;">
+            {{-- <div style="visibility: hidden;">
                 <div class="d-flex align-items-center column-gap-1 float-end">
                     @if (session()->get('lang') == "langen")
                         <button class="active" id="btn-langen" onclick="langen()">EN</button>
@@ -46,7 +46,7 @@
                     @endif
 
                 </div>
-            </div>
+            </div> --}}
         </header>
         <main>
             <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="navside" aria-labelledby="navsideLabel">

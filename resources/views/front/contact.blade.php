@@ -54,6 +54,9 @@
                             <input type="number" class="form-control form-control-lg" name="phone" placeholder="Contact Number">
                         </div>
                         <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" name="subject" placeholder="Email Subject">
+                        </div>
+                        <div class="form-group">
                             <textarea id="" cols="1" rows="10" class="form-control form-control-lg" name="pesan" placeholder="Message"></textarea>
                         </div>
                         <div class="form-group pt-3">

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\RedirectIfAuthenticated;
 use App\Http\Controllers\Front\AboutController;
 use App\Http\Controllers\Front\ContactController;
 use App\Http\Controllers\Front\KarirController;
@@ -8,6 +9,9 @@ use App\Http\Controllers\Front\LandingController;
 use App\Http\Controllers\Front\Policy\PolicyController;
 use App\Http\Controllers\Front\Policy\TermsController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Back\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +29,29 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [LandingController::class, 'landing'])->name('landing');
+
+Route::middleware([RedirectIfAuthenticated::class])->group(function () {
+    // login page
+    Route::get('/login', [LoginController::class, 'login'])->name('login');
+    Route::post('/actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
+
+    // register page
+    Route::get('/register', [RegisterController::class, 'register'])->name('register');
+    Route::post('/register/action', [RegisterController::class, 'actionregister'])->name('actionregister');
+
+});
+
+// admin page
+Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard')->middleware('auth');
+
+// Logout
+Route::get('/actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
+
+// message
+Route::get('/message', [AdminController::class, 'message'])->name('admin.message')->middleware('auth');
+Route::get('/read_message/{id}', [AdminController::class, 'read_message'])->name('admin.read_message');
+Route::post('/reply_message/{id}', [AdminController::class, 'reply_message'])->name('admin.reply_message');
+
 Route::post('/userip', [LandingController::class, 'userip'])->name('userip');
 Route::post('/sessionlang', [LandingController::class, 'sessionlang'])->name('sessionlang');
 Route::get('/industries', [IndustriesController::class, 'industries'])->name('industries');
