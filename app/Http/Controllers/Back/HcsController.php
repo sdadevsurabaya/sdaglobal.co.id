@@ -65,5 +65,14 @@ class HcsController extends Controller
         return response()->json(['error' => $validator->errors()->all()]);
     }
 
+    public function vacancies_detail($id)
+    {
+        $GetVacanciesById = Vacancies::where('id', $id)->with('level')->first();
+
+        return response()->json([
+            'success' => true,
+            'data' => $GetVacanciesById,
+        ]);
+    }
 
 }

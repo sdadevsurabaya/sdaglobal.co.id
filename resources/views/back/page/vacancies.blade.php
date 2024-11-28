@@ -365,19 +365,20 @@
         // show detail job
         function detail(id) {
             $.ajax({
-                url: "{{ url('CreateLowongan/detail') }}/" + id,
+                url: "{{ url('vacancies/detail') }}/" + id,
                 type: "get",
                 cache: false,
                 dataType: 'json',
                 success: function(response) {
                     //fill data to form
+                    // console.log(response.data);
 
-                    $('#detail-title').html(response.data[0].title);
-                    $('#detail-description').html(response.data[0].description);
-                    $('#detail-level').html(response.data[0].title_level);
-                    $('#detail-status').html(response.data[0].status);
-                    $('#detail-start-date').html(response.data[0].start_date);
-                    $('#detail-end-date').html(response.data[0].end_date);
+                    $('#detail-title').html(response.data.title);
+                    $('#detail-description').html(response.data.description);
+                    $('#detail-level').html(response.data.level.title);
+                    $('#detail-status').html(response.data.status);
+                    $('#detail-start-date').html(response.data.start_date);
+                    $('#detail-end-date').html(response.data.end_date);
                     //open modal
                     $('#ModalDetailJob').modal('show');
                 }
