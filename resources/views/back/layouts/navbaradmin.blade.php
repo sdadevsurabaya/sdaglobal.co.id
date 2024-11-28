@@ -83,19 +83,19 @@
                 </a>
                 <div class="collapse" id="data_master">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.level') }}"> Level / Posision </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('adminhcs.level') }}"> Level / Posision </a></li>
                     </ul>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#lowongan" aria-expanded="false" aria-controls="lowongan">
-                    <span class="menu-title">Lowongan</span>
+                <a class="nav-link" data-toggle="collapse" href="#vacancies" aria-expanded="false" aria-controls="vacancies">
+                    <span class="menu-title">Vacancies</span>
                     <i class="menu-arrow"></i>
                     <i class="mdi mdi-account-search menu-icon"></i>
                 </a>
-                <div class="collapse" id="lowongan">
+                <div class="collapse" id="vacancies">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"> <a class="nav-link" href="#"> Post Lowongan </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('adminhcs.vacancies') }}"> Post Vacancies </a></li>
                         <li class="nav-item"> <a class="nav-link" href="#"> List All Candidate </a></li>
                     </ul>
                 </div>

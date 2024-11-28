@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ModelLevel extends Model
+class Vacancies extends Model
 {
     use HasFactory;
 
@@ -16,10 +16,15 @@ class ModelLevel extends Model
      */
     protected $fillable = [
         'title',
+        'description',
+        'level_id',
+        'status',
+        'start_date',
+        'end_date',
     ];
 
-    public function vacancies()
+    public function level()
     {
-        return $this->belongsTo(Vacancies::class, 'level_id', 'id');
+        return $this->hasOne(ModelLevel::class, 'id', 'level_id');
     }
 }

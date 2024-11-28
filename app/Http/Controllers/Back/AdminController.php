@@ -9,6 +9,7 @@ use App\Models\ContactUsModel;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Session;
 
 class AdminController extends Controller
 {

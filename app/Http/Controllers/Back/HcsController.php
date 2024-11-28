@@ -2,10 +2,68 @@
 
 namespace App\Http\Controllers\Back;
 
-use App\Http\Controllers\Controller;
+use App\Models\Vacancies;
+use App\Models\ModelLevel;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Session;
+// use Illuminate\Support\Facades\Validator;
+use Validator;
 
 class HcsController extends Controller
 {
-    //
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        if (!Session::get('email')) {
+            return redirect('login');
+        } else {
+            $title = 'Master Vacancies | SDA Global';
+            $ListVacancies = Vacancies::with('level')->orderByDesc('id')->get();
+            // dd($ListVacancies);
+            $levels = ModelLevel::all();
+            return view('back.page.vacancies', compact('title', 'ListVacancies', 'levels'));
+        }
+    }
+
+    public function vacancies_store(Request $request)
+    {
+        $validator = Validator::make(
+            $request->all(),
+            [
+                'title' => 'required',
+                'description' => 'required',
+                'level' => 'required|not_in:0',
+                'status' => 'required|not_in:0',
+                'start_date' => 'required',
+                'end_date' => 'required',
+            ],
+            [
+                'title.required' => 'The Job Position field is required.',
+            ]
+        );
+
+        //check if validation fails
+        if ($validator->passes()) {
+            // insert to db
+            Vacancies::create([
+                'title' => $request->title,
+                'description' => $request->description,
+                'level' => $request->level,
+                'status' => $request->status,
+                'start_date' => $request->start_date,
+                'end_date' => $request->end_date,
+            ]);
+
+            return response()->json(['message' => 'Added new records job!']);
+        }
+
+        return response()->json(['error' => $validator->errors()->all()]);
+    }
+
+
 }
