@@ -7,7 +7,6 @@ use App\Models\ModelLevel;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Session;
-// use Illuminate\Support\Facades\Validator;
 use Validator;
 
 class HcsController extends Controller
@@ -73,6 +72,41 @@ class HcsController extends Controller
             'success' => true,
             'data' => $GetVacanciesById,
         ]);
+    }
+
+    public function vacancies_update(Request $request)
+    {
+        $validator = Validator::make(
+            $request->all(),
+            [
+                'title' => 'required',
+                'description' => 'required',
+                'level' => 'required|not_in:0',
+                'status' => 'required|not_in:0',
+                'start_date' => 'required',
+                'end_date' => 'required',
+            ],
+            [
+                'title.required' => 'The Job Position field is required.',
+            ]
+        );
+
+        //check if validation fails
+        if ($validator->passes()) {
+            // insert to db
+            $data = Vacancies::find($request->id);
+            $data->title = $request->title;
+            $data->description = $request->description;
+            $data->level_id = $request->level;
+            $data->status = $request->status;
+            $data->start_date = $request->start_date;
+            $data->end_date = $request->end_date;
+            $data->save();
+
+            return response()->json(['message' => 'Updated records job!']);
+        }
+
+        return response()->json(['error' => $validator->errors()->all()]);
     }
 
 }

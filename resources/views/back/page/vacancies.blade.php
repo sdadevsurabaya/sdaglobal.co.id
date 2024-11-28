@@ -388,26 +388,26 @@
         // show edit job
         function update(id) {
             $.ajax({
-                url: "{{ url('CreateLowongan/detail') }}/" + id,
+                url: "{{ url('vacancies/detail') }}/" + id,
                 type: "get",
                 cache: false,
                 success: function(response) {
                     //fill data to form
-                    $('#edit_id').val(response.data[0].id);
-                    $('#edit_title').val(response.data[0].title);
-                    CKEDITOR.instances['edit_description'].setData(response.data[0].description);
-                    $('[name="edit_level"]').val(response.data[0].level);
-                    $('[name="edit_status"]').val(response.data[0].status);
-                    $('#edit_start_date').val(response.data[0].start_date);
-                    $('#edit_end_date').val(response.data[0].end_date);
+                    $('#edit_id').val(response.data.id);
+                    $('#edit_title').val(response.data.title);
+                    CKEDITOR.instances['edit_description'].setData(response.data.description);
+                    $('[name="edit_level"]').val(response.data.level_id);
+                    $('[name="edit_status"]').val(response.data.status);
+                    $('#edit_start_date').val(response.data.start_date);
+                    $('#edit_end_date').val(response.data.end_date);
                     //open modal
                     $('#ModalEditJob').modal('show');
                 }
             });
         }
 
-         // proses submit edit job
-         $('#edit_jobs').submit(function(e) {
+        // proses submit edit job
+        $('#edit_jobs').submit(function(e) {
             e.preventDefault();
             var formData = new FormData(this);
             var id = formData.get("edit_id");
@@ -418,16 +418,10 @@
             var start_date = formData.get("edit_start_date");
             var end_date = formData.get("edit_end_date");
             let token   = $("meta[name='csrf-token']").attr("content");
-            // console.log(id);
-            // console.log(title);
-            // console.log(description);
-            // console.log(level);
-            // console.log(status);
-            // console.log(start_date);
-            // console.log(end_date);
+
             $.ajax({
                 type: 'POST',
-                url: "{{ url('CreateLowongan/update') }}",
+                url: "{{ url('vacancies/update') }}",
                 // data : formData,
                 data: {
                     "id": id,
@@ -449,7 +443,7 @@
                             showConfirmButton: false,
                             timer: 30000
                         });
-                        window.location.href = "{{url('CreateLowongan')}}";
+                        window.location.href = "{{url('vacancies')}}";
                     }else{
                         printErrorMsgEdit(data.error);
                     }
@@ -457,38 +451,38 @@
             });
         });
 
-        function destroy(id) {
-            Swal.fire({
-                icon: 'warning',
-                title: 'Hapus Data',
-                text: 'Apakah anda yakin ingin mengapus data ini ?',
-                showCancelButton: !0,
-                confirmButtonText: "Ya",
-                cancelButtonText: "Tidak",
-                reverseButtons: !0
-            }).then(function (e) {
-                if (e.value === true) {
-                    $.ajax({
-                        type: "get",
-                        url: "{{ url('CreateLowongan/destroy') }}/" + id,
-                        success: function(data) {
-                            Swal.fire({
-                                icon: 'success',
-                                title: `${data.message}`,
-                                // text: 'Data Type Outlet Berhasil dihapus.',
-                                showConfirmButton: true,
-                                // timer: 3000
-                            });
-                            window.location.href = "{{url('CreateLowongan')}}";
-                        }
-                    });
-                } else {
-                    e.dismiss;
-                }
-            }, function (dismiss) {
-                return false;
-            });
-        }
+        // function destroy(id) {
+        //     Swal.fire({
+        //         icon: 'warning',
+        //         title: 'Hapus Data',
+        //         text: 'Apakah anda yakin ingin mengapus data ini ?',
+        //         showCancelButton: !0,
+        //         confirmButtonText: "Ya",
+        //         cancelButtonText: "Tidak",
+        //         reverseButtons: !0
+        //     }).then(function (e) {
+        //         if (e.value === true) {
+        //             $.ajax({
+        //                 type: "get",
+        //                 url: "{{ url('CreateLowongan/destroy') }}/" + id,
+        //                 success: function(data) {
+        //                     Swal.fire({
+        //                         icon: 'success',
+        //                         title: `${data.message}`,
+        //                         // text: 'Data Type Outlet Berhasil dihapus.',
+        //                         showConfirmButton: true,
+        //                         // timer: 3000
+        //                     });
+        //                     window.location.href = "{{url('CreateLowongan')}}";
+        //                 }
+        //             });
+        //         } else {
+        //             e.dismiss;
+        //         }
+        //     }, function (dismiss) {
+        //         return false;
+        //     });
+        // }
 
         function printErrorMsgAdd (msg) {
             $(".print-error-msg-add").find("ul").html('');
