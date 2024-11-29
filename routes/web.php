@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Back\HcsController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Back\AdminController;
 use App\Http\Controllers\Back\LevelController;
@@ -70,8 +71,16 @@ Route::post('/show_jobs/search_level', [KarirController::class, 'search_level'])
 
 
 // master level
-Route::get('/level', [LevelController::class, 'index'])->name('admin.level');
-Route::post('/level/store', [LevelController::class, 'store'])->name('admin.level_store');
-Route::get('/level/show/{id}', [LevelController::class, 'show'])->name('admin.level_show');
-Route::get('/level/destroy/{id}', [LevelController::class, 'destroy'])->name('admin.level_destroy');
-Route::post('/level/update', [LevelController::class, 'update'])->name('admin.level_update');
+Route::get('/level', [LevelController::class, 'index'])->name('adminhcs.level');
+Route::post('/level/store', [LevelController::class, 'store'])->name('adminhcs.level_store');
+Route::get('/level/show/{id}', [LevelController::class, 'show'])->name('adminhcs.level_show');
+Route::get('/level/destroy/{id}', [LevelController::class, 'destroy'])->name('adminhcs.level_destroy');
+Route::post('/level/update', [LevelController::class, 'update'])->name('adminhcs.level_update');
+
+// jobs
+Route::get('/vacancies', [HcsController::class, 'index'])->name('adminhcs.vacancies');
+Route::post('/vacancies/store', [HcsController::class, 'vacancies_store'])->name('adminhcs.vacancies_store');
+Route::get('/vacancies/detail/{id}', [HcsController::class, 'vacancies_detail'])->name('adminhcs.vacancies_detail');
+Route::post('/vacancies/update', [HcsController::class, 'vacancies_update'])->name('adminhcs.vacancies_update');
+Route::get('/vacancies/destroy/{id}', [HcsController::class, 'vacancies_destroy'])->name('adminhcs.vacancies_destroy');
+Route::get('/vacancies/listCandidateByPosition/{id}', [HcsController::class, 'vacancies_listCandidateByPosition'])->name('adminhcs.vacancies_listCandidateByPosition');

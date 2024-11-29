@@ -9,17 +9,22 @@ use App\Models\ContactUsModel;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Session;
 
 class AdminController extends Controller
 {
     public function index() {
-        $title = 'Dashboard | SDA Global';
-        if (Auth::user()->role == "Administrator") {
-            // dd("ini admin");
-            return view('back.page.dashboard', compact('title'));
-        } else if (Auth::user()->role == "HCS") {
-            // dd("ini hcs");
-            return view('back.page.dashboardhcs', compact('title'));
+        if (!Session::get('email')) {
+            return redirect('login');
+        } else {
+            $title = 'Dashboard | SDA Global';
+            if (Auth::user()->role == "Administrator") {
+                // dd("ini admin");
+                return view('back.page.dashboard', compact('title'));
+            } else if (Auth::user()->role == "HCS") {
+                // dd("ini hcs");
+                return view('back.page.dashboardhcs', compact('title'));
+            }
         }
     }
 
