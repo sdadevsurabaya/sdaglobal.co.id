@@ -109,4 +109,12 @@ class HcsController extends Controller
         return response()->json(['error' => $validator->errors()->all()]);
     }
 
+    public function identitas($id)
+    {
+        $title = 'Form Career | SDA Global';
+        $getVacanciesById = Vacancies::where('id', $id)->first();
+        $posission = $getVacanciesById->title;
+
+        return view('front.form_career', compact('title', 'posission'));
+    }
 }

@@ -65,9 +65,9 @@ Route::get('/terms', [TermsController::class, 'terms'])->name('policy.terms');
 
 // karir
 Route::get('/career', [KarirController::class, 'career'])->name('career');
-Route::get('/form_career', [KarirController::class, 'form_career'])->name('form_career');
 Route::post('/show_jobs/search_jobs', [KarirController::class, 'search_jobs'])->name('home.search_jobs');
 Route::post('/show_jobs/search_level', [KarirController::class, 'search_level'])->name('home.search_level');
+Route::get('/identitas/{idposission}', [HcsController::class, 'identitas'])->name('adminhcs.identitas');
 
 // master level
 Route::get('/level', [LevelController::class, 'index'])->name('adminhcs.level');

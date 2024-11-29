@@ -65,12 +65,8 @@
                         <div class="col-md-6 col-xl-5">
                             <div class="form-group border-bottom">
                                 <label for="">Position Applied For<span style="color: red">*</span></label>
-                                <input class="form-control border-0 bg-transparent px-0" type="hidden" name="lang"
-                                    id="lang" value="{{ $lang }}"
-                                    placeholder="Other (If your position not in listing)" readonly>
-                                <input class="form-control border-0 bg-transparent px-0" type="text"
-                                    name="position_applied" id="position_applied" value="{{ $posission }}"
-                                    placeholder="Other (If your position not in listing)" readonly>
+                                {{-- <input class="form-control border-0 bg-transparent px-0" type="hidden" name="lang" id="lang" value="{{ $lang }}" placeholder="Other (If your position not in listing)" readonly> --}}
+                                <input class="form-control border-0 bg-transparent px-0" type="text" name="position_applied" id="position_applied" value="{{ $posission }}" placeholder="Other (If your position not in listing)" readonly>
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-5">

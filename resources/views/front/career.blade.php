@@ -100,7 +100,7 @@
                                        </div>
                                    </div>
                                    <div class="col-md-auto order-md-3">
-                                       <a href="#" class="btn btn-outline-dark btn-block text-decoration-none">Apply</a>
+                                       <a href="{{ route('adminhcs.identitas', $job->id) }}" class="btn btn-outline-dark btn-block text-decoration-none">Apply</a>
                                    </div>
                                </div>
                            </li>
@@ -167,7 +167,7 @@
         $('#search_level').change(function(e) {
             var val_level = $('#search_level').val();
             var lang = $('#lang').val();
-            console.log(val_level);
+            // console.log(val_level);
             $.ajax({
                 type: 'POST',
                 url: "{{ url('show_jobs/search_level') }}",

@@ -23,12 +23,6 @@ class KarirController extends Controller
         return view('front.career', compact('title', 'res_job', 'levels'));
     }
 
-    public function form_career()
-    {
-        $title = 'Form Career';
-        return view('front.form_career', compact('title'));
-    }
-
     public function search_jobs(Request $request)
     {
         $search_jobs = htmlspecialchars($request->search_jobs);
