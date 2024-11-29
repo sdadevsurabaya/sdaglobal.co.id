@@ -66,6 +66,9 @@ Route::get('/terms', [TermsController::class, 'terms'])->name('policy.terms');
 Route::get('/career', [KarirController::class, 'career'])->name('career');
 Route::get('/form_career', [KarirController::class, 'form_career'])->name('form_career');
 
+Route::post('/show_jobs/search_level', [KarirController::class, 'search_level'])->name('home.search_level');
+
+
 // master level
 Route::get('/level', [LevelController::class, 'index'])->name('admin.level');
 Route::post('/level/store', [LevelController::class, 'store'])->name('admin.level_store');

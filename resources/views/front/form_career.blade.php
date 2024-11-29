@@ -1438,7 +1438,7 @@
         </form>
 
     </main>
-    <script>
+    {{-- <script>
        $(function() {
             $('#datepicker').datepicker({format: 'yyyy-mm-dd'});
         });
@@ -2205,8 +2205,8 @@
         }
 
         $('body').attr('id', 'karir');
-        $('#nav-karir, #nav-karir-m').addClass('active');
-    </script>
+        $('#nav-career,').addClass('active');
+    </script> --}}
 
 
 

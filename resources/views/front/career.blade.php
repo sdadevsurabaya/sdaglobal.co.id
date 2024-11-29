@@ -100,7 +100,7 @@
                                        </div>
                                    </div>
                                    <div class="col-md-auto order-md-3">
-                                       <a href="{{ route('form_career'){{--, $job->id.'?lang='.$lang)--}} }}" class="btn btn-outline-dark btn-block">Lamar</a>
+                                       <a href="{{ route('form_career')}}" class="btn btn-outline-dark btn-block">Lamar</a>
                                    </div>
                                </div>
                            </li>
@@ -127,7 +127,64 @@
 
     @endsection
 @section('pageScripts')
-<script>
-    $('.nav-career').addClass('active');
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#nav-career').addClass('active');
+        document.getElementById("search_jobs_input").value = "";
+
+        // $.get(" {{url('show_jobs')}}", {}, function(data, status){
+        //     $("#lowongan").html(data);
+        // });
+
+        // proses search jobs
+        $('#search_jobs').submit(function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+            var search_jobs = formData.get("search_jobs");
+            var lang = $('#lang').val();
+            let token   = $("meta[name='csrf-token']").attr("content");
+            // console.log(lang);
+            $.ajax({
+                type: 'POST',
+                url: "{{ url('show_jobs/search_jobs') }}",
+                // data : formData,
+                data: {
+                    "search_jobs": search_jobs,
+                    "lang": lang,
+                    "_token": token,
+                },
+                cache: false,
+                success:function(response){
+                    if($.isEmptyObject(response.error)){
+                        $("#lowongan").html(response);
+                        document.getElementsByClassName('leanding_lowongan')[0].style.display = "none";
+                    }
+                }
+            });
+        });
+
+        // proses search by level
+        $('#search_level').change(function(e) {
+            var val_level = $('#search_level').val();
+            var lang = $('#lang').val();
+            // console.log(val_level);
+            $.ajax({
+                type: 'POST',
+                url: "{{ url('show_jobs/search_level') }}",
+                // data : formData,
+                data: {
+                    "val_level": val_level,
+                    "lang": lang,
+                },
+                cache: false,
+                success:function(response){
+                    if($.isEmptyObject(response.error)){
+                        $("#lowongan").html(response);
+                        document.getElementsByClassName('leanding_lowongan')[0].style.display = "none";
+                    }
+                }
+            });
+        });
+    });
 </script>
 @endsection
