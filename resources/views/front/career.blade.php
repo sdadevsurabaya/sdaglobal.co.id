@@ -51,7 +51,7 @@
                        @csrf
                        <input class="form-control bg-transparent border-0" type="search" name="search_jobs" id="search_jobs_input" placeholder="Search for Jobs" style="font-size: inherit;">
                        <button class="btn" type="submit">
-                           <i class="bi icon-cari"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                        </button>
                    </form>
               </div>
