@@ -15,5 +15,7 @@ class VerifyCsrfToken extends Middleware
         '/userip',
         '/sessionlang',
         '/reply_message',
+        '/show_jobs/search_jobs',
+        '/show_jobs/search_level',
     ];
 }
