@@ -29,6 +29,18 @@ class KarirController extends Controller
         return view('front.form_career', compact('title'));
     }
 
+    public function search_jobs(Request $request)
+    {
+        $search_jobs = htmlspecialchars($request->search_jobs);
+        date_default_timezone_set('Asia/Jakarta');
+        $today = date('Y-m-d');
+        // $lang = $request->lang;
+
+        $res_job = Vacancies::where('vacancies.end_date', '>=', $today)->where('vacancies.status', 'Open')->where('vacancies.title', 'like', '%' . $search_jobs . '%')->with('level')->orderByDesc('id')->get();
+
+        return view('front.showjobs', compact('res_job'));
+    }
+
     public function search_level(Request $request)
     {
         $val_level = $request->val_level;
@@ -37,7 +49,6 @@ class KarirController extends Controller
         // $lang = $request->lang;
 
         $res_job = Vacancies::where('vacancies.end_date', '>=', $today)->where('vacancies.status', 'Open')->where('vacancies.level_id', $val_level)->with('level')->orderByDesc('id')->get();
-        // dd($res_job);
 
         return view('front.showjobs', compact('res_job'));
     }
