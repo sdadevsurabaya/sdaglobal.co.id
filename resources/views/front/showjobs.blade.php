@@ -22,13 +22,13 @@
                     </div>
                     <div class="col-md-auto mb-2 order-md-2 mb-md-0 pr-md-0">
                         {{-- @if ($lang == 'en') --}}
-                            <button class="btn btn-outline-success btn-block" data-toggle="collapse" data-target="#lowongan{{ $job->id }}">Qualification</button>
+                            <button class="btn btn-outline-success btn-block" data-bs-toggle="collapse" data-bs-target="#lowongan{{ $job->id }}">Qualification</button>
                         {{-- @else
                             <button class="btn btn-outline-success btn-block" data-toggle="collapse" data-target="#lowongan{{ $job->id }}">Kualifikasi</button>
                         @endif --}}
                     </div>
                     <div class="col-12 order-md-4">
-                        <div class="collapse" id="lowongan{{ $job->id }}" data-parent="#lowongan{{ $job->id }}">
+                        <div class="collapse" id="lowongan{{ $job->id }}" data-bs-parent="#lowongan{{ $job->id }}">
                             <div class="pt-5">
                                 {!! $job->description !!}
                             </div>
