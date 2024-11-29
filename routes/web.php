@@ -69,7 +69,6 @@ Route::get('/form_career', [KarirController::class, 'form_career'])->name('form_
 
 Route::post('/show_jobs/search_level', [KarirController::class, 'search_level'])->name('home.search_level');
 
-
 // master level
 Route::get('/level', [LevelController::class, 'index'])->name('adminhcs.level');
 Route::post('/level/store', [LevelController::class, 'store'])->name('adminhcs.level_store');

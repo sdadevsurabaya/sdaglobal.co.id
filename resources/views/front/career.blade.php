@@ -59,64 +59,64 @@
               <div class="col">
                    <select class="form-control w-100 bg-light border-0" name="search_level" id="search_level">
                        <option value="" selected>-- Cari Sesuai Level Jabatan --</option>
-                       {{-- @foreach ($getLevel as $data)
+                       @foreach ($levels as $data)
                            <option value="{{ $data->id }}">{{ $data->title }}</option>
-                       @endforeach --}}
+                       @endforeach
                    </select>
               </div>
            </div>
 
            <ul class="list-group list-group-flush leanding_lowongan">
-               {{-- @if (count($res_job) != 0)
+               @if (count($res_job) != 0)
                    @foreach ($res_job as $job)
-                       <!-- lowongan item -->
-                       @if ($job->status == "Open")
+                        <!-- lowongan item -->
+                        @if ($job->status == "Open")
                            @php
                                date_default_timezone_set('Asia/Jakarta');
-                           @endphp --}}
+                           @endphp
 
                            <li class="list-group-item px-0 py-5">
                                <div class="row align-items-md-center ">
                                    <div class="col-md order-md-1">
-                                       <h2 class="mb-2">{{--{{ $job->title }}--}}</h2>
+                                       <h2 class="mb-2">{{ $job->title }}</h2>
                                        <p class="mb-3 mb-md-0 small text-black-50">
-                                           Level : {{-- {{ $job->title_level}} --}}
+                                           Level : {{ $job->level->title}}
                                            <br>
-                                           Berlaku Hingga : {{-- {{date('d M Y',strtotime($job->end_date))}} --}}
+                                           Valid until : {{date('d M Y',strtotime($job->end_date))}}
                                        </p>
                                    </div>
                                    <div class="col-md-auto mb-2 order-md-2 mb-md-0 pr-md-0">
                                       {{-- @if ($lang == 'en')  --}}
-                                           <button class="btn btn-outline-success btn-block" data-toggle="collapse" data-target="#lowongan{{-- {{ $job->id }} --}}">Qualification</button>
+                                           <button class="btn btn-outline-danger btn-block" data-toggle="collapse" data-target="#lowongan{{ $job->id }}">Qualification</button>
                                       {{-- @else --}}
-                                           <button class="btn btn-outline-success btn-block" data-toggle="collapse" data-target="#lowongan{{-- {{ $job->id }} --}}">Kualifikasi</button>
+                                           {{-- <button class="btn btn-outline-success btn-block" data-toggle="collapse" data-target="#lowongan{{ $job->id }}">Kualifikasi</button> --}}
                                       {{-- @endif --}}
                                    </div>
                                    <div class="col-12 order-md-4">
-                                       <div class="collapse" id="lowongan{{-- {{ $job->id }} --}}" data-parent="#lowongan {{-- {{ $job->id }} --}}">
+                                       <div class="collapse" id="lowongan{{ $job->id }}" data-parent="#lowongan{{ $job->id }}">
                                            <div class="pt-5">
-                                              {{-- {!! $job->description !!}  --}}
+                                              {!! $job->description !!}
                                            </div>
                                        </div>
                                    </div>
                                    <div class="col-md-auto order-md-3">
-                                       <a href="{{ route('form_career')}}" class="btn btn-outline-dark btn-block">Lamar</a>
+                                       <a href="#" class="btn btn-outline-dark btn-block">Apply</a>
                                    </div>
                                </div>
                            </li>
-                       {{-- @endif
-                   @endforeach
-               @else
+                        @endif
+                    @endforeach
+                @else
                    <li class="list-group-item px-0 py-5">
                        <div class="d-flex justify-content-center">
-                           @if ($lang == 'en')
+                           {{-- @if ($lang == 'en') --}}
                                <h3 class="">We currently do not have any job vacancies</h3>
-                           @else
+                           {{-- @else
                                <h3 class="">Saat ini kami tidak membuka lowongan pekerjaan</h3>
-                           @endif
+                           @endif --}}
                        </div>
                    </li>
-               @endif --}}
+               @endif
            </ul>
 
            <ul class="list-group list-group-flush" id="lowongan">
@@ -167,7 +167,7 @@
         $('#search_level').change(function(e) {
             var val_level = $('#search_level').val();
             var lang = $('#lang').val();
-            // console.log(val_level);
+            console.log(val_level);
             $.ajax({
                 type: 'POST',
                 url: "{{ url('show_jobs/search_level') }}",
