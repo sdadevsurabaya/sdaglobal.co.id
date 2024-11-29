@@ -52,7 +52,7 @@ class HcsController extends Controller
             Vacancies::create([
                 'title' => $request->title,
                 'description' => $request->description,
-                'level' => $request->level,
+                'level_id' => $request->level,
                 'status' => $request->status,
                 'start_date' => $request->start_date,
                 'end_date' => $request->end_date,
@@ -81,7 +81,7 @@ class HcsController extends Controller
             [
                 'title' => 'required',
                 'description' => 'required',
-                'level' => 'required|not_in:0',
+                'level_id' => 'required|not_in:0',
                 'status' => 'required|not_in:0',
                 'start_date' => 'required',
                 'end_date' => 'required',
