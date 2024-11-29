@@ -38,7 +38,7 @@
     </section>
 
     <section class="pb-0  border-0 container">
-        <h2 class="text-center">Lowongan Pekerjaan</h2>
+        <h2 class="text-center">Job Vacancy</h2>
     </section>
 
     <section>
@@ -49,7 +49,7 @@
                    <input type="hidden" value="" name="lang" id="lang">
                    <form id="search_jobs" action="javascript:void(0)" method="POST" class="input-group bg-light" style="margin-right: -.5rem;">
                        @csrf
-                       <input class="form-control bg-transparent border-0" type="search" name="search_jobs" id="search_jobs_input" placeholder="Cari Pekerjaan" style="font-size: inherit;">
+                       <input class="form-control bg-transparent border-0" type="search" name="search_jobs" id="search_jobs_input" placeholder="Search for Jobs" style="font-size: inherit;">
                        <button class="btn" type="submit">
                            <i class="bi icon-cari"></i>
                        </button>
@@ -58,7 +58,7 @@
 
               <div class="col">
                    <select class="form-control w-100 bg-light border-0" name="search_level" id="search_level">
-                       <option value="" selected>-- Cari Sesuai Level Jabatan --</option>
+                       <option value="" selected>-- Search by Job Level --</option>
                        @foreach ($levels as $data)
                            <option value="{{ $data->id }}">{{ $data->title }}</option>
                        @endforeach
@@ -87,20 +87,20 @@
                                    </div>
                                    <div class="col-md-auto mb-2 order-md-2 mb-md-0 pr-md-0">
                                       {{-- @if ($lang == 'en')  --}}
-                                           <button class="btn btn-outline-danger btn-block" data-toggle="collapse" data-target="#lowongan{{ $job->id }}">Qualification</button>
+                                           <button class="btn btn-outline-success btn-block" data-bs-toggle="collapse" data-bs-target="#lowongan{{ $job->id }}">Qualification</button>
                                       {{-- @else --}}
                                            {{-- <button class="btn btn-outline-success btn-block" data-toggle="collapse" data-target="#lowongan{{ $job->id }}">Kualifikasi</button> --}}
                                       {{-- @endif --}}
                                    </div>
                                    <div class="col-12 order-md-4">
-                                       <div class="collapse" id="lowongan{{ $job->id }}" data-parent="#lowongan{{ $job->id }}">
+                                       <div class="collapse" id="lowongan{{ $job->id }}" data-bs-parent="#lowongan{{ $job->id }}">
                                            <div class="pt-5">
                                               {!! $job->description !!}
                                            </div>
                                        </div>
                                    </div>
                                    <div class="col-md-auto order-md-3">
-                                       <a href="#" class="btn btn-outline-dark btn-block">Apply</a>
+                                       <a href="#" class="btn btn-outline-dark btn-block text-decoration-none">Apply</a>
                                    </div>
                                </div>
                            </li>

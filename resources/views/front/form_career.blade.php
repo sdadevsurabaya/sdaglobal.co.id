@@ -26,14 +26,21 @@
         <!-- banner -->
         <link rel="stylesheet" href="{{ url('/') }}/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
         <script src="{{ url('/') }}/sweetalert2/sweetalert2.min.js"></script>
-        <script src="{{ url('/') }}/js/karir-banner.js"></script>
+        <script src="{{ url('/') }}/js/career-banner.js"></script>
         <style>
             .banner>.jumbotron.mb-5 {
                 margin-bottom: 2rem !important;
+
             }
 
             .btn-outline-dark {
                 float: right;
+            }
+
+            input[type="date"].mobile {
+                &:before {
+                    content: 'DD-MM-YYYY';
+                }
             }
         </style>
 
@@ -52,17 +59,17 @@
             <section class="collapse fade show" id="section1" data-parent=".wrapper">
                 <div class="container">
                     {{-- <form id="create_applied" method="POST" action="javascript:void(0)" accept-charset="utf-8" enctype="multipart/form-data">
-                    @csrf --}}
-                    <h2 class="mb-5">IDENTITAS</h2>
+                        @csrf --}}
+                    <h2 class="mb-5">IDENTITY</h2>
                     <div class="row justify-content-xl-between">
                         <div class="col-md-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Position Applied For *</label>
-                                {{-- <input class="form-control border-0 bg-transparent px-0" type="hidden" name="lang"
-                                    id="lang" value="{{ $lang }}" --}}
+                                <label for="">Position Applied For<span style="color: red">*</span></label>
+                                <input class="form-control border-0 bg-transparent px-0" type="hidden" name="lang"
+                                    id="lang" value="{{ $lang }}"
                                     placeholder="Other (If your position not in listing)" readonly>
                                 <input class="form-control border-0 bg-transparent px-0" type="text"
-                                    name="position_applied" id="position_applied" value="{{--{{ $posission }} --}}"
+                                    name="position_applied" id="position_applied" value="{{ $posission }}"
                                     placeholder="Other (If your position not in listing)" readonly>
                             </div>
                         </div>
@@ -76,31 +83,33 @@
                         </div>
                         <div class="col-md-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nama Lengkap<span style="color: red">*</span></label>
+                                <label for="">FUll Name<span style="color: red">*</span></label>
                                 <input class="form-control border-0 bg-transparent px-0" type="text" name="nama_lengkap"
-                                    id="nama_lengkap" placeholder="Nama Lengkap">
+                                    id="nama_lengkap" placeholder="Name Lengkap">
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nama Panggilan<span style="color: red">*</span></label>
+                                <label for="">Nick Name<span style="color: red">*</span></label>
                                 <input class="form-control border-0 bg-transparent px-0" type="text"
-                                    name="nama_panggilan" id="nama_panggilan" placeholder="Nama Panggilan">
+                                    name="nama_panggilan" id="nama_panggilan" placeholder="Name Panggilan">
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Tempat, Tanggal lahir<span style="color: red">*</span></label>
+                                <label for="">Place, Date of birth<span style="color: red">*</span></label>
                                 <div class="row">
                                     <div class="col col-md-6 col-xl-6"><input
                                             class="form-control border-0 bg-transparent px-0" type="text" name="tempat"
                                             id="tempat" placeholder="Contoh: Surabaya">
                                     </div>
                                     <div class="col col-md-6 col-xl-6">
-                                        {{-- <input class="datepic form-control border-0 bg-transparent px-0" type="date"
-                                            name="tanggal_lahir" id="tanggal_lahir" placeholder="Contoh: 01-01-2023"> --}}
+                                        {{-- <input class="form-control border-0 bg-transparent px-0"
+                                                type="date" name="tanggal_lahir" id="tanggal_lahir"
+                                                placeholder="Contoh: 01-01-2023"> --}}
                                         <div class="input-group date" id="datepicker">
-                                            <input type="text" class="form-control border-0 bg-transparent px-0" name="tanggal_lahir" id="tanggal_lahir" placeholder="Contoh : 2001-12-01">
+                                            <input type="text" class="form-control border-0 bg-transparent px-0"
+                                                name="tanggal_lahir" id="tanggal_lahir" placeholder="Contoh : 2001-12-01">
                                             <span class="input-group-append d-none">
                                                 <span class="input-group-text bg-light d-block">
                                                     <i class="bi bi-calendar"></i>
@@ -113,23 +122,23 @@
                         </div>
                         <div class="col-md-6 col-xl-5">
                             <div class="form-group">
-                                <label for="" class="mb-2">Jenis Kelamin<span style="color: red">*</span></label>
+                                <label for="" class="mb-2">Gender<span style="color: red">*</span></label>
                                 <div class="row">
                                     <div class="col-auto">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="jenis_kelamin"
-                                                id="kelamin-laki-laki" value="Laki-laki">
+                                                id="kelamin-laki-laki" value="Male">
                                             <label class="form-check-label" for="kelamin-laki-laki">
-                                                Laki-laki
+                                                Male
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-auto">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="jenis_kelamin"
-                                                id="kelamin-perempuan" value="Perempuan">
+                                                id="kelamin-perempuan" value="Female">
                                             <label class="form-check-label" for="kelamin-perempuan">
-                                                Perempuan
+                                                Female
                                             </label>
                                         </div>
                                     </div>
@@ -138,16 +147,16 @@
                         </div>
                         <div class="col-md-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Kewarganegaraan</label>
+                                <label for="">Nationality</label>
                                 <input class="form-control border-0 bg-transparent px-0" type="text"
                                     name="kewarganegaraan" id="kewarganegaraan" value="Indonesia" readonly>
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="agama">Agama<span style="color: red">*</span></label>
+                                <label for="">Religon<span style="color: red">*</span></label>
                                 <select class="form-control border-0" id="agama" name="agama">
-                                    <option value="0">--Select Agama--</option>
+                                    <option value="0">--Select Religon--</option>
                                     <option value="Islam">Islam</option>
                                     <option value="Kristen Protestan">Kristen Protestan</option>
                                     <option value="Kristen Katolik">Kristen Katolik</option>
@@ -173,7 +182,7 @@
                         </div>
                         <div class="col-md-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Alamat KTP<span style="color: red">*</span></label>
+                                <label for="">KTP Address<span style="color: red">*</span></label>
                                 <input class="form-control border-0 bg-transparent px-0" type="text" name="alamat_ktp"
                                     id="alamat_ktp" placeholder="Alamat KTP">
                             </div>
@@ -187,7 +196,7 @@
                         </div>
                         <div class="col-md-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Alamat Domisili<span style="color: red">*</span></label>
+                                <label for="">Domicile Address<span style="color: red">*</span></label>
                                 <input class="form-control border-0 bg-transparent px-0" type="text"
                                     name="alamat_domisili" id="alamat_domisili" placeholder="Alamat Domisili">
                             </div>
@@ -195,35 +204,34 @@
                         <div class="col-md-6 col-xl-5">
                             <div class="form-group border-bottom">
                                 <label for="">Email<span style="color: red">*</span></label>
-                                <input class="form-control border-0 bg-transparent px-0" type="email" name="email"
+                                <input class="form-control border-0 bg-transparent px-0" type="text" name="email"
                                     id="email" placeholder="Email">
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">No. Telp. Rumah</label>
+                                <label for="">Phone No. Home</label>
                                 <input class="form-control border-0 bg-transparent px-0" type="number"
                                     name="no_telp_rumah" id="no_telp_rumah" placeholder="No. Telp. Rumah">
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">No. Telp. HP<span style="color: red">*</span></label>
+                                <label for="">Phone No. Mobile<span style="color: red">*</span></label>
                                 <input class="form-control border-0 bg-transparent px-0" type="number" name="no_telp_hp"
                                     id="no_telp_hp" placeholder="No. Telp. HP">
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-group">
-                                <label for="" class="mb-2">Status Rumah<span
-                                        style="color: red">*</span></label>
+                                <label for="" class="mb-2">Home status<span style="color: red">*</span></label>
                                 <div class="row">
                                     <div class="col-auto">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="status_rumah"
                                                 id="rumah-pribadi" value="Pribadi">
                                             <label class="form-check-label" for="rumah-pribadi">
-                                                Pribadi
+                                                Personal
                                             </label>
                                         </div>
                                     </div>
@@ -232,7 +240,7 @@
                                             <input class="form-check-input" type="radio" name="status_rumah"
                                                 id="rumah-ortu" value="Orang Tua">
                                             <label class="form-check-label" for="rumah-ortu">
-                                                Orang Tua
+                                                Parents
                                             </label>
                                         </div>
                                     </div>
@@ -241,7 +249,7 @@
                                             <input class="form-check-input" type="radio" name="status_rumah"
                                                 id="rumah-kontrak" value="Kontrak">
                                             <label class="form-check-label" for="rumah-kontrak">
-                                                Kontrak
+                                                Contract
                                             </label>
                                         </div>
                                     </div>
@@ -259,13 +267,13 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <b> Note : (<span style="color: red">*</span>) Wajib di isi. </b>
+                            <b> Note : (<span style="color: red">*</span>) Must be filled in. </b>
                         </div>
                         <div class="form-group col-12 pt-5">
                             <div class="row">
                                 <div class="col-auto mx-sm-auto">
                                     <a class="btn btn-outline-dark btn-block" style="min-width: 260px;"
-                                        data-toggle="collapse" href="#section2">Lanjutkan >></a>
+                                        data-toggle="collapse" href="#section2">Next >></a>
                                     {{-- <button type="submit" class="btn btn-outline-dark btn-block mt-0">Lamar</button> --}}
                                 </div>
                             </div>
@@ -280,9 +288,9 @@
                 <div class="container">
                     {{-- <form id="create_family" method="POST" action="javascript:void(0)" accept-charset="utf-8" enctype="multipart/form-data"> --}}
                     {{-- @csrf --}}
-                    <h2 class="mb-5">KELUARGA & LINGKUNGAN</h2>
+                    <h2 class="mb-5">FAMILY & ENVIRONMENT</h2>
                     <div class="form-group mb-5">
-                        <label for="" class="mb-2">Status Pernikahan<span style="color: red">*</span></label>
+                        <label for="" class="mb-2">Marital Status<span style="color: red">*</span></label>
                         <div class="row">
                             <div class="col-auto">
                                 <div class="form-check">
@@ -298,7 +306,7 @@
                                     <input class="form-check-input" type="radio" name="status_pernikahan"
                                         id="status-menikah" value="Menikah">
                                     <label class="form-check-label" for="status-menikah">
-                                        Menikah
+                                        Married
                                     </label>
                                 </div>
                             </div>
@@ -307,34 +315,34 @@
                                     <input class="form-check-input" type="radio" name="status_pernikahan"
                                         id="status-duda-janda" value="Duda / Janda">
                                     <label class="form-check-label" for="status-duda-janda">
-                                        Duda / Janda
+                                        Widowed / Widower
                                     </label>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <h5 class="mb-3">Susunan Keluarga (Ayah)</h5>
+                    <h5 class="mb-3">Family Lineup (Father)</h5>
                     <div class="row justify-content-xl-between mb-5">
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nama<span style="color: red">*</span></label>
+                                <label for="">Name<span style="color: red">*</span></label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0" name="nama_ayah"
-                                    id="nama_ayah" placeholder="Nama">
+                                    id="nama_ayah" placeholder="Name">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Pekerjaan<span style="color: red">*</span></label>
+                                <label for="">Job<span style="color: red">*</span></label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="pekerjaan_ayah" id="pekerjaan_ayah" placeholder="Pekerjaan">
+                                    name="pekerjaan_ayah" id="pekerjaan_ayah" placeholder="Work">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Pendidikan<span style="color: red">*</span></label>
+                                <label for="">Education<span style="color: red">*</span></label>
                                 <select class="form-control border-0" id="pendidikan_ayah" name="pendidikan_ayah">
-                                    <option value="0">--Select Pendidikan--</option>
+                                    <option value="0">--Select Education--</option>
                                     <option value="SD">SD</option>
                                     <option value="SMP">SMP</option>
                                     <option value="SMA/SMK">SMA/SMK</option>
@@ -344,27 +352,27 @@
                         </div>
                     </div>
 
-                    <h5 class="mb-3">Susunan Keluarga (Ibu)</h5>
+                    <h5 class="mb-3">Family Lineup (Mother)</h5>
                     <div class="row justify-content-xl-between mb-5">
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nama<span style="color: red">*</span></label>
+                                <label for="">Name<span style="color: red">*</span></label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0" name="nama_ibu"
-                                    id="nama_ibu" placeholder="Nama">
+                                    id="nama_ibu" placeholder="Name">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Pekerjaan<span style="color: red">*</span></label>
+                                <label for="">Job<span style="color: red">*</span></label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="pekerjaan_ibu" id="pekerjaan_ibu" placeholder="Pekerjaan">
+                                    name="pekerjaan_ibu" id="pekerjaan_ibu" placeholder="Work">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Pendidikan<span style="color: red">*</span></label>
+                                <label for="">Education<span style="color: red">*</span></label>
                                 <select class="form-control border-0" id="pendidikan_ibu" name="pendidikan_ibu">
-                                    <option value="0">--Select Pendidikan--</option>
+                                    <option value="0">--Select Education--</option>
                                     <option value="SD">SD</option>
                                     <option value="SMP">SMP</option>
                                     <option value="SMA/SMK">SMA/SMK</option>
@@ -375,26 +383,26 @@
                     </div>
 
                     <div id="saudara_1">
-                        <h5 class="mb-3">Susunan Keluarga (Saudara 1)</h5>
+                        <h5 class="mb-3">Family Lineup (Sibling 1)</h5>
                         <div class="row justify-content-xl-between mb-3">
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Nama</label>
+                                    <label for="">Name</label>
                                     <input type="text" class="form-control border-0 bg-transparent px-0"
-                                        name="nama_saudara_1" id="nama_saudara_1" placeholder="Nama">
+                                        name="nama_saudara_1" id="nama_saudara_1" placeholder="Name">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group">
-                                    <label for="" class="mb-2">Jenis Kelamin</label>
+                                    <label for="" class="mb-2">Gender</label>
                                     <div class="row">
                                         <div class="col-auto">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio"
                                                     name="jenis_kelamin_saudara_1" id="jenis_kelamin_laki_laki_saudara_1"
-                                                    value="Laki-laki">
+                                                    value="Male">
                                                 <label class="form-check-label" for="jenis_kelamin_laki_laki_saudara_1">
-                                                    Laki-laki
+                                                    Male
                                                 </label>
                                             </div>
                                         </div>
@@ -402,9 +410,9 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio"
                                                     name="jenis_kelamin_saudara_1" id="jenis_kelamin_perempuan_saudara_1"
-                                                    value="Perempuan">
+                                                    value="Female">
                                                 <label class="form-check-label" for="jenis_kelamin_perempuan_saudara_1">
-                                                    Perempuan
+                                                    Female
                                                 </label>
                                             </div>
                                         </div>
@@ -416,17 +424,17 @@
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Pekerjaan</label>
+                                    <label for="">Jobs</label>
                                     <input type="text" class="form-control border-0 bg-transparent px-0"
-                                        name="pekerjaan_saudara_1" id="pekerjaan_saudara_1" placeholder="Pekerjaan">
+                                        name="pekerjaan_saudara_1" id="pekerjaan_saudara_1" placeholder="Work">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Pendidikan</label>
+                                    <label for="">Education</label>
                                     <select class="form-control border-0" id="pendidikan_saudara_1"
                                         name="pendidikan_saudara_1">
-                                        <option value="0">--Select Pendidikan--</option>
+                                        <option value="0">--Select Education--</option>
                                         <option value="SD">SD</option>
                                         <option value="SMP">SMP</option>
                                         <option value="SMA/SMK">SMA/SMK</option>
@@ -441,38 +449,38 @@
 
                     <div class="mb-5">
                         <button type="button" class="text-dark" id="add-saudara">
-                            <i><u>Tambah Saudara+</u></i>
+                            <i><u>Add Sibling+</u></i>
                         </button>
                     </div>
 
-                    <h5 class="mb-3">Susunan Keluarga bagi yang Menikah (Suami/Istri)</h5>
+                    <h5 class="mb-3">Family Structure for Married (Sumai/Wife)</h5>
                     <div class="row justify-content-xl-between mb-5">
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nama</label>
+                                <label for="">Name</label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="nama_pasangan" id="nama_pasangan" placeholder="Nama">
+                                    name="nama_pasangan" id="nama_pasangan" placeholder="Name">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group">
-                                <label for="" class="mb-2">Jenis Kelamin</label>
+                                <label for="" class="mb-2">Gender</label>
                                 <div class="row">
                                     <div class="col-auto">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="jenis_kelamin_pasangan"
-                                                id="kelamin_laki_laki_pasangan" value="Laki-laki">
+                                                id="kelamin_laki_laki_pasangan" value="Male">
                                             <label class="form-check-label" for="kelamin_laki_laki_pasangan">
-                                                Laki-laki
+                                                Male
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-auto">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="jenis_kelamin_pasangan"
-                                                id="kelamin_perempuan_pasangan" value="Perempuan">
+                                                id="kelamin_perempuan_pasangan" value="Female">
                                             <label class="form-check-label" for="kelamin_perempuan_pasangan">
-                                                Perempuan
+                                                Female
                                             </label>
                                         </div>
                                     </div>
@@ -481,17 +489,17 @@
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Pekerjaan</label>
+                                <label for="">Work</label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="pekerjaan_pasangan" id="pekerjaan_pasangan" placeholder="Pekerjaan">
+                                    name="pekerjaan_pasangan" id="pekerjaan_pasangan" placeholder="Work">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Pendidikan</label>
+                                <label for="">Education</label>
                                 <select class="form-control border-0" id="pendidikan_pasangan"
                                     name="pendidikan_pasangan">
-                                    <option value="0">--Select Pendidikan--</option>
+                                    <option value="0">--Select Education--</option>
                                     <option value="SD">SD</option>
                                     <option value="SMP">SMP</option>
                                     <option value="SMA/SMK">SMA/SMK</option>
@@ -502,27 +510,27 @@
                     </div>
 
                     <div id="anak_1">
-                        <h5 class="mb-3">Susunan Keluarga (Anak 1)</h5>
+                        <h5 class="mb-3">Family Structure (Children 1)</h5>
                         <div class="row justify-content-xl-between mb-3">
 
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Nama</label>
+                                    <label for="">Name</label>
                                     <input type="text" class="form-control border-0 bg-transparent px-0"
-                                        name="nama_anak_1" id="nama_anak_1" placeholder="Nama">
+                                        name="nama_anak_1" id="nama_anak_1" placeholder="Name">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group">
-                                    <label for="" class="mb-2">Jenis Kelamin</label>
+                                    <label for="" class="mb-2">Gender</label>
                                     <div class="row">
                                         <div class="col-auto">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio"
                                                     name="jenis_kelamin_anak_1" id="kelamin_laki_laki_anak_1"
-                                                    value="Laki-laki">
+                                                    value="Male">
                                                 <label class="form-check-label" for="kelamin_laki_laki_anak_1">
-                                                    Laki-laki
+                                                    Male
                                                 </label>
                                             </div>
                                         </div>
@@ -530,9 +538,9 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio"
                                                     name="jenis_kelamin_anak_1" id="kelamin_perempuan_anak_1"
-                                                    value="Perempuan">
+                                                    value="Female">
                                                 <label class="form-check-label" for="kelamin_perempuan_anak_1">
-                                                    Perempuan
+                                                    Female
                                                 </label>
                                             </div>
                                         </div>
@@ -544,17 +552,17 @@
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Pekerjaan</label>
+                                    <label for="">Work</label>
                                     <input type="text" class="form-control border-0 bg-transparent px-0"
-                                        name="pekerjaan_anak_1" id="pekerjaan_anak_1" placeholder="Pekerjaan">
+                                        name="pekerjaan_anak_1" id="pekerjaan_anak_1" placeholder="Work">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Pendidikan</label>
+                                    <label for="">Education</label>
                                     <select class="form-control border-0" id="pendidikan_anak_1"
                                         name="pendidikan_anak_1">
-                                        <option value="0">--Select Pendidikan--</option>
+                                        <option value="0">--Select Education--</option>
                                         <option value="SD">SD</option>
                                         <option value="SMP">SMP</option>
                                         <option value="SMA/SMK">SMA/SMK</option>
@@ -569,12 +577,12 @@
 
                     <div class="mb-5">
                         <button type="button" class="text-dark" id="add-anak">
-                            <i><u>Tambah Anak+</u></i>
+                            <i><u>Add Child+</u></i>
                         </button>
                     </div>
 
                     <div>
-                        <b> Note : (<span style="color: red">*</span>) Wajib di isi. </b>
+                        <b> Note : (<span style="color: red">*</span>) Must be filled in. </b>
                     </div>
 
                     <div class="pt-5">
@@ -582,9 +590,9 @@
                             <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
                                 style="column-gap: 1rem">
                                 <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#section1">
-                                    << Kembali</a>
+                                    << Back</a>
                                         <a class="btn btn-outline-dark btn-block mt-0" data-toggle="collapse"
-                                            href="#section3">Lanjutkan >></a>
+                                            href="#section3">Next >></a>
                             </div>
                         </div>
                     </div>
@@ -598,20 +606,20 @@
                 <div class="container">
                     {{-- <form id="create_education" method="POST" action="javascript:void(0)" accept-charset="utf-8" enctype="multipart/form-data"> --}}
                     {{-- @csrf --}}
-                    <h2 class="mb-5">RIWAYAT PENDIDIKAN FORMAL</h2>
+                    <h2 class="mb-5">HISTORY OF FORMAL EDUCATION</h2>
 
-                    <h5 class="mb-3">Jenjang Pendidikan (SLTA / SMA / MA)</h5>
+                    <h5 class="mb-3">Education Level (SLTA / SMA / MA)</h5>
                     <div class="row justify-content-xl-between mb-5">
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nama Sekolah<span style="color: red">*</span></label>
+                                <label for="">School Name <span style="color: red">*</span></label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="nama_sekolah_slta" id="nama_sekolah_slta" placeholder="Nama Sekolah">
+                                    name="nama_sekolah_slta" id="nama_sekolah_slta" placeholder="Name Sekolah">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group">
-                                <label for="" class="mb-2">Status Kelulusan<span
+                                <label for="" class="mb-2">Graduation Status<span
                                         style="color: red">*</span></label>
                                 <div class="row">
                                     <div class="col-auto">
@@ -619,7 +627,7 @@
                                             <input class="form-check-input" type="radio" name="status_kelulusan_slta"
                                                 id="status-lulus-slta" value="Lulus">
                                             <label class="form-check-label" for="status-lulus-slta">
-                                                Lulus
+                                                Pass
                                             </label>
                                         </div>
                                     </div>
@@ -628,7 +636,7 @@
                                             <input class="form-check-input" type="radio" name="status_kelulusan_slta"
                                                 id="status-tidak-lulus-slta" value="Tidak Lulus">
                                             <label class="form-check-label" for="status-tidak-lulus-slta">
-                                                Tidak Lulus
+                                                Did not pass
                                             </label>
                                         </div>
                                     </div>
@@ -637,46 +645,47 @@
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Prodi / Jurusan<span style="color: red">*</span></label>
+                                <label for="">Study Program / Department<span style="color: red">*</span></label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="prodi_jurusan_slta" id="prodi_jurusan_slta" placeholder="Prodi / Jurusan">
+                                    name="prodi_jurusan_slta" id="prodi_jurusan_slta"
+                                    placeholder="Study Program / Department">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nilai / IPK<span style="color: red">*</span></label>
+                                <label for="">Grades/GPA<span style="color: red">*</span></label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="nilai_ipk_slta" id="nilai_ipk_slta" placeholder="Ex: 35.5">
+                                    name="nilai_ipk_slta" id="nilai_ipk_slta" placeholder="Ex: 80">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Tahun Studi<span style="color: red">*</span></label>
+                                <label for="">Years of study<span style="color: red">*</span></label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="tahun_studi_slta" id="tahun_studi_slta" placeholder="ex: 2020-2024">
+                                    name="tahun_studi_slta" id="tahun_studi_slta" placeholder="Ex: 2021-2024">
                             </div>
                         </div>
                     </div>
 
-                    <h5 class="mb-3">Jenjang Pendidikan (S1)</h5>
+                    <h5 class="mb-3">Education Level (S1)</h5>
                     <div class="row justify-content-xl-between mb-5">
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nama Universitas</label>
+                                <label for="">Name University</label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="nama_universitas_s1" id="nama_universitas_s1" placeholder="Nama Universitas">
+                                    name="nama_universitas_s1" id="nama_universitas_s1" placeholder="Name Universitas">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group">
-                                <label for="" class="mb-2">Status Kelulusan</label>
+                                <label for="" class="mb-2">Graduation Status</label>
                                 <div class="row">
                                     <div class="col-auto">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="status_kelulusan_s1"
                                                 id="status-lulus-s1" value="Lulus">
                                             <label class="form-check-label" for="status-lulus-s1">
-                                                Lulus
+                                                Pass
                                             </label>
                                         </div>
                                     </div>
@@ -685,7 +694,7 @@
                                             <input class="form-check-input" type="radio" name="status_kelulusan_s1"
                                                 id="status-tidak-lulus-s1" value="Tidak Lulus">
                                             <label class="form-check-label" for="status-tidak-lulus-s1">
-                                                Tidak Lulus
+                                                did not pass
                                             </label>
                                         </div>
                                     </div>
@@ -694,46 +703,48 @@
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Prodi / Jurusan</label>
+                                <label for="">Study Program / Department
+                                </label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="prodi_jurusan_s1" id="prodi_jurusan_s1" placeholder="Prodi / Jurusan">
+                                    name="prodi_jurusan_s1" id="prodi_jurusan_s1"
+                                    placeholder="Study Program / Department">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nilai / IPK</label>
+                                <label for="">Grades/GPA</label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="nilai_ipk_s1" id="nilai_ipk_s1" placeholder="ex: 3.5">
+                                    name="nilai_ipk_s1" id="nilai_ipk_s1" placeholder="Ex: 3.5">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Tahun Studi</label>
+                                <label for="">Years of Study</label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="tahun_studi_s1" id="tahun_studi_s1" placeholder="ex: 2018-2022">
+                                    name="tahun_studi_s1" id="tahun_studi_s1" placeholder="Ex: 2020-2024">
                             </div>
                         </div>
                     </div>
 
-                    <h5 class="mb-3">Jenjang Pendidikan (S2)</h5>
+                    <h5 class="mb-3">Education Level (S2)</h5>
                     <div class="row justify-content-xl-between mb-5">
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nama Universitas</label>
+                                <label for="">University Name</label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="nama_universitas_s2" id="nama_universitas_s2" placeholder="Nama Universitas">
+                                    name="nama_universitas_s2" id="nama_universitas_s2" placeholder="Name Universitas">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group">
-                                <label for="" class="mb-2">Status Kelulusan</label>
+                                <label for="" class="mb-2">Graduation Status</label>
                                 <div class="row">
                                     <div class="col-auto">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="status_kelulusan_s2"
                                                 id="status-lulus-s2" value="Lulus">
                                             <label class="form-check-label" for="status-lulus-s2">
-                                                Lulus
+                                                Pass
                                             </label>
                                         </div>
                                     </div>
@@ -742,7 +753,7 @@
                                             <input class="form-check-input" type="radio" name="status_kelulusan_s2"
                                                 id="status-tidak-lulus-s2" value="Tidak Lulus">
                                             <label class="form-check-label" for="status-tidak-lulus-s2">
-                                                Tidak Lulus
+                                                Not Pass
                                             </label>
                                         </div>
                                     </div>
@@ -751,46 +762,48 @@
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Prodi / Jurusan</label>
+                                <label for="">Study Program / Department
+                                </label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="prodi_jurusan_s2" id="prodi_jurusan_s2" placeholder="Prodi / Jurusan">
+                                    name="prodi_jurusan_s2" id="prodi_jurusan_s2"
+                                    placeholder="Study Program / Department">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nilai / IPK</label>
+                                <label for="">Grades/GPA</label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="nilai_ipk_s2" id="nilai_ipk_s2" placeholder="ex: 3.87">
+                                    name="nilai_ipk_s2" id="nilai_ipk_s2" placeholder="Ex: 3.0">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Tahun Studi</label>
+                                <label for="">Years of Study</label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="tahun_studi_s2" id="tahun_studi_s2" placeholder="ex: 2018-2022">
+                                    name="tahun_studi_s2" id="tahun_studi_s2" placeholder="Ex: 2019-2021">
                             </div>
                         </div>
                     </div>
 
-                    <h5 class="mb-3">Jenjang Pendidikan (Akademi / Kursus)</h5>
+                    <h5 class="mb-3"> Education (Akademi / Kursus)</h5>
                     <div class="row justify-content-xl-between mb-5">
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nama Lembaga</label>
+                                <label for="">Institution Name</label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="nama_lembaga_kursus" id="nama_lembaga_kursus" placeholder="Nama Lembaga">
+                                    name="nama_lembaga_kursus" id="nama_lembaga_kursus" placeholder="Name Lembaga">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group">
-                                <label for="" class="mb-2">Status Kelulusan</label>
+                                <label for="" class="mb-2">Graduation Status</label>
                                 <div class="row">
                                     <div class="col-auto">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="status_kelulusan_kursus"
                                                 id="status-lulus-kursus" value="Lulus">
                                             <label class="form-check-label" for="status-lulus-kursus">
-                                                Lulus
+                                                Pass
                                             </label>
                                         </div>
                                     </div>
@@ -799,7 +812,7 @@
                                             <input class="form-check-input" type="radio" name="status_kelulusan_kursus"
                                                 id="status-tidak-lulus-kursus" value="Tidak Lulus">
                                             <label class="form-check-label" for="status-tidak-lulus-kursus">
-                                                Tidak Lulus
+                                                Not Pass
                                             </label>
                                         </div>
                                     </div>
@@ -808,23 +821,25 @@
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Prodi / Jurusan</label>
+                                <label for="">Study Program / Department
+                                </label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="prodi_jurusan_kursus" id="prodi_jurusan_kursus" placeholder="Prodi / Jurusan">
+                                    name="prodi_jurusan_kursus" id="prodi_jurusan_kursus"
+                                    placeholder="Study Program / Department">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nilai / IPK</label>
+                                <label for="">Grades/GPA</label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="nilai_ipk_kursus" id="nilai_ipk_kursus" placeholder="ex: 70">
+                                    name="nilai_ipk_kursus" id="nilai_ipk_kursus" placeholder="Ex: 80">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Tahun Studi</label>
+                                <label for="">Years of Study</label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="tuhun_studi_kursus" id="tuhun_studi_kursus" placeholder="ex: 2022-2023">
+                                    name="tuhun_studi_kursus" id="tuhun_studi_kursus" placeholder="Years of Study">
                             </div>
                         </div>
                     </div>
@@ -832,30 +847,30 @@
                     <div class="row justify-content-xl-between mb-5">
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Prestasi</label>
+                                <label for="">Achievement</label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0" name="prestasi"
-                                    id="prestasi" placeholder="Prestasi">
+                                    id="prestasi" placeholder="Achievement">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Karya ilmiah yang pernah dibuat</label>
+                                <label for="">Scientific work ever made</label>
                                 <input type="text" class="form-control border-0 bg-transparent px-0"
-                                    name="karya_ilmiah" id="karya_ilmiah" placeholder="Nama Karya">
+                                    name="karya_ilmiah" id="karya_ilmiah" placeholder="Name Karya">
                             </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <b> Note : (<span style="color: red">*</span>) Wajib di isi. </b>
+                        <b> Note : (<span style="color: red">*</span>) Must be filled in. </b>
                     </div>
                     <div class="pt-5">
                         <div class="row">
                             <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
                                 style="column-gap: 1rem">
                                 <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#section2">
-                                    << Kembali</a>
+                                    << Back</a>
                                         <a class="btn btn-outline-dark btn-block mt-0" data-toggle="collapse"
-                                            href="#section4">Lanjutkan >></a>
+                                            href="#section4">Next >></a>
                             </div>
                         </div>
                     </div>
@@ -867,35 +882,35 @@
             <section class="collapse fade" id="section4" data-parent=".wrapper">
                 <div class="container">
                     {{-- <form action=""> --}}
-                    <h2 class="mb-5">RIWAYAT PENDIDIKAN NON FORMAL</h2>
+                    <h2 class="mb-5">HISTORY OF NON-FORMAL EDUCATION</h2>
                     <div id="organisasi_1">
-                        <h5 class="mb-3">Pendidikan Non Formal (Organisasi / Pelatihan 1)</h5>
+                        <h5 class="mb-3">Education Non Formal (Organization / Training 1)</h5>
                         <div class="row justify-content-xl-between mb-3">
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Organisasi / Pelatihan</label>
+                                    <label for="">Organization / Training</label>
                                     <input type="text" name="name_organisasi_1" id="name_organisasi_1"
                                         class="form-control border-0 bg-transparent px-0"
-                                        placeholder="Organisasi / Pelatihan">
+                                        placeholder="Organization / Training">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Jabatan</label>
+                                    <label for="">Position</label>
                                     <input type="text" name="jabatan_1" id="jabatan_1"
                                         class="form-control border-0 bg-transparent px-0" placeholder="Jabatan">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Bidang</label>
+                                    <label for="">Field</label>
                                     <input type="text" name="bidang_1" id="bidang_1"
                                         class="form-control border-0 bg-transparent px-0" placeholder="Bidang">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Periode</label>
+                                    <label for="">Period</label>
                                     <input type="text" name="periode_1" id="periode_1"
                                         class="form-control border-0 bg-transparent px-0" placeholder="Periode">
                                 </div>
@@ -910,31 +925,31 @@
 
                     <div class="mb-5">
                         <button type="button" class="text-dark" id="add-organisasi">
-                            <i><u>Tambah Organisasi / Pelatihan+</u></i>
+                            <i><u>Add Organization / Training+</u></i>
                         </button>
                     </div>
 
-                    <h2 class="mb-5">KEMAMPUAN BAHASA</h2>
+                    <h2 class="mb-5">LANGUAGE SKILLS</h2>
                     <div id="bahasa_1">
-                        <h5 class="mb-3">Kemampuan Bahasa (Bahasa 1)</h5>
+                        <h5 class="mb-3">language skills (Language 1)</h5>
                         <div class="row justify-content-xl-between mb-3">
                             <div class="col-lg-12">
                                 <div class="form-group border-bottom">
-                                    <label for="">Bahasa</label>
+                                    <label for="">Language</label>
                                     <input type="text" name="name_bahasa_1" id="name_bahasa_1"
-                                        class="form-control border-0 bg-transparent px-0" placeholder="Bahasa">
+                                        class="form-control border-0 bg-transparent px-0" placeholder="Language">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group">
-                                    <label for="" class="mb-2">Tertulis</label>
+                                    <label for="" class="mb-2">Written</label>
                                     <div class="row">
                                         <div class="col-auto">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="tertulis_1"
                                                     id="bahasa-tulis-baik" value="Baik">
                                                 <label class="form-check-label" for="bahasa-tulis-baik">
-                                                    Baik
+                                                    Good
                                                 </label>
                                             </div>
                                         </div>
@@ -943,7 +958,7 @@
                                                 <input class="form-check-input" type="radio" name="tertulis_1"
                                                     id="bahasa-tulis-cukup" value="Cukup">
                                                 <label class="form-check-label" for="bahasa-tulis-cukup">
-                                                    Cukup
+                                                    Enough
                                                 </label>
                                             </div>
                                         </div>
@@ -952,7 +967,7 @@
                                                 <input class="form-check-input" type="radio" name="tertulis_1"
                                                     id="bahasa-tulis-kurang" value="Kurang">
                                                 <label class="form-check-label" for="bahasa-tulis-kurang">
-                                                    Kurang
+                                                    Less
                                                 </label>
                                             </div>
                                         </div>
@@ -961,14 +976,14 @@
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group">
-                                    <label for="" class="mb-2">Lisan</label>
+                                    <label for="" class="mb-2">Oral</label>
                                     <div class="row">
                                         <div class="col-auto">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="lisan_1"
                                                     id="bahasa-lisan-baik" value="Baik">
                                                 <label class="form-check-label" for="bahasa-lisan-baik">
-                                                    Baik
+                                                    Good
                                                 </label>
                                             </div>
                                         </div>
@@ -977,7 +992,7 @@
                                                 <input class="form-check-input" type="radio" name="lisan_1"
                                                     id="bahasa-lisan-cukup" value="Cukup">
                                                 <label class="form-check-label" for="bahasa-lisan-cukup">
-                                                    Cukup
+                                                    Enough
                                                 </label>
                                             </div>
                                         </div>
@@ -986,7 +1001,7 @@
                                                 <input class="form-check-input" type="radio" name="lisan_1"
                                                     id="bahasa-lisan-kurang" value="Kurang">
                                                 <label class="form-check-label" for="bahasa-lisan-kurang">
-                                                    Kurang
+                                                    Less
                                                 </label>
                                             </div>
                                         </div>
@@ -995,9 +1010,9 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group border-bottom">
-                                    <label for="">Keterangan</label>
+                                    <label for="">Information</label>
                                     <input type="text" name="keterangan_1" id="keterangan_1"
-                                        class="form-control border-0 bg-transparent px-0" placeholder="Keterangan">
+                                        class="form-control border-0 bg-transparent px-0" placeholder="Information">
                                 </div>
                             </div>
                             <div class="col-lg-12 col-xl-12" id="btn_remove_bahasa_1">
@@ -1010,7 +1025,7 @@
 
                     <div class="mb-5">
                         <button type="button" class="text-dark" id="add-bahasa">
-                            <i><u>Tambah Bahasa+</u></i>
+                            <i><u>Add Language+</u></i>
                         </button>
                     </div>
 
@@ -1018,9 +1033,9 @@
                     <div class="row justify-content-xl-between mb-3">
                         <div class="col-lg-12">
                             <div class="form-group border-bottom">
-                                <label for="">Nama</label>
+                                <label for="">Name</label>
                                 <input type="text" name="name_referensi" id="name_referensi"
-                                    class="form-control border-0 bg-transparent px-0" placeholder="Nama">
+                                    class="form-control border-0 bg-transparent px-0" placeholder="Name">
                             </div>
                         </div>
                         <div class="col-lg-12">
@@ -1032,9 +1047,9 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group border-bottom">
-                                <label for="">Pekerjaan</label>
+                                <label for="">Work</label>
                                 <input type="text" name="pekerjaan" id="pekerjaan"
-                                    class="form-control border-0 bg-transparent px-0" placeholder="Pekerjaan">
+                                    class="form-control border-0 bg-transparent px-0" placeholder="Work">
                             </div>
                         </div>
                         <div class="col-lg-12">
@@ -1046,70 +1061,71 @@
                         </div>
                     </div>
 
-                    <h2 class="mb-5">RIWAYAT PEKERJAAN</h2>
+                    <h2 class="mb-5">EMPLOYMENT HISTORY</h2>
                     <div class="row justify-content-xl-between mb-5">
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nama Perusahaan</label>
+                                <label for="">Company Name</label>
                                 <input type="text" name="name_perusahaan" id="name_perusahaan"
-                                    class="form-control border-0 bg-transparent px-0" placeholder="Nama Perusahaan">
+                                    class="form-control border-0 bg-transparent px-0" placeholder="Name Perusahaan">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5"></div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Periode Awal</label>
+                                <label for="">Early Period</label>
                                 <input type="date" name="periode_awal" id="periode_awal"
-                                    class="form-control border-0 bg-transparent px-0" placeholder="Periode Awal">
+                                    class="form-control border-0 bg-transparent px-0" placeholder="Early Period">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Periode Akhir</label>
+                                <label for="">End Period</label>
                                 <input type="date" name="periode_akhir" id="periode_akhir"
-                                    class="form-control border-0 bg-transparent px-0" placeholder="Periode Akhir">
+                                    class="form-control border-0 bg-transparent px-0" placeholder="End Period">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Jabatan Awal</label>
+                                <label for="">Initial Position</label>
                                 <input type="text" name="jabatan_awal" id="jabatan_awal"
-                                    class="form-control border-0 bg-transparent px-0" placeholder="Jabatan Awal">
+                                    class="form-control border-0 bg-transparent px-0" placeholder="Initial Position">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Jabatan Akhir</label>
+                                <label for="">Final Position</label>
                                 <input type="text" name="jabatan_akhir" id="jabatan_akhir"
-                                    class="form-control border-0 bg-transparent px-0" placeholder="Jabatan Akhir">
+                                    class="form-control border-0 bg-transparent px-0" placeholder="Final Position">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Jenis Usaha</label>
+                                <label for="">Business Type</label>
                                 <input type="text" name="jenis_usaha" id="jenis_usaha"
-                                    class="form-control border-0 bg-transparent px-0" placeholder="Jenis Usaha">
+                                    class="form-control border-0 bg-transparent px-0" placeholder="Business Type">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Gaji Terakhir</label>
+                                <label for="">Last Salary</label>
                                 <input type="number" name="gaji_terakhir" id="gaji_terakhir"
-                                    class="form-control border-0 bg-transparent px-0" placeholder="ex: 1000000">
+                                    class="form-control border-0 bg-transparent px-0" placeholder="Ex: 1000000">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Nama Atasan</label>
+                                <label for="">Employer Name</label>
                                 <input type="text" name="name_atasan" id="name_atasan"
-                                    class="form-control border-0 bg-transparent px-0" placeholder="Nama Atasan">
+                                    class="form-control border-0 bg-transparent px-0" placeholder="Employer Name">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Alasan Berhenti</label>
+                                <label for="">Reasons for Quitting</label>
                                 <input type="text" name="alasan_berhenti" id="alasan_berhenti"
-                                    class="form-control border-0 bg-transparent px-0" placeholder="Alasan Berhenti">
+                                    class="form-control border-0 bg-transparent px-0"
+                                    placeholder="Reasons for Quitting">
                             </div>
                         </div>
                     </div>
@@ -1119,9 +1135,9 @@
                             <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
                                 style="column-gap: 1rem">
                                 <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#section3">
-                                    << Kembali</a>
+                                    << Back</a>
                                         <a class="btn btn-outline-dark btn-block mt-0" data-toggle="collapse"
-                                            href="#section5">Lanjutkan >></a>
+                                            href="#section5">Next >></a>
                             </div>
                         </div>
                         {{-- </form> --}}
@@ -1132,34 +1148,34 @@
             <section class="collapse fade" id="section5" data-parent=".wrapper">
                 <div class="container">
                     {{-- <form action=""> --}}
-                    <h2 class="mb-5">KELUARGA YANG BISA DIHUBUNGI</h2>
+                    <h2 class="mb-5">CONTACT FAMILY</h2>
                     <div id="bahasa_1">
-                        <h5 class="mb-3">Keluarga Yang Bisa Dihubungi (Keluraga 1)</h5>
+                        <h5 class="mb-3">Family to contact (Family 1)</h5>
                         <div class="row justify-content-xl-between mb-3">
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Nama<span style="color: red">*</span></label>
+                                    <label for="">Name<span style="color: red">*</span></label>
                                     <input type="text" name="name_near_family_1" id="name_near_family_1"
-                                        class="form-control border-0 bg-transparent px-0" placeholder="Nama">
+                                        class="form-control border-0 bg-transparent px-0" placeholder="Name">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Telepon<span style="color: red">*</span></label>
+                                    <label for="">Telephone<span style="color: red">*</span></label>
                                     <input type="text" name="telepon_near_family_1" id="telepon_near_family_1"
-                                        class="form-control border-0 bg-transparent px-0" placeholder="Telepon">
+                                        class="form-control border-0 bg-transparent px-0" placeholder="Telephone">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Pekerjaan<span style="color: red">*</span></label>
+                                    <label for="">Work<span style="color: red">*</span></label>
                                     <input type="text" name="pekerjaan_near_family_1" id="pekerjaan_near_family_1"
-                                        class="form-control border-0 bg-transparent px-0" placeholder="Pekerjaan">
+                                        class="form-control border-0 bg-transparent px-0" placeholder="Work">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xl-5">
                                 <div class="form-group border-bottom">
-                                    <label for="">Hubungan Keluarga<span style="color: red">*</span></label>
+                                    <label for="">Family Relationships<span style="color: red">*</span></label>
                                     <input type="text" name="hubungan_near_family_1" id="hubungan_near_family_1"
                                         class="form-control border-0 bg-transparent px-0"
                                         placeholder="Hubungan Keluarga">
@@ -1175,42 +1191,42 @@
 
                     <div class="mb-5">
                         <button type="button" class="text-dark" id="add-keluarga">
-                            <i><u>Tambah keluarga yang bisa dihubungi+</u></i>
+                            <i><u>Add family to contact+</u></i>
                         </button>
                     </div>
 
-                    <h2 class="mb-5">RIWAYAT KESEHATAN</h2>
+                    <h2 class="mb-5">MEDICAL HISTORY</h2>
                     <div class="row justify-content-xl-between mb-3">
                         <div class="col-lg-12">
                             <div class="form-group border-bottom">
-                                <label for="">Tinggi Badan (cm)<span style="color: red">*</span></label>
+                                <label for="">Height (cm)<span style="color: red">*</span></label>
                                 <input type="text" name="tinggi_badan" id="tinggi_badan"
-                                    class="form-control border-0 bg-transparent px-0" placeholder="Tinggi Badan">
+                                    class="form-control border-0 bg-transparent px-0" placeholder="Height">
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group border-bottom">
-                                <label for="">Berat Badan (kg)<span style="color: red">*</span></label>
+                                <label for="">Weight (kg)<span style="color: red">*</span></label>
                                 <input type="text" name="berat_badan" id="berat_badan"
                                     class="form-control border-0 bg-transparent px-0" placeholder="Berat Badan">
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group">
-                                <label for="" class="mb-2">Merokok<span style="color: red">*</span></label>
+                                <label for="" class="mb-2">Smoke<span style="color: red">*</span></label>
                                 <div class="row">
                                     <div class="col-auto">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="status_merokok"
                                                 id="merokok-ya" value="Ya">
-                                            <label class="form-check-label" for="merokok-ya">Ya</label>
+                                            <label class="form-check-label" for="merokok-ya">Yes</label>
                                         </div>
                                     </div>
                                     <div class="col-auto">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="status_merokok"
                                                 id="merokok-tidak" value="Tidak">
-                                            <label class="form-check-label" for="merokok-tidak">Tidak</label>
+                                            <label class="form-check-label" for="merokok-tidak">No</label>
                                         </div>
                                     </div>
                                 </div>
@@ -1218,7 +1234,7 @@
                         </div>
                         <div class="col-lg-6 col-xl-5">
                             <div class="form-group border-bottom">
-                                <label for="">Jenis penyakit yang pernah diderita<span
+                                <label for="">Types of diseases that have been suffered<span
                                         style="color: red">*</span></label>
                                 <input type="text" name="penyakit" id="penyakit"
                                     class="form-control border-0 bg-transparent px-0"
@@ -1227,16 +1243,16 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <b> Note : (<span style="color: red">*</span>) Wajib di isi. </b>
+                        <b> Note : (<span style="color: red">*</span>) Must be filled in. </b>
                     </div>
                     <div class="pt-5">
                         <div class="row">
                             <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
                                 style="column-gap: 1rem">
                                 <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#section4">
-                                    << Kembali</a>
+                                    << Back</a>
                                         <a class="btn btn-outline-dark btn-block mt-0" data-toggle="collapse"
-                                            href="#section6">Lanjutkan >></a>
+                                            href="#section6">Next >></a>
                             </div>
                         </div>
                     </div>
@@ -1248,60 +1264,59 @@
             <section class="collapse fade" id="section6" data-parent=".wrapper">
                 <div class="container">
                     {{-- <form action=""> --}}
-                    <h2 class="mb-5">PERNYATAAN PRIBADI</h2>
+                    <h2 class="mb-5">PERSONAL STATEMENT</h2>
                     <div class="form-group border-bottom">
-                        <label for="peryataan1">Berikan alasan / tujuan Anda melamar di Perusahaan ini?<span
+                        <label for="peryataan1">Give your reason/purpose for applying at this Company?<span
                                 style="color: red">*</span></label>
                         <textarea name="peryataan1" class="form-control border-0 bg-transparent px-0" id="peryataan1" rows="1"
-                            placeholder="Jelaskan"></textarea>
+                            placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="peryataan2">Berikan uraian mengenai pekerjaan / jabatan yang paling berkesan dalam
-                            hidup Anda dan mengapa?<span style="color: red">*</span></label>
+                        <label for="peryataan2">Give a description of the most memorable job/job in your life and
+                            why?<span style="color: red">*</span></label>
                         <textarea name="peryataan2" class="form-control border-0 bg-transparent px-0" id="peryataan2" rows="1"
-                            placeholder="Jelaskan"></textarea>
+                            placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="peryataan3">Pernakah Anda melakukan perubahan / pembaharuan di perusahaan - perusahaan
-                            terdahulu? Seperti apa perubahasan tersebut?<span style="color: red">*</span></label>
+                        <label for="peryataan3">Have you ever made changes / updates in previous companies? What the
+                            discussion looks like?<span style="color: red">*</span></label>
                         <textarea name="peryataan3" class="form-control border-0 bg-transparent px-0" id="peryataan3" rows="1"
-                            placeholder="Jelaskan"></textarea>
+                            placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="peryataan4">Apakah Anda merasa puas dengan kemajuan yang anda capai pada pekerjaan -
-                            pekerjaan terdahulu? Mengapa?<span style="color: red">*</span></label>
+                        <label for="peryataan4">Are you satisfied with the progress you have made in previous jobs?
+                            Why?<span style="color: red">*</span></label>
                         <textarea name="peryataan4" class="form-control border-0 bg-transparent px-0" id="peryataan4" rows="1"
-                            placeholder="Jelaskan"></textarea>
+                            placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="peryataan5">Deskripsikan sifat-sifat / kepribadian Saudara baik yang sifat positif(+)
-                            dan yang negatif(-)?<span style="color: red">*</span></label>
+                        <label for="peryataan5">Describe your good traits/personality that are positive traits (+) and the
+                            negative(-)?<span style="color: red">*</span></label>
                         <textarea name="peryataan5" class="form-control border-0 bg-transparent px-0" id="peryataan5" rows="1"
-                            placeholder="Jelaskan"></textarea>
+                            placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="peryataan6">Hobby dan kegiatan di waktu luang?<span
+                        <label for="peryataan6">Hobbies and activities in your spare time?<span
                                 style="color: red">*</span></label>
                         <textarea name="peryataan6" class="form-control border-0 bg-transparent px-0" id="peryataan6" rows="1"
-                            placeholder="Jelaskan"></textarea>
+                            placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom mb-3">
-                        <label for="peryataan7">Apa yang anda ketahui tentang indraco?<span
-                                style="color: red">*</span></label>
+                        <label for="peryataan7">What do you know about indraco?<span style="color: red">*</span></label>
                         <textarea name="peryataan7" class="form-control border-0 bg-transparent px-0" id="peryataan7" rows="1"
                             placeholder="Jelaskan"></textarea>
                     </div>
 
-                    <b> Note : (<span style="color: red">*</span>) Wajib di isi. </b>
+                    <b> Note : (<span style="color: red">*</span>) Must be filled in. </b>
 
                     <div class="pt-5">
                         <div class="row">
                             <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
                                 style="column-gap: 1rem">
                                 <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#section5">
-                                    << Kembali</a>
+                                    << Back</a>
                                         <a class="btn btn-outline-dark btn-block mt-0" data-toggle="collapse"
-                                            href="#section7">Lanjutkan >></a>
+                                            href="#section7">Next >></a>
                             </div>
                         </div>
                     </div>
@@ -1313,121 +1328,121 @@
             <section class="collapse fade" id="section7" data-parent=".wrapper">
                 <div class="container">
                     {{-- <form action=""> --}}
-                    <h2 class="mb-5">PERSETUJUAN-PERSETUJUAN</h2>
+                    <h2 class="mb-5">APPROVALS</h2>
                     <div class="form-group border-bottom">
-                        <label for="persetujuan1">Apakah anda bersedia kerja lebih dari jam kerja yang ditentukan?<span
+                        <label for="persetujuan1">Are you willing to work more than the specified hours?<span
                                 style="color: red">*</span></label>
                         <textarea name="persetujuan1" class="form-control border-0 bg-transparent px-0" id="persetujuan1" rows="1"
-                            placeholder="Jelaskan"></textarea>
+                            placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="persetujuan2">Apakah anda bersedia dinas keluar kota?<span
+                        <label for="persetujuan2">Are you willing to go out of town?<span
                                 style="color: red">*</span></label>
                         <textarea name="persetujuan2" class="form-control border-0 bg-transparent px-0" id="persetujuan2" rows="1"
-                            placeholder="Jelaskan"></textarea>
+                            placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="persetujuan3">Apakah anda siap ditempatkan di seluruh unit Indraco Group?<span
+                        <label for="persetujuan3">Are you ready to be placed in all Indraco Group units?<span
                                 style="color: red">*</span></label>
                         <textarea name="persetujuan3" class="form-control border-0 bg-transparent px-0" id="persetujuan3" rows="1"
-                            placeholder="Jelaskan"></textarea>
+                            placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="persetujuan4">Mengapa anda ingin bergabung dengan perusahaan kami?<span
-                                style="color: red">*</span><span style="color: red">*</span></label>
-                        <textarea name="persetujuan4" class="form-control border-0 bg-transparent px-0" id="persetujuan4" rows="1"
-                            placeholder="Jelaskan"></textarea>
-                    </div>
-                    <div class="form-group border-bottom">
-                        <label for="persetujuan5">Nilai lebih apa yang dapat anda tawarkan kepada kami, dan berguna bagi
-                            perusahaan kami?<span style="color: red">*</span></label>
-                        <textarea name="persetujuan5" class="form-control border-0 bg-transparent px-0" id="persetujuan5" rows="1"
-                            placeholder="Jelaskan"></textarea>
-                    </div>
-                    <div class="form-group border-bottom">
-                        <label for="persetujuan6">Pekerjaan apa yang anda tidak sukai?<span
+                        <label for="persetujuan4">Why do you want to join our company?<span
                                 style="color: red">*</span></label>
-                        <textarea name="persetujuan6" class="form-control border-0 bg-transparent px-0" id="persetujuan6" rows="1"
-                            placeholder="Jelaskan"></textarea>
+                        <textarea name="persetujuan4" class="form-control border-0 bg-transparent px-0" id="persetujuan4" rows="1"
+                            placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="persetujuan7">Apakah anda masih terikat dengan perusahaan lain?<span
+                        <label for="persetujuan5">What added value can you offer us, and be useful to our company?<span
+                                style="color: red">*</span></label>
+                        <textarea name="persetujuan5" class="form-control border-0 bg-transparent px-0" id="persetujuan5" rows="1"
+                            placeholder="Describe"></textarea>
+                    </div>
+                    <div class="form-group border-bottom">
+                        <label for="persetujuan6">What Work do you dislike?<span style="color: red">*</span></label>
+                        <textarea name="persetujuan6" class="form-control border-0 bg-transparent px-0" id="persetujuan6" rows="1"
+                            placeholder="Describe"></textarea>
+                    </div>
+                    <div class="form-group border-bottom">
+                        <label for="persetujuan7">Are you still tied to another company?<span
                                 style="color: red">*</span></label>
                         <textarea name="persetujuan7" class="form-control border-0 bg-transparent px-0" id="persetujuan7" rows="1"
-                            placeholder="Jelaskan"></textarea>
+                            placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="persetujuan8">Apakah anda memiliki pekerjaan sampingan? Jelaskan!<span
+                        <label for="persetujuan8">Do you have a side job? Explain!<span
                                 style="color: red">*</span></label>
                         <textarea name="persetujuan8" class="form-control border-0 bg-transparent px-0" id="persetujuan8" rows="1"
-                            placeholder="Jelaskan"></textarea>
+                            placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="persetujuan9">Apakah anda memiliki kendaraan pribadi?<span
-                                style="color: red">*</span></label>
+                        <label for="persetujuan9">Do you own a private vehicle?<span style="color: red">*</span></label>
                         <textarea name="persetujuan9" class="form-control border-0 bg-transparent px-0" id="persetujuan9" rows="1"
-                            placeholder="Jelaskan"></textarea>
+                            placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="persetujuan10">SIM apa yang anda miliki?<span style="color: red">*</span></label>
+                        <label for="persetujuan10">What driver's license do you have?<span
+                                style="color: red">*</span></label>
                         <textarea name="persetujuan10" class="form-control border-0 bg-transparent px-0" id="persetujuan10"
-                            rows="1" placeholder="Jelaskan"></textarea>
+                            rows="1" placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="persetujuan11">Kapan anda siap bergabung dengan perusahaan kami?<span
+                        <label for="persetujuan11">When are you ready to join our company?<span
                                 style="color: red">*</span></label>
                         <textarea name="persetujuan11" class="form-control border-0 bg-transparent px-0" id="persetujuan11"
-                            rows="1" placeholder="Jelaskan"></textarea>
+                            rows="1" placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="persetujuan12">Apakah anda bersedia dengan status kerja kontrak<span
+                        <label for="persetujuan12">Are you willing with the employment status of the contract<span
                                 style="color: red">*</span></label>
                         <textarea name="persetujuan12" class="form-control border-0 bg-transparent px-0" id="persetujuan12"
-                            rows="1" placeholder="Jelaskan"></textarea>
+                            rows="1" placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="persetujuan13">Apakah anda bersedia minitipkan ijasah asli terakhir?<span
+                        <label for="persetujuan13">Are you ready to leave the last original certificate?<span
                                 style="color: red">*</span></label>
                         <textarea name="persetujuan13" class="form-control border-0 bg-transparent px-0" id="persetujuan13"
-                            rows="1" placeholder="Jelaskan"></textarea>
+                            rows="1" placeholder="Describe"></textarea>
                     </div>
 
-                    <h2 class="mb-5">POSISI TERAKHIR</h2>
+                    <h2 class="mb-5">LAST POSITION</h2>
                     <div class="form-group border-bottom">
-                        <label for="struktur_organisasi">Jelaskan struktur organisasi posisi Saudara di perusahaan
-                            terakhir tempat anda bekerja!</label>
+                        <label for="struktur_organisasi">Explain the organizational structure of your position at the last
+                            company where you worked!</label>
                         <textarea name="struktur_organisasi" class="form-control border-0 bg-transparent px-0" id="struktur_organisasi"
-                            rows="1" placeholder="Jelaskan"></textarea>
+                            rows="1" placeholder="Describe"></textarea>
                     </div>
                     <div class="form-group border-bottom">
-                        <label for="tugas_dan_tanggung_jawab">Jelaskan Tugas dan Tanggung Jawab yang dikerjakan!</label>
+                        <label for="tugas_dan_tanggung_jawab">Describe the Duties and Responsibilities undertaken!</label>
                         <textarea name="tugas_dan_tanggung_jawab" class="form-control border-0 bg-transparent px-0"
-                            id="tugas_dan_tanggung_jawab" rows="1" placeholder="Jelaskan"></textarea>
+                            id="tugas_dan_tanggung_jawab" rows="1" placeholder="Describe"></textarea>
                     </div>
 
-                    <h2 class="mb-5">PERNYATAAN</h2>
+                    <h2 class="mb-5">STATEMENT</h2>
                     <div class="form-check mb-3">
                         <input type="checkbox" class="form-check-input"
                             value="keterangan yang saya berikan adalah benar" name="pernyataan" id="pernyataan"
                             required>
                         <label class="form-check-label" for="pernyataan">
-                            Dengan ini saya menyatakan bahwa keterangan yang saya berikan adalah benar. Apabila ada
-                            keterangan yang tidak benar dan dapat merugikan perusahaan, maka saya siap untuk dikeluarkan
-                            secara sepihak oleh perusahaan.<span style="color: red">*</span>
+                            I hereby declare that the information I give is true. If there is information that is incorrect
+                            and
+                            can harm the company, then I am ready to be unilaterally expelled by the company.<span
+                                style="color: red">*</span>
                         </label>
                     </div>
 
-                    <b> Note : (<span style="color: red">*</span>) Wajib di isi. </b>
+                    <b> Note : (<span style="color: red">*</span>) Must be filled in. </b>
 
                     <div class="pt-5">
                         <div class="row">
                             <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
                                 style="column-gap: 1rem">
                                 <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#section6">
-                                    << Kembali</a>
+                                    << Back</a>
                                         {{-- <a class="btn btn-outline-dark btn-block mt-0" data-toggle="collapse" href="#">Lamar >></a> --}}
                                         <button type="submit"
-                                            class="btn btn-outline-dark btn-block mt-0">Lamar</button>
+                                            class="btn btn-outline-dark btn-block mt-0">Apply</button>
                             </div>
                         </div>
                     </div>
@@ -1438,6 +1453,7 @@
         </form>
 
     </main>
+
     {{-- <script>
        $(function() {
             $('#datepicker').datepicker({format: 'yyyy-mm-dd'});
