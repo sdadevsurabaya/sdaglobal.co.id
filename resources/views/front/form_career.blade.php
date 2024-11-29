@@ -44,8 +44,7 @@
             }
         </style>
 
-        <form id="create_applied" method="POST" action="javascript:void(0)" accept-charset="utf-8"
-            enctype="multipart/form-data">
+        <form id="create_applied" method="POST" action="javascript:void(0)" accept-charset="utf-8" enctype="multipart/form-data">
             @csrf
             {{-- <section class="collapse fade show" id="section1" data-parent=".wrapper"> --}}
             <div class="container">
@@ -56,7 +55,7 @@
             {{-- </section> --}}
 
             {{-- section identitas --}}
-            <section class="collapse fade show" id="section1" data-parent=".wrapper">
+            <section class="collapse fade show" id="section1" data-bs-parent=".wrapper">
                 <div class="container">
                     {{-- <form id="create_applied" method="POST" action="javascript:void(0)" accept-charset="utf-8" enctype="multipart/form-data">
                         @csrf --}}
@@ -268,8 +267,7 @@
                         <div class="form-group col-12 pt-5">
                             <div class="row">
                                 <div class="col-auto mx-sm-auto">
-                                    <a class="btn btn-outline-dark btn-block" style="min-width: 260px;"
-                                        data-toggle="collapse" href="#section2">Next >></a>
+                                    <a class="btn btn-outline-dark btn-block" style="min-width: 260px;" data-bs-toggle="collapse" href="#section2">Next >></a>
                                     {{-- <button type="submit" class="btn btn-outline-dark btn-block mt-0">Lamar</button> --}}
                                 </div>
                             </div>
@@ -280,7 +278,7 @@
             </section>
 
             {{-- section family --}}
-            <section class="collapse fade" id="section2" data-parent=".wrapper">
+            <section class="collapse fade" id="section2" data-bs-parent=".wrapper">
                 <div class="container">
                     {{-- <form id="create_family" method="POST" action="javascript:void(0)" accept-charset="utf-8" enctype="multipart/form-data"> --}}
                     {{-- @csrf --}}
@@ -583,12 +581,9 @@
 
                     <div class="pt-5">
                         <div class="row">
-                            <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
-                                style="column-gap: 1rem">
-                                <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#section1">
-                                    << Back</a>
-                                        <a class="btn btn-outline-dark btn-block mt-0" data-toggle="collapse"
-                                            href="#section3">Next >></a>
+                            <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100" style="column-gap: 1rem">
+                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section1"> << Back</a>
+                                <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse" href="#section3">Next >></a>
                             </div>
                         </div>
                     </div>
@@ -598,7 +593,7 @@
             </section>
 
             {{-- section education --}}
-            <section class="collapse fade" id="section3" data-parent=".wrapper">
+            <section class="collapse fade" id="section3" data-bs-parent=".wrapper">
                 <div class="container">
                     {{-- <form id="create_education" method="POST" action="javascript:void(0)" accept-charset="utf-8" enctype="multipart/form-data"> --}}
                     {{-- @csrf --}}
@@ -863,10 +858,8 @@
                         <div class="row">
                             <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
                                 style="column-gap: 1rem">
-                                <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#section2">
-                                    << Back</a>
-                                        <a class="btn btn-outline-dark btn-block mt-0" data-toggle="collapse"
-                                            href="#section4">Next >></a>
+                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section2"><< Back</a>
+                                <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse" href="#section4">Next >></a>
                             </div>
                         </div>
                     </div>
@@ -875,7 +868,7 @@
             </section>
 
             {{-- section education non formal --}}
-            <section class="collapse fade" id="section4" data-parent=".wrapper">
+            <section class="collapse fade" id="section4" data-bs-parent=".wrapper">
                 <div class="container">
                     {{-- <form action=""> --}}
                     <h2 class="mb-5">HISTORY OF NON-FORMAL EDUCATION</h2>
@@ -1130,10 +1123,8 @@
                         <div class="row">
                             <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
                                 style="column-gap: 1rem">
-                                <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#section3">
-                                    << Back</a>
-                                        <a class="btn btn-outline-dark btn-block mt-0" data-toggle="collapse"
-                                            href="#section5">Next >></a>
+                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section3"> << Back</a>
+                                <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse" href="#section5">Next >></a>
                             </div>
                         </div>
                         {{-- </form> --}}
@@ -1141,7 +1132,7 @@
             </section>
 
             {{-- section near family --}}
-            <section class="collapse fade" id="section5" data-parent=".wrapper">
+            <section class="collapse fade" id="section5" data-bs-parent=".wrapper">
                 <div class="container">
                     {{-- <form action=""> --}}
                     <h2 class="mb-5">CONTACT FAMILY</h2>
@@ -1245,10 +1236,8 @@
                         <div class="row">
                             <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
                                 style="column-gap: 1rem">
-                                <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#section4">
-                                    << Back</a>
-                                        <a class="btn btn-outline-dark btn-block mt-0" data-toggle="collapse"
-                                            href="#section6">Next >></a>
+                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section4"> << Back</a>
+                                <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse" href="#section6">Next >></a>
                             </div>
                         </div>
                     </div>
@@ -1257,7 +1246,7 @@
             </section>
 
             {{-- section statement --}}
-            <section class="collapse fade" id="section6" data-parent=".wrapper">
+            <section class="collapse fade" id="section6" data-bs-parent=".wrapper">
                 <div class="container">
                     {{-- <form action=""> --}}
                     <h2 class="mb-5">PERSONAL STATEMENT</h2>
@@ -1309,10 +1298,8 @@
                         <div class="row">
                             <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
                                 style="column-gap: 1rem">
-                                <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#section5">
-                                    << Back</a>
-                                        <a class="btn btn-outline-dark btn-block mt-0" data-toggle="collapse"
-                                            href="#section7">Next >></a>
+                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section5"><< Back</a>
+                                <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse" href="#section7">Next >></a>
                             </div>
                         </div>
                     </div>
@@ -1321,7 +1308,7 @@
             </section>
 
             {{-- section agreement --}}
-            <section class="collapse fade" id="section7" data-parent=".wrapper">
+            <section class="collapse fade" id="section7" data-bs-parent=".wrapper">
                 <div class="container">
                     {{-- <form action=""> --}}
                     <h2 class="mb-5">APPROVALS</h2>
@@ -1432,13 +1419,10 @@
 
                     <div class="pt-5">
                         <div class="row">
-                            <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
-                                style="column-gap: 1rem">
-                                <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#section6">
-                                    << Back</a>
+                            <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100" style="column-gap: 1rem">
+                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section6"> << Back</a>
                                         {{-- <a class="btn btn-outline-dark btn-block mt-0" data-toggle="collapse" href="#">Lamar >></a> --}}
-                                        <button type="submit"
-                                            class="btn btn-outline-dark btn-block mt-0">Apply</button>
+                                <button type="submit" class="btn btn-outline-dark btn-block mt-0">Apply</button>
                             </div>
                         </div>
                     </div>
