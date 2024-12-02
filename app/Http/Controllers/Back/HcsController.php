@@ -81,7 +81,7 @@ class HcsController extends Controller
             [
                 'title' => 'required',
                 'description' => 'required',
-                'level_id' => 'required|not_in:0',
+                'level' => 'required|not_in:0',
                 'status' => 'required|not_in:0',
                 'start_date' => 'required',
                 'end_date' => 'required',
