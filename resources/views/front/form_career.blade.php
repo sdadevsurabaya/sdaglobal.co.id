@@ -17,10 +17,18 @@
                 max-width: 420px;
             }
         }
+
+        input:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        textarea:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
     </style>
 @endsection
-    @section('content')
-
+@section('content')
     <main class="wrapper">
 
         <!-- banner -->
@@ -44,7 +52,8 @@
             }
         </style>
 
-        <form id="create_applied" method="POST" action="javascript:void(0)" accept-charset="utf-8" enctype="multipart/form-data">
+        <form id="create_applied" method="POST" action="javascript:void(0)" accept-charset="utf-8"
+            enctype="multipart/form-data">
             @csrf
             {{-- <section class="collapse fade show" id="section1" data-parent=".wrapper"> --}}
             <div class="container">
@@ -65,7 +74,9 @@
                             <div class="form-group border-bottom">
                                 <label for="">Position Applied For<span style="color: red">*</span></label>
                                 {{-- <input class="form-control border-0 bg-transparent px-0" type="hidden" name="lang" id="lang" value="{{ $lang }}" placeholder="Other (If your position not in listing)" readonly> --}}
-                                <input class="form-control border-0 bg-transparent px-0" type="text" name="position_applied" id="position_applied" value="{{ $posission }}" placeholder="Other (If your position not in listing)" readonly>
+                                <input class="form-control border-0 bg-transparent px-0" type="text"
+                                    name="position_applied" id="position_applied" value="{{ $posission }}"
+                                    placeholder="Other (If your position not in listing)" readonly>
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-5">
@@ -267,7 +278,8 @@
                         <div class="form-group col-12 pt-5">
                             <div class="row">
                                 <div class="col-auto mx-sm-auto">
-                                    <a class="btn btn-outline-dark btn-block" style="min-width: 260px;" data-bs-toggle="collapse" href="#section2">Next >></a>
+                                    <a class="btn btn-outline-dark btn-block" style="min-width: 260px;"
+                                        data-bs-toggle="collapse" href="#section2">Next >></a>
                                     {{-- <button type="submit" class="btn btn-outline-dark btn-block mt-0">Lamar</button> --}}
                                 </div>
                             </div>
@@ -579,11 +591,13 @@
                         <b> Note : (<span style="color: red">*</span>) Must be filled in. </b>
                     </div>
 
-                    <div class="pt-5">
+                    <div class="form-group pt-5">
                         <div class="row">
-                            <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100" style="column-gap: 1rem">
-                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section1"> << Back</a>
-                                <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse" href="#section3">Next >></a>
+                            <div class="col-auto mx-sm-auto mx-auto d-flex" style="column-gap: 1rem">
+                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section1">
+                                << Back</a>
+                                <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse"
+                                href="#section3">Next >></a>
                             </div>
                         </div>
                     </div>
@@ -854,12 +868,13 @@
                     <div class="col-12">
                         <b> Note : (<span style="color: red">*</span>) Must be filled in. </b>
                     </div>
-                    <div class="pt-5">
+                    <div class="form-group pt-5">
                         <div class="row">
-                            <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
-                                style="column-gap: 1rem">
-                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section2"><< Back</a>
-                                <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse" href="#section4">Next >></a>
+                            <div class="col-auto mx-sm-auto mx-auto d-flex" style="column-gap: 1rem">
+                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section2">
+                                    << Back</a>
+                                        <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse"
+                                            href="#section4">Next >></a>
                             </div>
                         </div>
                     </div>
@@ -1119,12 +1134,13 @@
                         </div>
                     </div>
 
-                    <div class="pt-5">
+                    <div class="form-group pt-5">
                         <div class="row">
-                            <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
-                                style="column-gap: 1rem">
-                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section3"> << Back</a>
-                                <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse" href="#section5">Next >></a>
+                            <div class="col-auto mx-sm-auto mx-auto d-flex" style="column-gap: 1rem">
+                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section3">
+                                    << Back</a>
+                                        <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse"
+                                            href="#section5">Next >></a>
                             </div>
                         </div>
                         {{-- </form> --}}
@@ -1232,12 +1248,13 @@
                     <div class="col-12">
                         <b> Note : (<span style="color: red">*</span>) Must be filled in. </b>
                     </div>
-                    <div class="pt-5">
+                    <div class="form-group pt-5">
                         <div class="row">
-                            <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
-                                style="column-gap: 1rem">
-                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section4"> << Back</a>
-                                <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse" href="#section6">Next >></a>
+                            <div class="col-auto mx-sm-auto mx-auto d-flex" style="column-gap: 1rem">
+                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section4">
+                                    << Back</a>
+                                        <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse"
+                                            href="#section6">Next >></a>
                             </div>
                         </div>
                     </div>
@@ -1294,12 +1311,13 @@
 
                     <b> Note : (<span style="color: red">*</span>) Must be filled in. </b>
 
-                    <div class="pt-5">
+                    <div class="form-group pt-5">
                         <div class="row">
-                            <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100"
-                                style="column-gap: 1rem">
-                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section5"><< Back</a>
-                                <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse" href="#section7">Next >></a>
+                            <div class="col-auto mx-sm-auto mx-auto d-flex" style="column-gap: 1rem">
+                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section5">
+                                    << Back</a>
+                                        <a class="btn btn-outline-dark btn-block mt-0" data-bs-toggle="collapse"
+                                            href="#section7">Next >></a>
                             </div>
                         </div>
                     </div>
@@ -1417,12 +1435,14 @@
 
                     <b> Note : (<span style="color: red">*</span>) Must be filled in. </b>
 
-                    <div class="pt-5">
+                    <div class="form-group pt-5">
                         <div class="row">
-                            <div class="col col-12 col-md-8 col-lg-7 col-xl-6 mx-auto d-flex flex-wrap flex-nowrap align-items-center w-100" style="column-gap: 1rem">
-                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section6"> << Back</a>
+                            <div class="col-auto mx-sm-auto mx-auto d-flex" style="column-gap: 1rem">
+                                <a class="btn btn-outline-dark btn-block" data-bs-toggle="collapse" href="#section6">
+                                    << Back</a>
                                         {{-- <a class="btn btn-outline-dark btn-block mt-0" data-toggle="collapse" href="#">Lamar >></a> --}}
-                                <button type="submit" class="btn btn-outline-dark btn-block mt-0">Apply</button>
+                                        <button type="submit"
+                                            class="btn btn-outline-dark btn-block mt-0">Apply</button>
                             </div>
                         </div>
                     </div>
@@ -2203,10 +2223,7 @@
         $('body').attr('id', 'karir');
         $('#nav-career,').addClass('active');
     </script> --}}
-
-
-
-    @endsection
+@endsection
 
 @section('pageScripts')
     <script>
