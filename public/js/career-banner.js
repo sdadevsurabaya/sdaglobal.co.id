@@ -5,9 +5,9 @@ document.write(`
       <div class="row align-items-lg-center">
          <div class="col-lg-6">
             <div class="px-4 py-5 px-lg-5">
-               <h2>Career at INDRACO</h2>
+               <h2>Career at SDA Global </h2>
                <p class="mb-0">
-                  Know the flow of the recruitment process at INDRACO from sending applications to the employee acceptance stage.
+                  Know the flow of the recruitment process at SDA Global from sending applications to the employee acceptance stage.
                   <br>
                   Come join and be a part of us!
                </p>
