@@ -17,10 +17,34 @@ body {
     font-size: 1rem;
 }
 
+@media (min-width: 768px) {
+
+	html,
+	body {
+		font-size: 16px;
+	}
+}
+
 @media (min-width: 1200px) {
     body {
         font-size: 1.125rem;
     }
+}
+
+@media (min-width: 1400px) {
+
+	html,
+	body {
+		font-size: 17px
+	}
+
+	.container {
+		max-width: 1320px;
+	}
+}
+
+.form-group{
+    margin-bottom: 1rem;
 }
 
 body>header,
